@@ -1,0 +1,31 @@
+version: '3.9'
+
+services:
+  app:
+    build: .
+    container_name: resume-landing-app
+    ports:
+      - '3000:3000'
+    environment:
+      DATABASE_URL: mysql://root:securepass@db:3306/resume
+      NEXTAUTH_URL: http://localhost:3000
+    depends_on:
+      - db
+    volumes:
+      - .:/app
+      - /app/node_modules
+
+  db:
+    image: mariadb:latest
+    container_name: resume-db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: securepass
+      MYSQL_DATABASE: resume
+    ports:
+      - '3307:3306'
+    volumes:
+      - db_data:/var/lib/mysql
+
+volumes:
+  db_data:
