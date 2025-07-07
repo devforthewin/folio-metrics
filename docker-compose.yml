@@ -16,7 +16,8 @@ services:
       - /app/node_modules
 
   db:
-    image: mariadb:latest
+    build:
+      context: ./db
     container_name: resume-db
     restart: always
     environment:
