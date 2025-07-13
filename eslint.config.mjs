@@ -30,7 +30,7 @@ const eslintConfig = [
           'newlines-between': 'always',
         },
       ],
-      'max-len': ['warn', { code: 120 }],
+      "max-len": "off",
       'comma-dangle': ['warn', 'always-multiline'],
       // 'no-unused-vars': 'warn',
       // 'no-console': 'warn',
