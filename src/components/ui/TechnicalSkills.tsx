@@ -1,3 +1,5 @@
+import SkillBarText from '@/components/SkillBarText'
+
 export default function TechnicalSkills() {
   return (
     <section className="flex w-full text-gray-700 relative">
@@ -32,47 +34,53 @@ export default function TechnicalSkills() {
           </div>
         </div>
 
-        {/* Правая часть — текст */}
-        <div
-          className=" bg-[#FFFFFF] flex-1 flex flex-col
-        pt-[1.75rem]
-                  px-[1.75rem]
+        {/* Правая часть — Скиллы */}
+        <div className="bg-[#FFFFFF] flex-1 flex flex-col pt-[1.75rem] px-[1.75rem] lg:pt-[4.375rem] lg:pb-[1.6625rem] md:pt-[1.75rem] md:pb-[1.4rem] md:px-[3.5rem]">
 
-                  lg:pt-[4.375rem]
-                  lg:pb-[1.6625rem]
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 
-                  md:pt-[1.75rem]
-                  md:pb-[1.4rem]
-                  md:px-[3.5rem]"
-        >
-          <div className="">
-            <p className="mb-4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus hendrerit. Pellentesque aaliquet nibh
-              nec
-              urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed{' '}
-              <span className="text-yellow-600 font-medium">pretium</span>, ligula sollicitudin laoreet viverra, tortor
-              libero
-              sodales leo, eget blandit nunc tortor ut nibh. Nullam mollis. Ut justo. Suspendisse potenti. Nulla vitae
-              mauris
-              non felis mollis faucibus.
-            </p>
-            <p>
-              Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi
-              purus
-              libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit
-              tortor.
-              Sed
-              semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar
-              nunc
-              sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna. Fusce lacinia arcu
-              et
-              nulla.
-              Nulla vitae mauris non felis mollis.
-            </p>
+            {/* Левая колонка */}
+            <div>
+              <h3 className="text-md font-bold mb-4 uppercase">Frontend</h3>
+              <SkillBarText name="React" percent={95} />
+              <SkillBarText name="TypeScript" percent={90} />
+              <SkillBarText name="Next.js" percent={85} />
+              <SkillBarText name="Vue" percent={75} />
+
+              <h3 className="text-md font-bold mt-6 mb-4 uppercase">Backend</h3>
+              <SkillBarText name="NestJS" percent={85} />
+              <SkillBarText name="Laravel" percent={80} />
+              <SkillBarText name="REST API" percent={90} />
+              <SkillBarText name="PostgreSQL" percent={85} />
+              <SkillBarText name="MariaDB" percent={70} />
+              <SkillBarText name="Redis" percent={70} />
+            </div>
+
+            {/* Правая колонка */}
+            <div>
+              <h3 className="text-md font-bold mb-4 uppercase">Infrastructure</h3>
+              <SkillBarText name="Docker" percent={85}/>
+              <SkillBarText name="GitLab CI/CD" percent={85}/>
+              <SkillBarText name="Cloudflare" percent={70}/>
+
+              <h3 className="text-md font-bold mt-6 mb-4 uppercase">Other</h3>
+              <SkillBarText name="Telegram Bots" percent={90}/>
+              <SkillBarText name="Telegram Web Apps" percent={85}/>
+              <SkillBarText name="Integrations" percent={85}/>
+            </div>
+            <div className="mt-8">
+              <h3 className="text-md font-semibold mb-2">Additional Tools & Libraries</h3>
+              <p className="text-sm text-gray-700">
+                Zustand, Webpack/Vite, MUI, Styled Components, Telegram API, Grammy, Webhook Architecture, Postman,
+                ORM.
+              </p>
+            </div>
+
           </div>
-        </div>
 
+        </div>
       </div>
+
     </section>
   )
 }
