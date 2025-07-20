@@ -2,7 +2,9 @@ version: '3.9'
 
 services:
   app:
-    build: .
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
     container_name: resume-landing-app
     ports:
       - '3000:3000'
@@ -13,10 +15,10 @@ services:
       - db
     volumes:
       - .:/app
-      - /app/node_modules
+    command: sh -c "npx prisma generate && npm run dev"
 
   db:
-    image: mariadb:latest
+    image: mariadb:10.9
     container_name: resume-db
     restart: always
     environment:

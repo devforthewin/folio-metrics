@@ -32,6 +32,8 @@ const eslintConfig = [
       ],
       "max-len": "off",
       'comma-dangle': ['warn', 'always-multiline'],
+      'react/no-unescaped-entities': 'off',
+      '@next/next/no-page-custom-font': 'off',
       // 'no-unused-vars': 'warn',
       // 'no-console': 'warn',
       semi: ['warn', 'never'],

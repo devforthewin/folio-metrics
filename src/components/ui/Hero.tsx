@@ -10,16 +10,16 @@ import {
 export default function Hero() {
   return (
     <section className="w-full h-screen flex flex-col lg:flex-row">
-      <div className="absolute top-0 left-0 w-1/2 h-full lg:bg-rose-300 z-0 md:bg-gray-50"/>
-      <div className="absolute top-0 right-0 w-1/2 h-full bg-gray-50 z-0"/>
+      <div className="absolute top-0 left-0 w-1/2 h-full lg:bg-[#F4E6DD] z-0 md:bg-gray-50"/>
+      <div className="absolute top-0 right-0 w-1/2 h-full bg-[#FFFFFF] z-0"/>
 
       <div className="w-full z-10 max-w-[1276px] mx-auto flex flex-col lg:flex-row h-full">
         {/* Левая часть */}
         <div
           className="
-                  lg:bg-rose-300
+                  lg:bg-[#F4E6DD]
                   w-full
-                  lg:flex-[0_0_31%]
+                  lg:flex-[0_0_30%]
                   flex
                   items-center
                   justify-center
@@ -37,12 +37,12 @@ export default function Hero() {
           <img
             src="/images/my_ava.jpg"
             alt="Avatar"
-            className="rounded-full object-cover lg:mt-[-5.8rem] lg:max-w-[236px] lg:max-h-[236px] md:w-[13rem]"
+            className="rounded-full object-cover lg:mt-[-5.8rem]"
           />
         </div>
 
         {/* Правая часть */}
-        <div className="bg-gray-50 flex-1 flex flex-col lg:justify-between
+        <div className=" bg-[#FFFFFF] flex-1 flex flex-col lg:justify-between
         pt-[1.75rem]
                   px-[1.75rem]
 
