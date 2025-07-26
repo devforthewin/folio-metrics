@@ -30,7 +30,7 @@ export default function Experience() {
         >
           <div className="flex flex-col items-end justify-end text-right">
             <h2 className="text-lg font-bold tracking-wider uppercase">Work Experience</h2>
-            {/*<p className="text-sm mt-2">What I am all about.</p>*/}
+            <p className="text-sm mt-2">Every line of code bears the mark of battle. Every project — a new victory.</p>
           </div>
         </div>
 
@@ -61,11 +61,11 @@ export default function Experience() {
 
               <div className="flex w-full flex-col md:flex-row gap-6">
                 <div className="w-full md:w-4/12 flex flex-col">
-                  <h3 className="text-lg font-bold uppercase mb-1">
+                  <h4 className="text-base font-bold uppercase mb-1">
                     CPABOX | 2022–2025
-                  </h3>
+                  </h4>
+                  <p className="text-xs font-medium mb-1">Full-Stack Developer</p>
                   <p className="text-xs text-gray-500 mb-1">(SaaS platform for media buying automation)</p>
-                  <p className="text-sm font-medium mb-1">Full-Stack Developer</p>
                 </div>
 
                 <div className="w-full md:w-8/12 flex flex-col gap-4">
@@ -94,13 +94,12 @@ export default function Experience() {
 
               <div className="flex w-full flex-col md:flex-row gap-6">
                 <div className="w-full md:w-4/12 flex flex-col">
-                  <h3 className="text-lg font-bold uppercase mb-1">
+                  <h3 className="text-base font-bold uppercase mb-1">
                     Remotza.tech | 2021–2022
                   </h3>
-                  <p className="text-sm font-medium mb-1">Backend/Full-Stack Developer</p>
-
+                  <p className="text-xs font-medium mb-1">Backend/Full-Stack Developer</p>
+                  <p className="text-xs text-gray-500 mb-1">(SaaS platform for media buying automation)</p>
                 </div>
-
                 <div className="w-full md:w-8/12 flex flex-col gap-4">
                   <div className="text-sm text-gray-500 space-y-2">
                     <p className="text-gray-500 font-semibold">
@@ -126,13 +125,12 @@ export default function Experience() {
 
               <div className="flex w-full flex-col md:flex-row gap-6">
                 <div className="w-full md:w-4/12 flex flex-col">
-                  <h3 className="text-lg font-bold uppercase mb-1">
+                  <h3 className="text-base font-bold uppercase mb-1">
                     AOPSRM | 2020–2021
                   </h3>
-                  <p className="text-sm font-medium mb-1">Full-Stack Developer</p>
-
+                  <p className="text-xs font-medium mb-1">Full-Stack Developer</p>
+                  <p className="text-xs text-gray-500 mb-1">(SaaS platform for media buying automation)</p>
                 </div>
-
                 <div className="w-full md:w-8/12 flex flex-col gap-4">
                   <div className="text-sm text-gray-500 space-y-2">
                     <p className="text-gray-500 font-semibold">

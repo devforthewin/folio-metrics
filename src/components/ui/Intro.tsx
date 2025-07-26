@@ -30,7 +30,7 @@ export default function Intro() {
         >
           <div className="flex flex-col items-end justify-end text-right">
             <h2 className="text-lg font-bold tracking-wider uppercase">About Me</h2>
-            {/*<p className="text-sm mt-2">What I am all about.</p>*/}
+            <p className="text-sm mt-2">A warrior doesn't boast — he simply knows what he's capable of.</p>
           </div>
         </div>
 

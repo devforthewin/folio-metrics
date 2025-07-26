@@ -30,7 +30,7 @@ export default function TechnicalSkills() {
         >
           <div className="flex flex-col items-end justify-end text-right">
             <h2 className="text-lg font-bold tracking-wider uppercase">Technical Skills</h2>
-            {/*<p className="text-sm mt-2">What I am all about.</p>*/}
+            <p className="text-sm mt-2"> Tools in the hands of a master become an extension of his will.</p>
           </div>
         </div>
 

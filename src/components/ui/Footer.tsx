@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faDribbble, faFacebookF, faTwitter } from '@fortawesome/free-brands-svg-icons'
+
 export default function Footer() {
   return (
     <section className="flex w-full text-gray-700 relative">
@@ -28,47 +31,106 @@ export default function Footer() {
         >
           <div className="flex flex-col items-end justify-end text-right">
             <h2 className="text-lg font-bold tracking-wider uppercase">Footer</h2>
-            {/*<p className="text-sm mt-2">What I am all about.</p>*/}
+            <p className="text-sm mt-2"> I walk my own path. If it crosses yours — reach out.</p>
           </div>
         </div>
 
         {/* Правая часть — текст */}
         <div
-          className=" bg-[#FFFFFF] flex-1 flex flex-col
-        pt-[1.75rem]
-                  px-[1.75rem]
-
-                  lg:pt-[4.375rem]
-                  lg:pb-[1.6625rem]
-
-                  md:pt-[1.75rem]
-                  md:pb-[1.4rem]
-                  md:px-[3.5rem]"
+          className="
+          bg-[#FFFFFF]
+          flex-1 flex
+          flex-col
+          pt-[1.75rem]
+          px-[1.75rem]
+          lg:pt-[4.375rem]
+          lg:pb-[1.6625rem]
+          md:pt-[1.75rem]
+          md:pb-[1.4rem]
+          md:px-[3.5rem]"
         >
-          <div className="">
-            <p className="mb-4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus hendrerit. Pellentesque aaliquet nibh
-              nec
-              urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed{' '}
-              <span className="text-yellow-600 font-medium">pretium</span>, ligula sollicitudin laoreet viverra, tortor
-              libero
-              sodales leo, eget blandit nunc tortor ut nibh. Nullam mollis. Ut justo. Suspendisse potenti. Nulla vitae
-              mauris
-              non felis mollis faucibus.
-            </p>
-            <p>
-              Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi
-              purus
-              libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit
-              tortor.
-              Sed
-              semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar
-              nunc
-              sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna. Fusce lacinia arcu
-              et
-              nulla.
-              Nulla vitae mauris non felis mollis.
-            </p>
+          <div className="w-full">
+
+            {/*Info Block*/}
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-8 leading-[1.75] mb-4">
+              <div>
+                <h4 className="font-semibold text-gray-400 font-semibold">Location</h4>
+                <p className="text-gray-500 font-normal">Kishinev, OR</p>
+              </div>
+              <div>
+                <h4 className="font-semibold text-gray-400 font-semibold">Phone</h4>
+                <p className="text-gray-500 font-normal">+373 68 940 997</p>
+              </div>
+              <div>
+                <h4 className="font-semibold text-gray-400 font-semibold">Telegram</h4>
+                <p className="text-gray-500 font-normal">@tanya_arbuz</p>
+              </div>
+              <div>
+                <h4 className="font-semibold text-gray-400 font-semibold">E-mail</h4>
+                <p className="text-gray-500 font-normal">work.arbuz@gmail.com</p>
+              </div>
+            </div>
+            <hr className="w-full border-t border-gray-200 mb-8"/>
+
+            <div className="flex flex-col lg:items-end lg:justify-center lg:flex-1 md:mb-[1.75rem]">
+
+              <div
+                className="
+                flex items-end justify-between w-full mt-1 lg:flex-row flex-col
+              ">
+                <div
+                  className="
+            font-light
+            text-gray-700
+            lg:text-left
+            leading-tight
+            text-center
+            mb-4
+            ">
+                  <span
+                    className="
+                font-bold text-yellow-500 uppercase block
+                lg:text-[3.2rem] lg:leading-[1]
+                text-[2rem] leading-[0.91]
+                lg:text-left
+                text-center
+                mb-4
+                ">
+                    Tanya Arbuz
+                  </span>
+                  <span className="text-[1.3rem]">[Full-Stack Developer]</span>
+                </div>
+
+                <div className="flex space-x-3 mb-4">
+                  <a
+                    href="#"
+                    className="w-[38px] h-[38px] flex items-center justify-center bg-[#ededed] border border-[#ededed] rounded-[3px] text-gray-800 hover:bg-transparent transition-all duration-[1200ms] ease-in-out hover:scale-100">
+                    <FontAwesomeIcon icon={faFacebookF} className="text-[1rem]"/>
+                  </a>
+                  <a
+                    href="#"
+                    className="w-[38px] h-[38px] flex items-center justify-center bg-[#ededed] border border-[#ededed] rounded-[3px] text-gray-800 hover:bg-transparent transition-all duration-[1200ms] ease-in-out hover:scale-100"
+                    style={{
+                      transition:
+                        'all 1.2s ease 0.7s, transform 1.2s ease 0.7s, opacity 1.2s ease 0.7s',
+                    }}
+                  >
+                    <FontAwesomeIcon icon={faDribbble} className="text-[1rem]"/>
+                  </a>
+                  <a
+                    href="#"
+                    className="w-[38px] h-[38px] flex items-center justify-center bg-[#ededed] border border-[#ededed] rounded-[3px] text-gray-800 hover:bg-transparent transition-all duration-[1200ms] ease-in-out hover:scale-100"
+                    style={{
+                      transition:
+                        'all 1.2s ease 0.7s, transform 1.2s ease 0.7s, opacity 1.2s ease 0.7s',
+                    }}
+                  >
+                    <FontAwesomeIcon icon={faTwitter} className="text-[1rem]"/>
+                  </a>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
 
