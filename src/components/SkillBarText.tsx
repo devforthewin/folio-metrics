@@ -30,7 +30,7 @@ export default function SkillBarText({ name, percent }: SkillBarTextProps) {
     <span
       key={idx}
       className={`text-lg ${
-        idx < filledLength ? 'text-red-400' : 'text-gray-300'
+        idx < filledLength ? 'text-[#F67769]' : 'text-gray-300'
       }`}
     >
       •

@@ -5,14 +5,14 @@ export default function Footer() {
   return (
     <section className="flex w-full text-gray-700 relative">
 
-      <div className="absolute top-0 left-0 w-1/2 h-full lg:bg-[#F4E6DD] z-0 md:bg-gray-50"/>
+      <div className="absolute top-0 left-0 w-1/2 h-full lg:bg-[#FBE1D0] z-0 md:bg-gray-50"/>
       <div className="absolute top-0 right-0 w-1/2 h-full bg-[#FFFFFF] z-0"/>
 
       <div className="w-full z-10 max-w-[1276px] mx-auto flex flex-col lg:flex-row h-full">
-        {/* Левая часть — INTRO */}
+        {/* Left Part */}
         <div
           className="
-                  lg:bg-[#F4E6DD]
+                  lg:bg-[#FBE1D0]
                   w-full
                   lg:flex-[0_0_30%]
                   flex
@@ -30,12 +30,18 @@ export default function Footer() {
                 "
         >
           <div className="flex flex-col items-end justify-end text-right">
-            <h2 className="text-lg font-bold tracking-wider uppercase">Footer</h2>
-            <p className="text-sm mt-2"> I walk my own path. If it crosses yours — reach out.</p>
+            <h2
+              className="
+            w-full
+            text-md font-bold tracking-wider uppercase text-[#FFFFFF] text-center
+            py-2
+            bg-[#F67769]">
+              I walk my own path. If it crosses yours — reach out.
+            </h2>
           </div>
         </div>
 
-        {/* Правая часть — текст */}
+        {/* Right Part */}
         <div
           className="
           bg-[#FFFFFF]
@@ -54,23 +60,23 @@ export default function Footer() {
             {/*Info Block*/}
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8 leading-[1.75] mb-4">
               <div>
-                <h4 className="font-semibold text-gray-400 font-semibold">Location</h4>
+                <h4 className="font-semibold text-[#F67769] font-semibold">Location</h4>
                 <p className="text-gray-500 font-normal">Kishinev, OR</p>
               </div>
               <div>
-                <h4 className="font-semibold text-gray-400 font-semibold">Phone</h4>
+                <h4 className="font-semibold text-[#F67769] font-semibold">Phone</h4>
                 <p className="text-gray-500 font-normal">+373 68 940 997</p>
               </div>
               <div>
-                <h4 className="font-semibold text-gray-400 font-semibold">Telegram</h4>
+                <h4 className="font-semibold text-[#F67769] font-semibold">Telegram</h4>
                 <p className="text-gray-500 font-normal">@tanya_arbuz</p>
               </div>
               <div>
-                <h4 className="font-semibold text-gray-400 font-semibold">E-mail</h4>
+                <h4 className="font-semibold text-[#F67769] font-semibold">E-mail</h4>
                 <p className="text-gray-500 font-normal">work.arbuz@gmail.com</p>
               </div>
             </div>
-            <hr className="w-full border-t border-gray-200 mb-8"/>
+            <hr className="w-full border-t border-[#F67769] mb-8"/>
 
             <div className="flex flex-col lg:items-end lg:justify-center lg:flex-1 md:mb-[1.75rem]">
 
@@ -89,7 +95,7 @@ export default function Footer() {
             ">
                   <span
                     className="
-                font-bold text-yellow-500 uppercase block
+                font-bold text-[#F67769] uppercase block
                 lg:text-[3.2rem] lg:leading-[1]
                 text-[2rem] leading-[0.91]
                 lg:text-left
