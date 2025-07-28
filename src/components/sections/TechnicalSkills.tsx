@@ -1,4 +1,4 @@
-import SkillBarText from '@/components/SkillBarText'
+import SkillBarText from '@/components/ui/SkillBarText'
 
 export default function TechnicalSkills() {
   return (
@@ -95,7 +95,6 @@ export default function TechnicalSkills() {
               ORM.
             </p>
           </div>
-        
         </div>
       </div>
     </section>

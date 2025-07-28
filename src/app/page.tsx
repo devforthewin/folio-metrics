@@ -1,11 +1,11 @@
-import Hero from '@/components/ui/Hero'
-import Intro from '@/components/ui/Intro'
-import Experience from '@/components/ui/Experience'
-import TechnicalSkills from '@/components/ui/TechnicalSkills'
-import Education from '@/components/ui/Education'
-import Additional from '@/components/ui/Additional'
-import Footer from '@/components/ui/Footer'
-import Header from '@/components/ui/Header'
+import Hero from '@/components/sections/Hero'
+import Intro from '@/components/sections/Intro'
+import Experience from '@/components/sections/Experience'
+import TechnicalSkills from '@/components/sections/TechnicalSkills'
+import Education from '@/components/sections/Education'
+import Additional from '@/components/sections/Additional'
+import Footer from '@/components/common/Footer'
+import Header from '@/components/common/Header'
 
 export default function Home() {
   return (
