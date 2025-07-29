@@ -1,20 +1,12 @@
 'use client'
 
-import { useState } from 'react'
+import { useTranslations } from 'next-intl'
+
+import LanguageSwitcher from '@/components/features/LanguageSwitcher'
+{/*todo:  {theme === 'light' ? '☀️' : '🌙'}*/}
 
 export default function Header() {
-  const [theme, setTheme] = useState<'light' | 'dark'>('light')
-  const [lang, setLang] = useState<'en' | 'ru'>('en')
-
-  const toggleTheme = () => {
-    setTheme((prev) => (prev === 'light' ? 'dark' : 'light'))
-    // здесь можешь добавить переключение Tailwind классов или контекста темы
-  }
-
-  const toggleLang = () => {
-    setLang((prev) => (prev === 'en' ? 'ru' : 'en'))
-    // здесь можешь поменять i18n контекст, если используешь его
-  }
+  const t = useTranslations('Header')
 
   return (
     <header className="top-0 z-50 w-full bg-transparent h-[70px] relative flex flex-col lg:flex-row">
@@ -40,6 +32,7 @@ export default function Header() {
             py-2
             bg-[#F67769]">
               Tanya Arbuz
+              {t('heroText')}
             </h2>
           </div>
         </div>
@@ -58,41 +51,7 @@ export default function Header() {
           </h1>
 
           {/*Buttons Block*/}
-          <div className="flex flex-row items-end gap-2">
-            <button
-              onClick={toggleLang}
-              style={{
-                transition:
-                  'all 1.2s ease 0.7s, transform 1.2s ease 0.7s, opacity 1.2s ease 0.7s',
-              }}
-              className="
-                  w-[38px] h-[38px]
-                  flex gap-3
-                  items-center justify-center
-                  bg-transparent hover:bg-[#F67769] transition-all duration-[1200ms] ease-in-out hover:scale-100
-                  text-[#F67769] text-md hover:text-white font-medium"
-            >
-              {lang.toUpperCase()}
-            </button>
-
-            {/*<button*/}
-            {/*  onClick={toggleTheme}*/}
-            {/*  style={{*/}
-            {/*    transition:*/}
-            {/*          'all 1.2s ease 0.7s, transform 1.2s ease 0.7s, opacity 1.2s ease 0.7s',*/}
-            {/*  }}*/}
-            {/*  className="*/}
-            {/*  w-[38px] h-[38px]*/}
-            {/*  flex items-center justify-center*/}
-            {/*  bg-[#F23F4A]*/}
-            {/*  border border-[#ededed] rounded-[3px]*/}
-            {/*  text-gray-800*/}
-            {/*  hover:bg-transparent transition-all duration-[1200ms] ease-in-out hover:scale-100"*/}
-            {/*>*/}
-            {/*  {theme === 'light' ? '☀️' : '🌙'}*/}
-            {/*</button>*/}
-
-          </div>
+          <LanguageSwitcher />
         </div>
       </div>
     </header>
