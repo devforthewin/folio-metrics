@@ -2,8 +2,10 @@
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedinIn, faTelegramPlane } from '@fortawesome/free-brands-svg-icons'
+import { useTranslations } from 'next-intl'
 
 export default function Hero() {
+  const t = useTranslations('Hero')
   return (
     <section className="w-full screen-minus-header relative flex flex-col lg:flex-row">
       <div className="absolute top-0 left-0 w-1/2 screen-minus-header lg:bg-[#FBE1D0] z-0 md:bg-gray-50"/>
@@ -62,7 +64,7 @@ export default function Hero() {
             text-center
             mb-4
             ">
-              <span className="text-[1.3rem] text-[#455B84] pb-3">[Full-Stack Developer]</span>
+              <span className="text-[1.3rem] text-[#455B84] pb-3">[{t('smallTitle')}]</span>
               <span
                 className="
                 font-bold text-[#F67769] uppercase block
@@ -71,7 +73,7 @@ export default function Hero() {
                 lg:text-left
                 text-center
                 ">
-                Tanya Arbuz
+                {t('title')}
               </span>
             </div>
 
@@ -91,8 +93,7 @@ export default function Hero() {
                 font-normal
                 max-w-[600px]
                 ">
-                [ Building scalable, modular systems with a strong focus on architecture, clean code, and iterative delivery.
-                Solving product and engineering challenges with a long-term mindset. ]
+                [ {t('description')} ]
               </h2>
 
               {/*Social buttons + download*/}

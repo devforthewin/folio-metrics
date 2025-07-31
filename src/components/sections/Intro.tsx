@@ -1,6 +1,10 @@
 'use client'
 
+import { useTranslations } from 'next-intl'
+
 export default function Intro() {
+  const t = useTranslations('AboutMe')
+
   return (
     <section className="flex w-full text-gray-700 relative">
 
@@ -25,10 +29,10 @@ export default function Intro() {
             text-md font-bold tracking-wider uppercase text-[#FFFFFF] text-center
             py-2
             bg-[#F67769]">
-              About Me
+              {t('leftTitle')}
             </h2>
             <p className="text-sm mt-2">
-              [A warrior doesn't boast — he simply knows what he's capable of.]
+              [{t('leftSubtitle')}]
             </p>
           </div>
         </div>
@@ -44,18 +48,13 @@ export default function Intro() {
         >
           <div className="mb-4">
             <p className="mb-2">
-              Full-stack developer with 4+ years of experience, specializing in building web applications and Telegram
-              bots. I’m equally confident in both frontend and backend development, focused on creating flexible and
-              scalable solutions.
+              {t('description1')}
             </p>
             <p>
-              I care deeply about architectural reliability, user convenience, and automation of routine tasks.
-              Continuously learning, I listen to my teammates and strive to propose solutions that benefit both the
-              business and the team.
+              {t('description2')}
             </p>
           </div>
         </div>
-
       </div>
     </section>
   )

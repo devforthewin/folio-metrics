@@ -1,6 +1,76 @@
 {
   "Header": {
-    "heroText": "Clean code. Sharp decisions. Steady hand.",
+    "headerText": "Clean code. Sharp decisions. Steady hand.",
+    "title": "Arbuz Tanya",
     "language": "RU"
+  },
+  "Hero": {
+    "smallTitle": "Full-Stack Developer",
+    "title": "Tanya Arbuz",
+    "description": "I build scalable and modular systems with a keen focus on architecture, clean code, and iterative delivery. I take full ownership of challenges to deliver results, continuously seeking ways to enhance product and engineering processes, and transforming complex problems into robust, effective solutions."
+  },
+  "AboutMe": {
+    "leftTitle": "About Me",
+    "leftSubtitle": "A warrior doesn't boast — he simply knows what he's capable of.",
+    "description1": "Full-stack developer with 4+ years of experience, specializing in web applications and Telegram bots. I am proficient across the full stack, building flexible and scalable solutions.",
+    "description2": "My core priorities are architectural reliability, user-friendly experiences, and process automation. I am committed to continuous learning, value team collaboration, and am driven to find solutions that deliver value to both the business and the team."
+  },
+  "TechnicalSkills": {
+    "leftTitle": "Technical skills",
+    "leftSubtitle": "Tools in the hands of a master become an extension of his will.",
+    "frontTitle": "Frontend",
+    "backTitle": "Backend",
+    "infraTitle": "Infrastructure",
+    "otherTitle": "Other",
+    "addTitle": "Additional Tools and Libraries."
+  },
+  "Experience": {
+    "leftTitle": "Work Experience",
+    "leftSubtitle": "Every line of code bears the mark of battle. Every project — a new victory.",
+    "Stack": "Stack",
+    "cpabox": {
+      "about": "SaaS platform for media buying automation",
+      "description": "Built and maintained frontend architecture and backend logic. Integrated Keitaro TDS, developed Telegram bots for domain checks, built Telegram Web Apps and webhook architecture. Contributed to technical solutions and architecture.",
+      "resultDescription": "Automated routine operations for traffic arbitrage; strengthened architecture and product-thinking skills."
+    },
+    "remotza": {
+      "about": "A company specializing in custom software development",
+      "description": "Developed RESTful APIs, integrated external services, worked with PostgreSQL and Redis caching, contributed to UI with Vue.js.",
+      "resultDescription": "Delivered stable APIs meeting business requirements; improved focus on stability and team communication."
+    },
+    "aopsrm": {
+      "about": "A non-profit organization assisting stoma patients in Moldova",
+      "description": "Designed and launched a full-featured CRM: React frontend with Redux and Formik, Laravel REST API backend. Managed deployment with Docker and GitLab CI/CD; handled server admin and support.",
+      "resultDescription": "Delivered end-to-end CRM solution; built strong confidence in full-cycle delivery."
+    }
+  },
+  "Education": {
+    "leftTitle": "Education",
+    "leftSubtitle": "The path isn’t defined by diplomas. Anything that makes you stronger is part of the journey.",
+    "educ": "Russian University of Cooperation | Accounting and Finance | 2003–2007",
+    "addiTitle": "Additionally:",
+    "additionallyBlock": {
+      "first": "Completed a webmaster course in 2011.",
+      "second": "Gained hands-on experience through practical development.",
+      "third": "Continuous self-education via professional resources."
+    }
+  },
+  "Additional": {
+    "leftTitle": "Additional",
+    "leftSubtitle": "Every project — like a battle. I enter it to win, not just to participate."
+  },
+  "Footer": {
+    "leftTitle": "I walk my own path. If it crosses yours — reach out."
+  },
+  "Common": {
+    "smallTitle": "Full-Stack Developer",
+    "title": "Tanya Arbuz",
+    "location": "Location",
+    "or": "Kishinev",
+    "phone": "Phone",
+    "telegram": "Telegram",
+    "mail": "E-mail",
+    "result": "Result:",
+    "stack": "Stack:"
   }
 }

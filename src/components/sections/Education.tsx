@@ -1,6 +1,10 @@
 'use client'
 
+import { useTranslations } from 'next-intl'
+
 export default function Education() {
+  const t = useTranslations('Education')
+
   return (
     <section className="flex w-full text-gray-700 relative">
 
@@ -35,9 +39,9 @@ export default function Education() {
             text-md font-bold tracking-wider uppercase text-[#FFFFFF] text-center
             py-2
             bg-[#F67769]">
-              Education
+              {t('leftTitle')}
             </h2>
-            <p className="text-sm mt-2">[Learning never ends. A samurai always remains a student.]</p>
+            <p className="text-sm mt-2">[{t('leftSubtitle')}]</p>
           </div>
         </div>
 
@@ -54,7 +58,7 @@ export default function Education() {
             <div className="flex w-full gap-4 items-start">
               <div className="flex flex-col">
                 <h3 className="text-base font-bold uppercase text-[#F67769] mb-2">
-                  Russian University of Cooperation | Accounting and Finance | 2003–2007
+                  {t('educ')}
                 </h3>
                 <h2
                   className="
@@ -64,12 +68,12 @@ export default function Education() {
                     bg-[#F67769]">
                 </h2>
                 <p className="text-sm font-semibold text-gray-900 mb-1">
-                  Additionally:
+                  {t('addiTitle')}
                 </p>
                 <ul className="list-disc list-inside text-sm text-gray-500 space-y-1">
-                  <li>Completed a webmaster course in 2011.</li>
-                  <li>Gained hands-on experience through practical development.</li>
-                  <li>Continuous self-education via professional resources.</li>
+                  <li>{t('additionallyBlock.first')}</li>
+                  <li>{t('additionallyBlock.second')}</li>
+                  <li>{t('additionallyBlock.third')}</li>
                 </ul>
               </div>
             </div>

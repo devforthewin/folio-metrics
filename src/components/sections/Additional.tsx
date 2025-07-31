@@ -1,4 +1,10 @@
+'use client'
+
+import { useTranslations } from 'next-intl'
+
 export default function Additional() {
+  const t = useTranslations('Additional')
+
   return (
     <section className="flex w-full text-gray-700 relative">
 
@@ -33,9 +39,9 @@ export default function Additional() {
             text-md font-bold tracking-wider uppercase text-[#FFFFFF] text-center
             py-2
             bg-[#F67769]">
-              Additional
+              {t('leftTitle')}
             </h2>
-            <p className="text-sm mt-2">[The path isn’t defined by diplomas. Anything that makes you stronger is part of the journey.]</p>
+            <p className="text-sm mt-2">[{t('leftSubtitle')}]</p>
           </div>
 
         </div>

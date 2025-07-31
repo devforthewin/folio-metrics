@@ -31,8 +31,7 @@ export default function Header() {
             text-md font-bold tracking-wider uppercase text-[#FFFFFF] text-center
             py-2
             bg-[#F67769]">
-              Tanya Arbuz
-              {t('heroText')}
+              {t('title')}
             </h2>
           </div>
         </div>
@@ -47,7 +46,7 @@ export default function Header() {
       ">
           {/*Text Block*/}
           <h1 className="text-sm sm:text-base font-medium tracking-tight text-[#F67769]">
-            Clean code. Sharp decisions. Steady hand.
+            {t('headerText')}
           </h1>
 
           {/*Buttons Block*/}

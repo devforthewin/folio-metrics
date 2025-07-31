@@ -1,7 +1,13 @@
+'use client'
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDribbble, faFacebookF, faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { useTranslations } from 'next-intl'
 
 export default function Footer() {
+  const t = useTranslations('Footer')
+  const tCommon = useTranslations('Common')
+
   return (
     <section className="flex w-full text-gray-700 relative">
 
@@ -36,7 +42,7 @@ export default function Footer() {
             text-md font-bold tracking-wider uppercase text-[#FFFFFF] text-center
             py-2
             bg-[#F67769]">
-              I walk my own path. If it crosses yours — reach out.
+              {t('leftTitle')}
             </h2>
           </div>
         </div>
@@ -60,19 +66,19 @@ export default function Footer() {
             {/*Info Block*/}
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8 leading-[1.75] mb-4">
               <div>
-                <h4 className="font-semibold text-[#F67769] font-semibold">Location</h4>
-                <p className="text-gray-500 font-normal">Kishinev, OR</p>
+                <h4 className="font-semibold text-[#F67769] font-semibold">{tCommon('location')}</h4>
+                <p className="text-gray-500 font-normal">{tCommon('or')}</p>
               </div>
               <div>
-                <h4 className="font-semibold text-[#F67769] font-semibold">Phone</h4>
+                <h4 className="font-semibold text-[#F67769] font-semibold">{tCommon('phone')}</h4>
                 <p className="text-gray-500 font-normal">+373 68 940 997</p>
               </div>
               <div>
-                <h4 className="font-semibold text-[#F67769] font-semibold">Telegram</h4>
+                <h4 className="font-semibold text-[#F67769] font-semibold">{tCommon('telegram')}</h4>
                 <p className="text-gray-500 font-normal">@tanya_arbuz</p>
               </div>
               <div>
-                <h4 className="font-semibold text-[#F67769] font-semibold">E-mail</h4>
+                <h4 className="font-semibold text-[#F67769] font-semibold">{tCommon('mail')}</h4>
                 <p className="text-gray-500 font-normal">work.arbuz@gmail.com</p>
               </div>
             </div>
@@ -102,9 +108,9 @@ export default function Footer() {
                 text-center
                 mb-4
                 ">
-                    Tanya Arbuz
+                    {tCommon('title')}
                   </span>
-                  <span className="text-[1.3rem]">[Full-Stack Developer]</span>
+                  <span className="text-[1.3rem]">[{tCommon('smallTitle')}]</span>
                 </div>
 
                 <div className="flex space-x-3 mb-4">
