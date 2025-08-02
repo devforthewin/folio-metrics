@@ -1,6 +1,8 @@
 'use client'
 
 import { useTranslations } from 'next-intl'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Additional() {
   const t = useTranslations('Additional')
@@ -61,7 +63,12 @@ export default function Additional() {
         >
           <div className="">
             <p className="mb-4">
-              GitHub: https://github.com/devforthewin
+              <a
+                href="https://github.com/devforthewin/folio-metrics"
+                target="_blank"
+                className="bg-gray-800 hover:bg-black text-white px-4 py-2 rounded-lg transition">
+                <FontAwesomeIcon icon={faGithub} className="text-[1rem]"/> Исследовать код
+              </a>
             </p>
           </div>
         </div>

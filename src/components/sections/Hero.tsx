@@ -4,6 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedinIn, faTelegramPlane } from '@fortawesome/free-brands-svg-icons'
 import { useTranslations } from 'next-intl'
 
+import ContactInfo from '@/components/common/ContactInfo'
+
 export default function Hero() {
   const t = useTranslations('Hero')
   return (
@@ -144,24 +146,7 @@ export default function Hero() {
           <div className="w-full">
             <hr className="w-full border-t border-2 border-[#FF7814] mb-8"/>
 
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-8 leading-[1.75]">
-              <div>
-                <h4 className="font-semibold text-[#F67769] font-semibold">Location</h4>
-                <p className="text-[#455B84] font-normal">Kishinev, OR</p>
-              </div>
-              <div>
-                <h4 className="font-semibold text-[#F67769] font-semibold">Phone</h4>
-                <p className="text-[#455B84] font-normal">+373 68 940 997</p>
-              </div>
-              <div>
-                <h4 className="font-semibold text-[#F67769] font-semibold">Telegram</h4>
-                <p className="text-[#455B84] font-normal">@tanya_arbuz</p>
-              </div>
-              <div>
-                <h4 className="font-semibold text-[#F67769] font-semibold">E-mail</h4>
-                <p className="text-[#455B84] font-normal">work.arbuz@gmail.com</p>
-              </div>
-            </div>
+            <ContactInfo/>
           </div>
         </div>
       </div>

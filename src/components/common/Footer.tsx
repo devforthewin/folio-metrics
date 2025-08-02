@@ -4,6 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDribbble, faFacebookF, faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { useTranslations } from 'next-intl'
 
+import ContactInfo from '@/components/common/ContactInfo'
+
 export default function Footer() {
   const t = useTranslations('Footer')
   const tCommon = useTranslations('Common')
@@ -63,25 +65,11 @@ export default function Footer() {
         >
           <div className="w-full">
 
-            {/*Info Block*/}
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-8 leading-[1.75] mb-4">
-              <div>
-                <h4 className="font-semibold text-[#F67769] font-semibold">{tCommon('location')}</h4>
-                <p className="text-gray-500 font-normal">{tCommon('or')}</p>
-              </div>
-              <div>
-                <h4 className="font-semibold text-[#F67769] font-semibold">{tCommon('phone')}</h4>
-                <p className="text-gray-500 font-normal">+373 68 940 997</p>
-              </div>
-              <div>
-                <h4 className="font-semibold text-[#F67769] font-semibold">{tCommon('telegram')}</h4>
-                <p className="text-gray-500 font-normal">@tanya_arbuz</p>
-              </div>
-              <div>
-                <h4 className="font-semibold text-[#F67769] font-semibold">{tCommon('mail')}</h4>
-                <p className="text-gray-500 font-normal">work.arbuz@gmail.com</p>
-              </div>
+            {/* Information Block */}
+            <div className="mb-4">
+              <ContactInfo/>
             </div>
+
             <hr className="w-full border-t border-[#F67769] mb-8"/>
 
             <div className="flex flex-col lg:items-end lg:justify-center lg:flex-1 md:mb-[1.75rem]">
