@@ -40,11 +40,9 @@ const SectionHeader = ({ title, subtitle }: SectionHeaderProps) => {
         >
           {title}
         </h2>
-        <p className="text-sm text-gray-800 mt-2 sm:mt-4 font-normal">
-          <blockquote className="text-sm text-gray-600 mt-3 sm:mt-4 font-normal italic">
-            [ {subtitle} ]
-          </blockquote>
-        </p>
+        <blockquote className="text-sm text-gray-600 mt-3 sm:mt-4 font-normal italic">
+          [ {subtitle} ]
+        </blockquote>
       </div>
     </div>
   )

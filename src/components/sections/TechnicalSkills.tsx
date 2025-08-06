@@ -2,11 +2,16 @@
 
 import { useTranslations } from 'next-intl'
 
-import SkillBarText from '@/components/ui/SkillBarText'
+import SkillBar from '@/components/ui/SkillBar'
 import SectionHeader from '@/components/common/SectionHeader'
 
 export default function TechnicalSkills() {
   const t = useTranslations('TechnicalSkills')
+
+  const additionalSkills = [
+    'Zustand', 'Webpack/Vite', 'MUI', 'Styled Components',
+    'Telegram API', 'Grammy', 'Webhook Architecture', 'Postman', 'ORM',
+  ]
 
   return (
     <section className="flex w-full text-gray-700 relative">
@@ -28,50 +33,46 @@ export default function TechnicalSkills() {
             {/* Left Column */}
             <div>
               <h3 className="text-md font-bold mb-4 uppercase text-[#F67769]">{t('frontTitle')}</h3>
-              <SkillBarText name="React" percent={95}/>
-              <SkillBarText name="TypeScript" percent={90}/>
-              <SkillBarText name="Next.js" percent={85}/>
-              <SkillBarText name="Vue" percent={75}/>
+              <SkillBar name="React" level={5}/>
+              <SkillBar name="TypeScript" level={5}/>
+              <SkillBar name="Next.js" level={5}/>
+              <SkillBar name="Vue" level={3}/>
 
               <h3 className="text-md font-bold mt-6 mb-4 uppercase text-[#F67769]">{t('backTitle')}</h3>
-              <SkillBarText name="NestJS" percent={85}/>
-              <SkillBarText name="Laravel" percent={80}/>
-              <SkillBarText name="REST API" percent={90}/>
-              <SkillBarText name="PostgreSQL" percent={85}/>
-              <SkillBarText name="MariaDB" percent={70}/>
-              <SkillBarText name="Redis" percent={70}/>
+              <SkillBar name="NestJS" level={5}/>
+              <SkillBar name="Laravel" level={3}/>
+              <SkillBar name="REST API" level={5}/>
+              <SkillBar name="PostgreSQL" level={3}/>
+              <SkillBar name="MariaDB" level={5}/>
+              <SkillBar name="Redis" level={4}/>
             </div>
 
             {/* Right Col */}
             <div>
               <h3 className="text-md font-bold mb-4 uppercase text-[#F67769]">{t('infraTitle')}</h3>
-              <SkillBarText name="Docker" percent={85}/>
-              <SkillBarText name="GitLab CI/CD" percent={85}/>
-              <SkillBarText name="Cloudflare" percent={70}/>
+              <SkillBar name="Docker" level={3}/>
+              <SkillBar name="GitLab CI/CD" level={3}/>
+              <SkillBar name="Cloudflare" level={3}/>
 
               <h3 className="text-md font-bold mt-6 mb-4 uppercase text-[#F67769]">{t('otherTitle')}</h3>
-              <SkillBarText name="Telegram Bots" percent={90}/>
-              <SkillBarText name="Telegram Web Apps" percent={85}/>
-              <SkillBarText name="Integrations" percent={85}/>
+              <SkillBar name="Telegram Bots" level={4}/>
+              <SkillBar name="Telegram Web Apps" level={5}/>
+              <SkillBar name="Integrations" level={4}/>
             </div>
           </div>
 
           {/*Block Additinal Skills*/}
           <div className="mt-8">
-            <h2
-              className="
-            w-full h-[38px]
-            text-md font-bold tracking-wider text-[#FFFFFF] text-center
-            py-2 mb-[1.3rem]
-            bg-[#F67769]">
+            <h3 className="w-full text-center text-md font-bold ...">
               {t('addTitle')}
-            </h2>
-            <h1 className="text-sm sm:text-base tracking-tight text-[#F67769] w-full">
-            </h1>
-            <p className="text-sm text-gray-700">
-              Zustand, Webpack/Vite, MUI, Styled Components, Telegram API, Grammy, Webhook Architecture, Postman,
-              ORM.
-            </p>
+            </h3>
+            <div className="flex flex-wrap justify-center gap-2 mt-4">
+              {additionalSkills.map((skill) => (
+                <span key={skill} className="bg-gray-200 text-gray-800 text-sm font-medium px-3 py-1 rounded-full">
+                  {skill}
+                </span>
+              ))}
+            </div>
           </div>
         </div>
       </div>
