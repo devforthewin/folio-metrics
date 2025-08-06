@@ -39,13 +39,15 @@ export default function SkillBarText({ name, percent }: SkillBarTextProps) {
 
   return (
     <div className="mb-2 font-mono text-sm text-gray-800 flex items-center">
-      <span className="w-[130px]">{name}</span>
-      <span className="flex items-center gap-[10px]">
-        <span>[</span>
-        <span className="flex gap-[2px]">{blocks}</span>
-        <span>]</span>
+      <span className="w-[130px] sm:w-full ">{name}</span>
+      <span className="flex flex-row">
+        <span className="flex items-center gap-[10px]">
+          <span>[</span>
+          <span className="flex gap-[2px]">{blocks}</span>
+          <span>]</span>
+        </span>
+        <span className="ml-2">{percent}%</span>
       </span>
-      <span className="ml-2">{percent}%</span>
     </div>
   )
 }

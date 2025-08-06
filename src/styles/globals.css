@@ -40,3 +40,6 @@ body {
 .screen-minus-header {
   height: calc(100vh - 70px);
 }
+
+@media (min-width: 640px) {
+}

@@ -3,7 +3,9 @@
 import { useTranslations } from 'next-intl'
 
 import LanguageSwitcher from '@/components/features/LanguageSwitcher'
-{/*todo:  {theme === 'light' ? '☀️' : '🌙'}*/}
+
+{/*todo:  {theme === 'light' ? '☀️' : '🌙'}*/
+}
 
 export default function Header() {
   const t = useTranslations('Header')
@@ -39,18 +41,17 @@ export default function Header() {
         {/* Right /Text + Buttons */}
         <div
           className="
-          bg-[#FFFFFF]
-          flex-1 flex items-center justify-between
-          pt-[1.75rem] px-[1.75rem]
-          md:px-[3.5rem]
-      ">
-          {/*Text Block*/}
-          <h1 className="text-sm sm:text-base font-medium tracking-tight text-[#F67769]">
+                  lg:bg-[#FFFFFF] bg-transparent
+                  pt-[1.75rem] px-[1.75rem] md:px-[3.5rem]
+                  flex-1 flex flex-col justify-between
+                  sm:flex-row sm:items-center
+                "
+        >
+          <h1 className="text-sm sm:text-base font-medium tracking-tight mb-4 sm:mb-0 text-[#F67769]">
             {t('headerText')}
           </h1>
 
-          {/*Buttons Block*/}
-          <LanguageSwitcher />
+          <LanguageSwitcher/>
         </div>
       </div>
     </header>

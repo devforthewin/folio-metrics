@@ -1,6 +1,7 @@
 'use client'
 
 import { useTranslations } from 'next-intl'
+
 import SkillBarText from '@/components/ui/SkillBarText'
 
 export default function TechnicalSkills() {
@@ -13,6 +14,7 @@ export default function TechnicalSkills() {
       <div className="absolute top-0 right-0 w-1/2 h-full bg-[#FFFFFF] z-0"/>
 
       <div className="w-full z-10 max-w-[1276px] mx-auto flex flex-col lg:flex-row h-full">
+
         {/* Left Part */}
         <div
           className="
@@ -33,7 +35,12 @@ export default function TechnicalSkills() {
                   md:pb-[0]
                 "
         >
-          <div className="flex flex-col items-end justify-end text-right">
+          {/*Titles Block*/}
+          <div
+            className="
+          flex flex-col
+          lg:items-end lg:justify-end lg:text-right
+          sm:w-full text-center">
             <h2
               className="
             w-full h-[38px]
@@ -42,7 +49,7 @@ export default function TechnicalSkills() {
             bg-[#F67769]">
               {t('leftTitle')}
             </h2>
-            <p className="text-sm mt-2">
+            <p className="text-sm mt-2 sm:mt-4">
               [{t('leftSubtitle')}]
             </p>
           </div>
@@ -52,7 +59,7 @@ export default function TechnicalSkills() {
         <div
           className="bg-[#FFFFFF] flex-1 flex flex-col pt-[1.75rem] px-[1.75rem] lg:pt-[4.375rem] lg:pb-[1.6625rem] md:pt-[1.75rem] md:pb-[1.4rem] md:px-[3.5rem]">
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 sm:grid-cols-2 gap-8">
 
             {/* Left Column */}
             <div>

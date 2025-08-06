@@ -9,132 +9,139 @@ import ContactInfo from '@/components/common/ContactInfo'
 export default function Hero() {
   const t = useTranslations('Hero')
   return (
-    <section className="w-full screen-minus-header relative flex flex-col lg:flex-row">
-      <div className="absolute top-0 left-0 w-1/2 screen-minus-header lg:bg-[#FBE1D0] z-0 md:bg-gray-50"/>
-      <div className="absolute top-0 right-0 w-1/2 screen-minus-header bg-[#FFFFFF] z-0"/>
+    <section
+      className="w-full lg:h-[calc(100vh-70px)] lg:h-[calc(100vh-70px)] min-h-full relative flex flex-col lg:flex-row">
+      <div className="absolute top-0 left-0 w-1/2 min-h-full lg:bg-[#FBE1D0] z-0 md:bg-gray-50"/>
+      <div className="absolute top-0 right-0 w-1/2 min-h-full bg-[#FFFFFF] z-0"/>
 
-      <div className="w-full z-10 max-w-[1276px] mx-auto flex flex-col lg:flex-row h-full">
+      <div className="w-full z-10 max-w-[1276px] mx-auto flex flex-col lg:flex-row">
         {/* Left */}
         <div
           className="
-                  lg:bg-[#FBE1D0]
                   w-full
-                  lg:flex-[0_0_30%]
-                  flex
-                  items-center
-                  justify-center
-                  pt-[1.75rem]
-                  px-[1.75rem]
+                  flex items-center justify-center
+                  pt-[1.75rem] px-[1.75rem]
 
-                  lg:pt-[4.375rem]
-                  lg:pb-[1.6625rem]
+                  lg:bg-[#FBE1D0] lg:flex-[0_0_30%] lg:pt-[4.375rem] lg:pb-[1.6625rem]
 
-                  md:pt-[3.15rem]
-                  md:pb-[0]
-                  md:px-[3.5rem]
+                  md:pt-[3.15rem] md:pb-[0] md:px-[3.5rem]
                 "
         >
+          {/*Avatar Image*/}
           <img
             src="/images/my_ava.jpg"
             alt="Avatar"
-            className="rounded-full object-cover lg:mt-[-5.8rem]"
+            className="
+            rounded-full
+            object-cover
+            w-40 sm:w-48 lg:w-56 mt-[2rem]
+
+            lg:mt-[-5.8rem]
+            sm:w-[14rem]"
           />
         </div>
 
         {/* Right */}
         <div
-          className="bg-[#FFFFFF] flex-1 flex flex-col lg:justify-between
-        pt-[1.75rem]
-                  px-[1.75rem]
+          className="
+          bg-[#FFFFFF] pt-[1.75rem] px-[1.75rem]
+          flex flex-col flex-1 lg:justify-between
 
-                  lg:pt-[4.375rem]
-                  lg:pb-[1.6625rem]
-
-                  md:pt-[1.75rem]
-                  md:pb-[1.4rem]
-                  md:px-[3.5rem]"
+          lg:pt-[4.375rem] lg:pb-[1.6625rem]
+          md:pt-[1.75rem] md:pb-[1.4rem] md:px-[3.5rem]"
         >
-          {/* Центрированный контент */}
-          <div className="flex flex-col lg:items-start lg:justify-center lg:flex-1 md:mb-[1.75rem]">
+          {/* Content */}
+          <div className="flex flex-col lg:items-start lg:justify-center lg:flex-1 mb-[1rem] md:mb-[1.75rem]">
 
+            {/* Titles */}
             <div
               className="
-            font-light
-            text-gray-700
+            font-light leading-tight text-center mb-4
             lg:text-left
-            leading-tight
-            text-center
-            mb-4
             ">
-              <span className="text-[1.3rem] text-[#455B84] pb-3">[{t('smallTitle')}]</span>
+              <span className="text-[1.1rem] sm:text-[1.2rem] text-gray-800 pb-3">[{t('smallTitle')}]</span>
               <span
                 className="
-                font-bold text-[#F67769] uppercase block
-                lg:text-[4rem] lg:leading-[1]
-                text-[2rem] leading-[0.91]
-                lg:text-left
-                text-center
+                font-bold uppercase block
+                text-[#F67769] text-center text-[2.5rem]
+                sm:text-[3rem] lg:text-[4rem] lg:text-left
                 ">
                 {t('title')}
               </span>
             </div>
 
+            {/* Description */}
             <div
               className="
-                flex items-left justify-between w-full mt-1 flex-row
+                flex lg:flex-row lg:items-left lg:justify-between w-full
+                justify-center flex-col items-center
               ">
               <h2
                 className="
-                  text-[1rem]
-                  text-gray-500
-                  font-light pl-1
-                  lg:text-left
-                text-center
-                text-[#455B84]
-                md:mb-[1.75rem]
-                font-normal
-                max-w-[600px]
+                  text-sm sm:text-base
+                  text-[#455B84] font-normal
+                  text-center lg:text-left
+                  max-w-[600px]
+                  mb-4 sm:mb-8 md:mb-7
                 ">
-                [ {t('description')} ]
+                <span className="hidden sm:inline">[ {t('description')} ]</span>
+                <span className="sm:hidden">[ {t('descriptionMobile')} ]</span>
               </h2>
 
               {/*Social buttons + download*/}
-              <div className="flex flex-col items-end gap-2">
+              <div
+                className="
+              flex lg:flex-col items-end gap-2
+              sm:flex-row">
                 <a
-                  href="https://github.com/devforthewin"
+                  href="../../../../CV_en.pdf"
+                  download
                   className="
-                  w-[38px] h-[38px]
-                  flex gap-3 items-center justify-center
-                  bg-[#F67769] hover:bg-transparent hover:scale-100 hover:text-[#F67769]
-                  border border-[#F67769] hover:border-[#F67769] rounded-[3px]
-                  transition-all duration-[1200ms] ease-in-out
-                  text-white font-medium">
+                  w-8 h-8 px-4 lg:w-[38px] lg:h-[38px]
+                  flex items-center justify-center
+                  text-sm font-medium text-white
+                  bg-[#F67769] border border-[#F67769] rounded
+                  hover:bg-transparent hover:text-[#F67769]
+                  transition-colors duration-300 ease-in-out">
                   {/*Download CV */}
                   {/*<FontAwesomeIcon icon={faFileDownload} />*/}
                   CV
                 </a>
                 <a
                   href="https://github.com/devforthewin"
-                  className="w-[38px] h-[38px] flex items-center justify-center bg-[#ededed] border border-[#ededed] rounded-[3px] text-gray-800 hover:bg-transparent transition-all duration-[1200ms] ease-in-out hover:scale-100">
+                  target="_blank" rel="noopener noreferrer"
+                  className="
+                      w-8 h-8 lg:w-[38px] lg:h-[38px]
+                      flex items-center justify-center
+                      bg-gray-200 border border-gray-200 rounded
+                      text-gray-800 hover:bg-transparent
+                      transition-all duration-300 ease-in-out
+                    ">
                   <FontAwesomeIcon icon={faGithub} className="text-[1rem]"/>
                 </a>
                 <a
                   href="https://www.linkedin.com/in/tanya-arbuz-187199221"
-                  className="w-[38px] h-[38px] flex items-center justify-center bg-[#ededed] border border-[#ededed] rounded-[3px] text-gray-800 hover:bg-transparent transition-all duration-[1200ms] ease-in-out hover:scale-100"
-                  style={{
-                    transition:
-                      'all 1.2s ease 0.7s, transform 1.2s ease 0.7s, opacity 1.2s ease 0.7s',
-                  }}
+                  target="_blank" rel="noopener noreferrer"
+                  className="
+                      w-8 h-8 lg:w-[38px] lg:h-[38px]
+                      flex items-center justify-center
+                      bg-gray-200 border border-gray-200 rounded
+                      text-gray-800 hover:bg-transparent
+                      transition-all duration-300 ease-in-out
+                    "
                 >
                   <FontAwesomeIcon icon={faLinkedinIn} className="text-[1rem]"/>
                 </a>
                 <a
                   href="https://t.me/tanya_arbuz"
-                  className="w-[38px] h-[38px] flex items-center justify-center bg-[#ededed] border border-[#ededed] rounded-[3px] text-gray-800 hover:bg-transparent transition-all duration-[1200ms] ease-in-out hover:scale-100"
-                  style={{
-                    transition:
-                      'all 1.2s ease 0.7s, transform 1.2s ease 0.7s, opacity 1.2s ease 0.7s',
-                  }}
+                  target="_blank" rel="noopener noreferrer"
+                  className="
+                      w-8 h-8 lg:w-[38px] lg:h-[38px]
+                      flex items-center justify-center
+                      bg-gray-200 border border-gray-200 rounded
+                      text-gray-800 hover:bg-transparent
+                      transition-all duration-300 ease-in-out
+                    "
                 >
                   <FontAwesomeIcon icon={faTelegramPlane} className="text-[1rem]"/>
                 </a>
@@ -145,7 +152,6 @@ export default function Hero() {
           {/* Information Block */}
           <div className="w-full">
             <hr className="w-full border-t border-2 border-[#FF7814] mb-8"/>
-
             <ContactInfo/>
           </div>
         </div>

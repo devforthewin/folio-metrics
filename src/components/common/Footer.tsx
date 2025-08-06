@@ -37,7 +37,12 @@ export default function Footer() {
                   md:pb-[0]
                 "
         >
-          <div className="flex flex-col items-end justify-end text-right">
+          {/*Title Block*/}
+          <div
+            className="
+          flex flex-col
+          lg:items-end lg:justify-end lg:text-right
+          sm:w-full sm:text-center">
             <h2
               className="
             w-full
@@ -89,9 +94,8 @@ export default function Footer() {
             ">
                   <span
                     className="
-                font-bold text-[#F67769] uppercase block
+                font-bold text-[#F67769] uppercase block text-[2rem] leading-[0.91]
                 lg:text-[3.2rem] lg:leading-[1]
-                text-[2rem] leading-[0.91]
                 lg:text-left
                 text-center
                 mb-4
@@ -101,6 +105,7 @@ export default function Footer() {
                   <span className="text-[1.3rem]">[{tCommon('smallTitle')}]</span>
                 </div>
 
+                {/*Social buttons + download*/}
                 <div className="flex space-x-3 mb-4">
                   <a
                     href="#"

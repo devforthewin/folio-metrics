@@ -32,7 +32,12 @@ export default function Education() {
                   md:pb-[0]
                 "
         >
-          <div className="flex flex-col items-end justify-end text-right">
+          {/*Title Block*/}
+          <div
+            className="
+          flex flex-col
+          lg:items-end lg:justify-end lg:text-right
+          sm:w-full sm:text-center">
             <h2
               className="
             w-full h-[38px]
@@ -41,7 +46,9 @@ export default function Education() {
             bg-[#F67769]">
               {t('leftTitle')}
             </h2>
-            <p className="text-sm mt-2">[{t('leftSubtitle')}]</p>
+            <p className="text-sm mt-2 sm:mt-4">
+              [{t('leftSubtitle')}]
+            </p>
           </div>
         </div>
 

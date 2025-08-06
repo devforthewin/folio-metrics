@@ -21,3 +21,5 @@ export default function Home() {
     </div>
   )
 }
+
+//todo: lint for Tailwindcss?
