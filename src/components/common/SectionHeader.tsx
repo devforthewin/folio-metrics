@@ -1,26 +1,40 @@
+import clsx from 'clsx'
+
 type SectionHeaderProps = {
   title: string;
   subtitle?: string;
+  theme: 'cream' | 'peach'
 };
 
-const SectionHeader = ({ title, subtitle }: SectionHeaderProps) => {
+const SectionHeader = ({ title, subtitle, theme }: SectionHeaderProps) => {
+  const themeClasses = {
+    cream: 'lg:bg-[#FBE1D0]', // Technical Skills
+    peach: 'lg:bg-[#F6D8C2]', // About Me
+  }
   return (
     <div
-      className="
-        lg:bg-[#FBE1D0]
-        w-full
-        lg:flex-[0_0_30%]
-        flex
-        items-start
-        justify-end
-        pt-[1.75rem]
-        px-[1.75rem]
-        lg:pt-[4.375rem]
-        lg:pb-[1.6625rem]
-        md:pt-[3.15rem]
-        md:px-[3.5rem]
-        md:pb-[0]
-      "
+      className={clsx(
+        `
+         w-full lg:flex-[0_0_30%] flex items-start justify-end
+          pt-7 px-7 lg:pt-16 lg:pb-6 md:pt-12 md:px-14 md:pb-0
+      `,
+        themeClasses[theme],
+      )}
+      // className="
+      //   lg:bg-[#FBE1D0]
+      //   w-full
+      //   lg:flex-[0_0_30%]
+      //   flex
+      //   items-start
+      //   justify-end
+      //   pt-[1.75rem]
+      //   px-[1.75rem]
+      //   lg:pt-[4.375rem]
+      //   lg:pb-[1.6625rem]
+      //   md:pt-[3.15rem]
+      //   md:px-[3.5rem]
+      //   md:pb-[0]
+      // "
     >
       {/* Titles Block */}
       <div
