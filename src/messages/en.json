@@ -59,11 +59,12 @@
     "leftTitle": "Education",
     "leftSubtitle": "The path isn’t defined by diplomas. Anything that makes you stronger is part of the journey.",
     "educ": "Russian University of Cooperation | Accounting and Finance | 2003–2007",
-    "addiTitle": "Additionally:",
-    "additionallyBlock": {
-      "first": "Completed a webmaster course in 2011.",
-      "second": "Gained hands-on experience through practical development.",
-      "third": "Continuous self-education via professional resources."
+    "pathTitle": "from finance to full-stack:",
+    "dailyTitle": "Daily Learning:",
+    "path": {
+      "first": "2011: First Step into Tech (Webmaster Course",
+      "second": "2012-Present: From Hobby Projects to Professional Systems",
+      "third": "Following industry leaders, documentation, and best practices."
     }
   },
   "Additional": {
