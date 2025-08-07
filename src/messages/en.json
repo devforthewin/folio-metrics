@@ -82,7 +82,8 @@
     "buttonText": "Explore the Code"
   },
   "Footer": {
-    "leftTitle": "I walk my own path. If it crosses yours — reach out."
+    "finalWords": "I walk my own path. If it crosses yours — reach out.",
+    "copyright": "© 2025 Tanya Arbuz. All Rights Reserved."
   },
   "Common": {
     "smallTitle": "Full-Stack Developer",
