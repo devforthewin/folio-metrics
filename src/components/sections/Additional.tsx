@@ -9,6 +9,8 @@ import SectionHeader from '@/components/common/SectionHeader'
 export default function Additional() {
   const t = useTranslations('Additional')
 
+  const featureKeys = ['item1', 'item2', 'item3', 'item4', 'item5']
+
   return (
     <section className="flex w-full text-gray-700 relative">
 
@@ -34,15 +36,44 @@ export default function Additional() {
                   md:pb-[1.4rem]
                   md:px-[3.5rem]"
         >
-          <div className="">
-            <p className="mb-4">
-              <a
-                href="https://github.com/devforthewin/folio-metrics"
-                target="_blank"
-                className="bg-gray-800 hover:bg-black text-white px-4 py-2 rounded-lg transition">
-                <FontAwesomeIcon icon={faGithub} className="text-[1rem]"/> Исследовать код
-              </a>
+          <div className="flex flex-col">
+            {/* Intro */}
+            <p className="text-base mb-4 text-gray-700">
+              {t('intro')}
             </p>
+
+            {/* Project Name */}
+            <h3 className="text-lg font-bold uppercase text-[#F67769] mb-4">
+              {t('projectTitle')}
+            </h3>
+
+            {/* Fetches */}
+            <ul className="space-y-2 text-sm text-gray-800 mb-6">
+              {featureKeys.map((key) => (
+                <li key={key} className="flex items-start">
+                  <span className="text-[#F67769] mr-2 pt-1">◆</span>
+                  <span>
+                    {t.rich(`projectFeatures.${key}`, {
+                      highlight: (chunks) => <span className="font-semibold">{chunks}</span>,
+                    })}
+                  </span>
+                </li>
+              ))}
+            </ul>
+
+            <a
+              href="https://github.com/devforthewin/folio-metrics"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="
+        inline-flex items-center justify-center px-6 py-3
+        max-w-xs bg-gray-800 text-white font-semibold rounded-lg
+        hover:bg-gray-700 transition-colors duration-300
+      "
+            >
+              <FontAwesomeIcon icon={faGithub} className="mr-3"/>
+              {t('buttonText')}
+            </a>
           </div>
         </div>
       </div>
