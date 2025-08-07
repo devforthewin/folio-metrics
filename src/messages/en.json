@@ -34,6 +34,11 @@
     "leftTitle": "Work Experience",
     "leftSubtitle": "Every line of code bears the mark of battle. Every project — a new victory.",
     "Stack": "Stack",
+    "contract": {
+      "about": "Confidential Client",
+      "description": "Architected and developed a headless CMS from scratch using Payload v3. Implemented custom collections, fields, and access controls, and integrated the CMS with a large-scale Next.js application to enable full-cycle dynamic content management.",
+      "resultDescription": "Delivered a scalable decoupled architecture; provided the client with a user-friendly solution for independent content management, significantly reducing content update times."
+    },
     "cpabox": {
       "about": "SaaS platform for media buying automation",
       "description": "Built and maintained frontend architecture and backend logic. Integrated Keitaro TDS, developed Telegram bots for domain checks, built Telegram Web Apps and webhook architecture. Contributed to technical solutions and architecture.",

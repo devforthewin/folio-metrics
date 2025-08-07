@@ -65,7 +65,7 @@ export default function TechnicalSkills() {
 
           {/*Block Additinal Skills*/}
           <div className="mt-8">
-            <h3 className="w-full text-center text-md font-bold ...">
+            <h3 className="w-full text-center text-md font-bold">
               {t('addTitle')}
             </h3>
             <div className="flex flex-wrap justify-center gap-2 mt-4">
