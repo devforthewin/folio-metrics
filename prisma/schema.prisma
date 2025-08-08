@@ -10,12 +10,14 @@ datasource db {
 
 model Visit {
   id        String   @id @default(uuid())
-  page      String
-  country   String?
-  city      String?
+  sectionId String
+  country   String?  @db.VarChar(100)
+  city      String?  @db.VarChar(100)
+  ipAddress String?  @db.VarChar(45)
+  userAgent String?  @db.VarChar(512)
   duration  Int?
   createdAt DateTime @default(now()) @db.Timestamp(6)
 
-  @@index([page])
+  @@index([sectionId])
   @@index([createdAt])
 }

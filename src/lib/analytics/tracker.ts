@@ -1,22 +1,45 @@
-import { NextRequest } from 'next/server'
-
 import { prisma } from '@/lib/db/prisma'
 
-export async function trackVisit(req: NextRequest) {
-  const start = parseInt(req.cookies.get('track-start')?.value || '0')
-  const duration = Date.now() - start
-  // const geo = req.geo || {}
+interface VisitData {
+  sectionId: string
+  duration: number
+  ipAddress: string
+  userAgent: string
+  country: string
+  city: string
+}
 
+export async function trackVisit(data: VisitData) {
   try {
     await prisma.visit.create({
       data: {
-        page: req.nextUrl.pathname,
-        // country: geo.country || 'Unknown',
-        // city: geo.city || 'Unknown',
-        duration: duration > 0 ? duration : null,
+        sectionId: data.sectionId,
+        country: data.country,
+        city: data.city,
+        ipAddress: data.ipAddress,
+        userAgent: data.userAgent,
+        duration: data.duration,
       },
     })
   } catch (error) {
     console.error('Visit tracking failed:', error)
+  }
+}
+
+export async function getAnalyticsSummary() {
+  const [totalVisits, uniqueVisitorsByIp, avgDurationResult, visits] = await Promise.all([
+    prisma.visit.count(),
+    prisma.visit.groupBy({ by: ['ipAddress'] }),
+    prisma.visit.aggregate({ _avg: { duration: true } }),
+    prisma.visit.findMany({ orderBy: { createdAt: 'desc' }, take: 50 }),
+  ])
+
+  return {
+    summary: {
+      totalVisits,
+      uniqueVisitors: uniqueVisitorsByIp.length,
+      avgDuration: Math.round(avgDurationResult._avg.duration || 0),
+    },
+    visits,
   }
 }
