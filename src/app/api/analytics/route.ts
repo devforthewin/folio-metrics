@@ -4,6 +4,12 @@ import { jwtVerify } from 'jose'
 import { mockVisits } from '@/lib/mockData'
 import { getAnalyticsSummary } from '@/lib/analytics/tracker'
 
+function getJwtSecret() {
+  const s = process.env.JWT_SECRET
+  if (!s) throw new Error('JWT_SECRET is not set')
+  return new TextEncoder().encode(s)
+}
+
 export async function GET(request: NextRequest) {
   // Guard protect
   // get token from cookie
@@ -13,8 +19,8 @@ export async function GET(request: NextRequest) {
   }
   //Checking the validity of the token
   try {
-    const secret = new TextEncoder().encode(process.env.JWT_SECRET)
-    const { payload } = await jwtVerify(token, secret)
+    const secret = getJwtSecret()
+    const { payload } = await jwtVerify(token, secret,{ algorithms: ['HS256'] })
 
     //for demo fake data
     if (payload.isDemo) {

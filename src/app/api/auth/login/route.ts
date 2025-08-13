@@ -1,15 +1,22 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { SignJWT } from 'jose'
-import { cookies } from 'next/headers'
+
+function getJwtSecret() {
+  const s = process.env.JWT_SECRET
+  if (!s) throw new Error('JWT_SECRET is not set')
+  return new TextEncoder().encode(s)
+}
+
+function isHttps(req: NextRequest) {
+  const xfProto = req.headers.get('x-forwarded-proto')
+  if (xfProto) return xfProto.split(',')[0].trim() === 'https'
+  return req.nextUrl.protocol === 'https:'
+}
 
 export async function POST(request: NextRequest) {
-  // Getting data from the request body
-  const body = await request.json()
-  const { email, password } = body
+  const { email, password } = await request.json()
+  const { ADMIN_USER, ADMIN_PASS, DEMO_USER, DEMO_PASS } = process.env
 
-  const { ADMIN_USER, ADMIN_PASS, DEMO_USER, DEMO_PASS, JWT_SECRET } = process.env
-
-  //Checking who is trying to log in: admin or demo user
   const isAdmin = email === ADMIN_USER && password === ADMIN_PASS
   const isDemo = email === DEMO_USER && password === DEMO_PASS
 
@@ -17,30 +24,28 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ message: 'Invalid credentials' }, { status: 401 })
   }
 
-  //Create a JWT token
   try {
-    const secret = new TextEncoder().encode(JWT_SECRET)
-
     const token = await new SignJWT({
       email,
-      isDemo, // Adding a demo mode flag to the token
+      isDemo,
       role: 'admin',
     })
       .setProtectedHeader({ alg: 'HS256' })
       .setIssuedAt()
-      .setExpirationTime('2h') // The token will be valid for 2 hours.
-      .sign(secret)
+      .setExpirationTime('2h')
+      .sign(getJwtSecret())
 
-    const response = NextResponse.json({ message: 'Login successful' })
+    const res = NextResponse.json({ message: 'Login successful' })
 
-    //Set the token to a secure httpOnly cookie
-    response.cookies.set('admin-auth', token, {
+    res.cookies.set('admin-auth', token, {
       httpOnly: true,
-      secure: process.env.NODE_ENV === 'production',
-      path: '/', // for all pages
-      maxAge: 60 * 60 * 2, // 2 hours in ms
+      secure: isHttps(request), // in dev on http will be false -> cookie will not fall off
+      sameSite: 'lax',
+      path: '/',
+      maxAge: 60 * 60 * 2, // 2 ours (ms!)
     })
-    return NextResponse.json({ message: 'Login successful' }, { status: 200 })
+
+    return res
   } catch (error) {
     console.error('JWT Signing Error:', error)
     return NextResponse.json({ message: 'Internal Server Error' }, { status: 500 })

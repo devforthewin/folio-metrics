@@ -10,7 +10,8 @@ services:
       - '3000:3000'
     environment:
       DATABASE_URL: mysql://root:securepass@db:3306/resume
-      NEXTAUTH_URL: http://localhost:3000
+      JWT_SECRET: 61df36f69ae3e2cecdc81431bda20b1e
+      NODE_ENV: development
     depends_on:
       - db
     volumes:
