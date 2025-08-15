@@ -1,71 +1,115 @@
-import { NextRequest, NextResponse } from 'next/server'
+// middleware.ts
+import { NextResponse } from 'next/server'
 
-const PUBLIC_FILE = /\.(.*)$/
-const DEFAULT_LOCALE = 'en'
-const LOCALES = new Set<string>(['en', 'ru'])
+import type { NextRequest } from 'next/server'
 
-function splitPath(pathname: string) {
-  // '/en/admin/stats' -> locale: 'en', rest: '/admin/stats'
-  const segments = pathname.split('/').filter(Boolean)
-  const maybeLocale = segments[0]
-  const hasLocale = LOCALES.has(maybeLocale)
-  const locale = hasLocale ? maybeLocale : null
-  const rest = '/' + (hasLocale ? segments.slice(1).join('/') : segments.join('/'))
-  return { locale, rest }
-}
+// --- настройки из твоего проекта
+const LOCALES = ['en', 'ru', 'ro'] as const
+const DEFAULT_LOCALE = 'ro'
+const TRACKING_PARAMS = ['subid', 'fbclid', 'gclid'] as const
+const COOKIE_MAX_AGE = 90 * 24 * 60 * 60 // 90 дней
 
-function isAdminPath(pathWithoutLocale: string) {
-  return pathWithoutLocale === '/admin' || pathWithoutLocale.startsWith('/admin/')
-}
-function isAdminLoginPath(pathWithoutLocale: string) {
-  return pathWithoutLocale === '/admin/login'
-}
+// --- служебные константы
+const ADMIN_ROOT = '/admin'
+const ADMIN_LOGIN = '/admin/login'
 
-export function middleware(request: NextRequest) {
-  const { pathname } = request.nextUrl
+const norm = (p: string) => (p !== '/' ? p.replace(/\/+$/, '') : '/')
+const hasLocale = (p: string) => LOCALES.some(l => p === `/${l}` || p.startsWith(`/${l}/`))
+const isHTMLNav = (req: NextRequest) =>
+  req.method === 'GET' && (req.headers.get('accept') || '').includes('text/html')
 
-  // Skipping anything that looks like Next.js files or service paths
-  if (
-    pathname.startsWith('/api') ||
-    pathname.startsWith('/_next') ||
-    PUBLIC_FILE.test(pathname)
-  ) {
+// ассеты/служебные пути, которые НИКОГДА не должны попадать под i18n/админ-редиректы
+const isAsset = (p: string) =>
+  p.startsWith('/_next/') ||
+  p.startsWith('/uploads') ||
+  p.startsWith('/icon') ||
+  p.startsWith('/.well-known') ||
+  p === '/favicon.ico' ||
+  p.startsWith('/robots') ||
+  p.startsWith('/sitemap') ||
+  p.startsWith('/manifest') ||
+  /\.(?:js|mjs|css|map|png|jpg|jpeg|gif|webp|svg|ico|txt|xml|woff2?|ttf|eot)$/.test(p)
+
+export function middleware(req: NextRequest) {
+  const { pathname, search } = req.nextUrl
+
+  // 0) ассеты/api — пропускаем сразу
+  if (isAsset(pathname) || pathname.startsWith('/api')) {
     return NextResponse.next()
   }
 
-  // locale and path without locale
-  const { locale, rest } = splitPath(pathname)
-  const token = request.cookies.get('admin-auth')?.value ?? null
-
-  // /admin/login to dashboard
-  if (isAdminLoginPath(rest) && token) {
-    const to = request.nextUrl.clone()
-    to.pathname = `/${locale ?? DEFAULT_LOCALE}/admin`
-    to.search = '' // clear login params
-    return NextResponse.redirect(to)
-  }
-
-  // admin routes (except /admin/login) require a token for login
-  if (isAdminPath(rest) && !isAdminLoginPath(rest) && !token) {
-    const url = request.nextUrl.clone()
-    url.pathname = `/${locale ?? DEFAULT_LOCALE}/admin/login`
-    // Save the desired path (for post-login)
-    const nextParam = encodeURIComponent(request.nextUrl.pathname + request.nextUrl.search)
-    url.search = `?next=${nextParam}`
+  // 1) Нормализация: /{locale}/admin* -> /admin*
+  //    (делаем ПЕРЕД любой авторизацией/локалями)
+  const localeAdmin = pathname.match(new RegExp(`^/(${LOCALES.join('|')})(/${ADMIN_ROOT.slice(1)}(?:/.*)?$)`))
+  if (localeAdmin) {
+    const url = req.nextUrl.clone()
+    url.pathname = localeAdmin[2] // '/admin' или '/admin/...'
     return NextResponse.redirect(url)
   }
 
-  //locale for public pages
-  if (!locale && !isAdminPath(rest) && !isAdminLoginPath(rest)) {
-    const url = request.nextUrl.clone()
-    url.pathname = `/${DEFAULT_LOCALE}${pathname}`
+  // 2) Ветка админки
+  const nPath = norm(pathname)
+  const inAdmin = nPath === ADMIN_ROOT || nPath.startsWith(`${ADMIN_ROOT}/`)
+  const onLogin = nPath === ADMIN_LOGIN
+  const token = req.cookies.get('admin-auth')?.value ?? null
+
+  if (inAdmin || onLogin) {
+    // ассеты/данные внутри админки (JS, CSS, data) — пропускаем
+    if (!isHTMLNav(req)) return NextResponse.next()
+
+    // /admin/login
+    if (onLogin) {
+      if (token) {
+        const to = req.nextUrl.clone()
+        to.pathname = ADMIN_ROOT
+        to.search = ''
+        return NextResponse.redirect(to)
+      }
+      return NextResponse.next()
+    }
+
+    // /admin* требует токен
+    if (!token) {
+      const url = req.nextUrl.clone()
+      url.pathname = ADMIN_LOGIN
+      url.search = `?next=${encodeURIComponent(pathname + search)}`
+      return NextResponse.redirect(url)
+    }
+
+    return NextResponse.next()
+  }
+
+  // 3) Публичная зона — выставим tracking-cookies, если есть subid/gclid/fbclid
+  const params = req.nextUrl.searchParams
+  const res = NextResponse.next()
+  if (params.has('subid')) {
+    for (const key of TRACKING_PARAMS) {
+      const v = params.get(key)
+      if (!v) continue
+      res.cookies.set({
+        name: key,
+        value: v,
+        maxAge: COOKIE_MAX_AGE,
+        path: '/',
+        sameSite: 'lax',
+        secure: process.env.NODE_ENV === 'production',
+      })
+    }
+  }
+
+  // 4) Публичная i18n — добавляем префикс ТОЛЬКО здесь
+  if (!hasLocale(pathname)) {
+    const url = req.nextUrl.clone()
+    url.pathname = `/${DEFAULT_LOCALE}${pathname === '/' ? '' : pathname}`
     return NextResponse.redirect(url)
   }
 
-  // skip the rest
-  return NextResponse.next()
+  return res
 }
-//Run middleware on all paths except static files and api
+
+// Матчер — дополнительно отсекаем статику/иконки/аплоады/сайтмапы/robots/etc
 export const config = {
-  matcher: ['/((?!api|_next/static|_next/image|favicon.ico).*)'],
+  matcher: [
+    '/((?!_next/|uploads/|icon/|api/|\\.well-known/|sitemap|sitemap\\.xml|robots\\.txt|manifest|favicon\\.ico|.*\\..*).*)',
+  ],
 }
