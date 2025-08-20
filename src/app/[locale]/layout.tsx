@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/order
 import type { Metadata } from 'next'
 
 import '../../lib/fontawesome'
