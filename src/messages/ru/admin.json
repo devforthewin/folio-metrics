@@ -1,0 +1,11 @@
+{
+  "Dashboard": {
+    "title": "Панель",
+    "totalVisits": "Всего визитов",
+    "uniqueVisitors": "Уникальные посетители",
+    "avgSession": "Средняя длительность сессии"
+  },
+  "Footer": {
+    "text": "Футер"
+  }
+}

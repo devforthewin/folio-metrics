@@ -13,6 +13,7 @@ export default function AdminDashboard() {
     revalidateOnReconnect: false,
     shouldRetryOnError: false, // 401 don't spin in circles
   })
+  console.log('next-intl/config ->', require.resolve('next-intl/config'));
 
   if (error) {
     return (

@@ -1,28 +1,25 @@
-// eslint-disable-next-line import/order
 import type { Metadata } from 'next'
 
 import '../../lib/fontawesome'
 import '../../styles/globals.css'
 import { NextIntlClientProvider } from 'next-intl'
-import { getMessages } from 'next-intl/server'
-import { ReactNode } from 'react'
 
 import { robotoMono, robotoSlab } from '@/lib/fonts'
+import { loadMessages } from '@/i18n/loadMessages'
 
 export const metadata: Metadata = {
   title: 'arbuz.tp',
   description: 'Front-end & Back-end Expert',
 }
 
-export default async function RootLayout({
-  children,
-  params,
-}: {
-  children: ReactNode
+export default async function PublicLayout(props: {
+  children: React.ReactNode,
   params: Promise<{ locale: string }>
 }) {
-  const { locale } = await params
-  const messages = await getMessages({ locale })
+  const { children } = props
+  const { locale } = await props.params
+
+  const messages = await loadMessages(locale, ['public'])
 
   return (
     <html lang={locale}>

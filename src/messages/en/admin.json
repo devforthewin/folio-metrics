@@ -1,0 +1,11 @@
+{
+  "Dashboard": {
+    "title": "Dashboard",
+    "totalVisits": "Total Visits",
+    "uniqueVisitors": "Unique Visitors",
+    "avgSession": "Avg. Session Duration"
+  },
+  "Footer": {
+    "text": "Footer"
+  }
+}

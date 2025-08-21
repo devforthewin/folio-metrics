@@ -1,13 +1,11 @@
-import { ReactNode } from 'react'
-
 export default function DashboardLayout({
   children,
   header,
   footer,
 }: {
-  children: ReactNode;
-  header: ReactNode;
-  footer: ReactNode;
+  children: React.ReactNode;
+  header: React.ReactNode;
+  footer: React.ReactNode;
 }) {
   return (
     <div className="">
