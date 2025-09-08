@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="156eae76-157f-473e-bd06-5a2fb2289c98" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eslint.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/eslint.config.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,18 +32,30 @@
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/home/arbuz/Documents/Projects/GitHub/folio-metrics/src/app",
+    "last_opened_file_path": "/home/arbuz/Documents/Projects/GitHub/folio-metrics/src/app/(site)/[lang]",
     "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_interpreter_path": "node",
     "nodejs_package_manager_path": "/home/arbuz/.nvm/versions/node/v20.18.3/bin/pnpm",
     "npm.dev.executor": "Run",
-    "settings.editor.selected.configurable": "settings.nodejs",
+    "settings.editor.selected.configurable": "settings.javascript.linters.eslint",
+    "ts.external.directory.path": "/home/arbuz/Documents/Projects/GitHub/folio-metrics/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/app/(site)/[lang]" />
+      <recent name="$PROJECT_DIR$/src/app/(admin)/admin/(auth)" />
+      <recent name="$PROJECT_DIR$/src/app/(admin)/admin" />
+      <recent name="$PROJECT_DIR$/src/app/(api)/api" />
+      <recent name="$PROJECT_DIR$/src/app/(site)" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
@@ -76,7 +89,7 @@
       <option name="presentableId" value="Default" />
       <updated>1757346958270</updated>
       <workItem from="1757346959877" duration="288000" />
-      <workItem from="1757347343144" duration="307000" />
+      <workItem from="1757347343144" duration="728000" />
     </task>
     <servers />
   </component>
