@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="156eae76-157f-473e-bd06-5a2fb2289c98" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/middleware.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/(admin)/admin/(auth)/login/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/(admin)/admin/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(admin)/admin/(auth)/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(admin)/admin/(auth)/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auth.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(admin)/admin/(auth)/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(admin)/admin/SignOutButton.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +57,7 @@
       <recent name="$PROJECT_DIR$/prisma/migrations" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/app/(admin)/admin" />
       <recent name="$PROJECT_DIR$/prisma" />
     </key>
   </component>
@@ -98,7 +97,7 @@
       <workItem from="1757347343144" duration="1212000" />
       <workItem from="1757348565992" duration="369000" />
       <workItem from="1757348949638" duration="1915000" />
-      <workItem from="1757397700551" duration="6315000" />
+      <workItem from="1757397700551" duration="7658000" />
     </task>
     <servers />
   </component>
