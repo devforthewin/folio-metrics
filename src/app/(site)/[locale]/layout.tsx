@@ -1,19 +1,10 @@
-import { Geist, Geist_Mono } from 'next/font/google'
-
 import type { Metadata } from 'next'
 
 import '../../../styles/globals.css'
 import { NextIntlClientProvider } from 'next-intl'
 import { getMessages } from 'next-intl/server'
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
-  subsets: ['latin'],
-})
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
-  subsets: ['latin'],
-})
+import { robotoMono, robotoSlab } from '@/lib/fonts'
 
 export const metadata: Metadata = {
   title: 'Folio-Metrics',
@@ -34,7 +25,7 @@ export default async function RootLayout({
     <html lang={locale}>
       <NextIntlClientProvider locale={locale} messages={messages}>
         <body
-          className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+          className={`${robotoSlab.variable} ${robotoMono.variable} antialiased`}
         >
           {children}
         </body>

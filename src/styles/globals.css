@@ -2,7 +2,7 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #939393;
 }
 
 @theme inline {
@@ -10,6 +10,8 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-roboto-slab: var(--font-roboto-slab);
+  --font-roboto-mono: var(--font-roboto-mono);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,5 +24,22 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /*font-family: Arial, Helvetica, sans-serif;*/
+  font-family: "Roboto Mono", monospace;
+  font-size: 14px;
+}
+
+.mb-4 {
+  margin-bottom: 25px
+}
+
+.pb-3 {
+  padding-bottom: 18px
+}
+
+.screen-minus-header {
+  height: calc(100vh - 70px);
+}
+
+@media (min-width: 640px) {
 }
