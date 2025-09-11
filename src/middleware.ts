@@ -2,13 +2,13 @@ import { NextResponse } from 'next/server'
 import createMiddleware from 'next-intl/middleware'
 
 import { auth } from '@/auth'
-import { DEFAULT_LOCALE, LOCALES } from '@/i18n/config'
+import { defaultLocale, locales } from '@/i18n/config'
 
 export const runtime = 'nodejs'
 
 const intlMiddleware = createMiddleware({
-  locales: LOCALES as unknown as string[],
-  defaultLocale: DEFAULT_LOCALE,
+  locales: locales as unknown as string[],
+  defaultLocale: defaultLocale,
   localePrefix: 'always',
 })
 
@@ -35,7 +35,8 @@ export default auth((req) => {
 
 export const config = {
   matcher: [
-    '/((?!api|_next/static|_next/image|favicon.ico).*)',
+    '/',
+    '/((?!api|_next/static|_next/image|favicon.ico|robots.txt|sitemap.xml).+)',
     // '/admin/:path*',
   ],
 }
