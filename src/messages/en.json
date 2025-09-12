@@ -37,6 +37,21 @@
       "about": "Confidential Client",
       "description": "Architected and developed a headless CMS from scratch using Payload v3. Implemented custom collections, fields, and access controls, and integrated the CMS with a large-scale Next.js application to enable full-cycle dynamic content management.",
       "resultDescription": "Delivered a scalable decoupled architecture; provided the client with a user-friendly solution for independent content management, significantly reducing content update times."
+    },
+    "cpabox": {
+      "about": "SaaS platform for media buying automation",
+      "description": "Built and maintained frontend architecture and backend logic. Integrated Keitaro TDS, developed Telegram bots for domain checks, built Telegram Web Apps and webhook architecture. Contributed to technical solutions and architecture.",
+      "resultDescription": "Automated routine operations for traffic arbitrage; strengthened architecture and product-thinking skills."
+    },
+    "remotza": {
+      "about": "A company specializing in custom software development",
+      "description": "Developed RESTful APIs, integrated external services, worked with PostgreSQL and Redis caching, contributed to UI with Vue.js.",
+      "resultDescription": "Delivered stable APIs meeting business requirements; improved focus on stability and team communication."
+    },
+    "aopsrm": {
+      "about": "A non-profit organization assisting stoma patients in Moldova",
+      "description": "Designed and launched a full-featured CRM: React frontend with Redux and Formik, Laravel REST API backend. Managed deployment with Docker and GitLab CI/CD; handled server admin and support.",
+      "resultDescription": "Delivered end-to-end CRM solution; built strong confidence in full-cycle delivery."
     }
   },
   "Education": {

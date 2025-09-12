@@ -3,5 +3,97 @@
     "headerText": "Cod curat. Soluție clară. Mână fermă.",
     "title": "Arbuz Tanya",
     "language": "RO"
+  },
+  "Hero": {
+    "smallTitle": "Full-Stack Developer",
+    "title": "Tanya Arbuz",
+    "description": "I build scalable and modular systems with a keen focus on architecture, clean code, and iterative delivery. I take full ownership of challenges to deliver results, continuously seeking ways to enhance product and engineering processes, and transforming complex problems into robust, effective solutions.",
+    "descriptionMobile": "I build scalable and modular systems with a keen focus on architecture, clean code, and iterative delivery."
+  },
+  "AboutMe": {
+    "leftTitle": "About Me",
+    "leftSubtitle": "A warrior doesn't boast — he simply knows what he's capable of.",
+    "description1": "<highlight>Full-stack developer</highlight> with <highlight>4+ years of experience</highlight>, specializing in <secondary>web applications and Telegram bots</secondary>. I am proficient across the full stack, building <highlight>flexible and scalable solutions</highlight>.",
+    "description2_title": "My core priorities are:",
+    "description2_item1": "Architectural reliability",
+    "description2_item2": "User-friendly experiences",
+    "description2_item3": "Process automation",
+    "description2": "I am committed to <secondary>continuous learning</secondary>, value <secondary>team collaboration</secondary>, and am driven to find solutions that deliver <highlight>value to both the business and the team</highlight>."
+  },
+  "TechnicalSkills": {
+    "leftTitle": "Technical skills",
+    "leftSubtitle": "Tools in the hands of a master become an extension of his will.",
+    "frontTitle": "Frontend",
+    "backTitle": "Backend",
+    "infraTitle": "Infrastructure",
+    "otherTitle": "Other",
+    "addTitle": "Additional Tools and Libraries."
+  },
+  "Experience": {
+    "leftTitle": "Work Experience",
+    "leftSubtitle": "Every line of code bears the mark of battle. Every project — a new victory.",
+    "Stack": "Stack",
+    "contract": {
+      "about": "Confidential Client",
+      "description": "Architected and developed a headless CMS from scratch using Payload v3. Implemented custom collections, fields, and access controls, and integrated the CMS with a large-scale Next.js application to enable full-cycle dynamic content management.",
+      "resultDescription": "Delivered a scalable decoupled architecture; provided the client with a user-friendly solution for independent content management, significantly reducing content update times."
+    },
+    "cpabox": {
+      "about": "SaaS platform for media buying automation",
+      "description": "Built and maintained frontend architecture and backend logic. Integrated Keitaro TDS, developed Telegram bots for domain checks, built Telegram Web Apps and webhook architecture. Contributed to technical solutions and architecture.",
+      "resultDescription": "Automated routine operations for traffic arbitrage; strengthened architecture and product-thinking skills."
+    },
+    "remotza": {
+      "about": "A company specializing in custom software development",
+      "description": "Developed RESTful APIs, integrated external services, worked with PostgreSQL and Redis caching, contributed to UI with Vue.js.",
+      "resultDescription": "Delivered stable APIs meeting business requirements; improved focus on stability and team communication."
+    },
+    "aopsrm": {
+      "about": "A non-profit organization assisting stoma patients in Moldova",
+      "description": "Designed and launched a full-featured CRM: React frontend with Redux and Formik, Laravel REST API backend. Managed deployment with Docker and GitLab CI/CD; handled server admin and support.",
+      "resultDescription": "Delivered end-to-end CRM solution; built strong confidence in full-cycle delivery."
+    }
+  },
+  "Education": {
+    "leftTitle": "Education",
+    "leftSubtitle": "The path isn’t defined by diplomas. Anything that makes you stronger is part of the journey.",
+    "educ": "Russian University of Cooperation | Accounting and Finance | 2003–2007",
+    "pathTitle": "from finance to full-stack:",
+    "dailyTitle": "Daily Learning:",
+    "path": {
+      "first": "2011: First Step into Tech (Webmaster Course",
+      "second": "2012-Present: From Hobby Projects to Professional Systems",
+      "third": "Following industry leaders, documentation, and best practices."
+    }
+  },
+  "Additional": {
+    "leftTitle": "Additional",
+    "leftSubtitle": "Every project — like a battle. I enter it to win, not just to participate.",
+    "intro": "This site is more than a resume; it's a full-stack open-source project showcasing my approach to software development.",
+    "projectTitle": "Folio Metrics Project",
+    "projectFeatures": {
+      "item1": "An interactive resume with <highlight>real-time visitor analytics</highlight>.",
+      "item2": "Optimized architecture: <highlight>Next.js, Prisma + MariaDB, and caching</highlight>.",
+      "item3": "Professional practices: <highlight>type safety, lazy loading, and middleware</highlight>.",
+      "item4": "An admin panel with <highlight>metrics visualization</highlight>.",
+      "item5": "Performance (Lighthouse): <highlight>95+ on all Core Web Vitals</highlight>."
+    },
+    "buttonText": "Explore the Code",
+    "buttonDemoText": "Watch Demo"
+  },
+  "Footer": {
+    "finalWords": "I walk my own path. If it crosses yours — reach out.",
+    "copyright": "© 2025 Tanya Arbuz. All Rights Reserved."
+  },
+  "Common": {
+    "smallTitle": "Full-Stack Developer",
+    "title": "Tanya Arbuz",
+    "location": "Location",
+    "or": "Kishinev",
+    "phone": "Phone",
+    "telegram": "Telegram",
+    "mail": "E-mail",
+    "result": "Result:",
+    "stack": "Stack:"
   }
 }
