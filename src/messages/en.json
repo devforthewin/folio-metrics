@@ -28,5 +28,27 @@
     "infraTitle": "Infrastructure",
     "otherTitle": "Other",
     "addTitle": "Additional Tools and Libraries."
+  },
+  "Experience": {
+    "leftTitle": "Work Experience",
+    "leftSubtitle": "Every line of code bears the mark of battle. Every project — a new victory.",
+    "Stack": "Stack",
+    "contract": {
+      "about": "Confidential Client",
+      "description": "Architected and developed a headless CMS from scratch using Payload v3. Implemented custom collections, fields, and access controls, and integrated the CMS with a large-scale Next.js application to enable full-cycle dynamic content management.",
+      "resultDescription": "Delivered a scalable decoupled architecture; provided the client with a user-friendly solution for independent content management, significantly reducing content update times."
+    }
+  },
+  "Education": {
+    "leftTitle": "Education",
+    "leftSubtitle": "The path isn’t defined by diplomas. Anything that makes you stronger is part of the journey.",
+    "educ": "Russian University of Cooperation | Accounting and Finance | 2003–2007",
+    "pathTitle": "from finance to full-stack:",
+    "dailyTitle": "Daily Learning:",
+    "path": {
+      "first": "2011: First Step into Tech (Webmaster Course",
+      "second": "2012-Present: From Hobby Projects to Professional Systems",
+      "third": "Following industry leaders, documentation, and best practices."
+    }
   }
 }

@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="156eae76-157f-473e-bd06-5a2fb2289c98" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/sections/TechnicalSkills.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/SkillBar.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/sections/Education.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/sections/Experience.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ui/ExperienceItem.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/experienceData.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/types.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/(site)/[locale]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(site)/[locale]/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/messages/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/messages/en.json" afterDir="false" />
@@ -35,7 +38,7 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/home/arbuz/Documents/Projects/GitHub/folio-metrics/src/components/ui",
+    "last_opened_file_path": "/home/arbuz/Documents/Projects/GitHub/folio-metrics/src/components/sections",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -52,11 +55,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/components/ui" />
       <recent name="$PROJECT_DIR$/src/components/sections" />
-      <recent name="$PROJECT_DIR$/src/components/common" />
-      <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/lib" />
+      <recent name="$PROJECT_DIR$/src/components/ui" />
+      <recent name="$PROJECT_DIR$/src/components/common" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/assets" />
@@ -106,7 +109,7 @@
       <workItem from="1757501315751" duration="12540000" />
       <workItem from="1757588709491" duration="9142000" />
       <workItem from="1757599987805" duration="1951000" />
-      <workItem from="1757674101513" duration="2028000" />
+      <workItem from="1757674101513" duration="2573000" />
     </task>
     <servers />
   </component>
