@@ -19,5 +19,14 @@
     "description2_item2": "User-friendly experiences",
     "description2_item3": "Process automation",
     "description2": "I am committed to <secondary>continuous learning</secondary>, value <secondary>team collaboration</secondary>, and am driven to find solutions that deliver <highlight>value to both the business and the team</highlight>."
+  },
+  "TechnicalSkills": {
+    "leftTitle": "Technical skills",
+    "leftSubtitle": "Tools in the hands of a master become an extension of his will.",
+    "frontTitle": "Frontend",
+    "backTitle": "Backend",
+    "infraTitle": "Infrastructure",
+    "otherTitle": "Other",
+    "addTitle": "Additional Tools and Libraries."
   }
 }

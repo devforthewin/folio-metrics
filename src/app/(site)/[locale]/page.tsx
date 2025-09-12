@@ -3,6 +3,7 @@
 import Header from '@/components/common/Header'
 import Hero from '@/components/sections/Hero'
 import Intro from '@/components/sections/Intro'
+import TechnicalSkills from '@/components/sections/TechnicalSkills'
 
 export default function LandingPage() {
   return (
@@ -10,7 +11,7 @@ export default function LandingPage() {
       <Header/>
       <section id="hero"><Hero/></section>
       <section id="intro"><Intro/></section>
-      <section id="skills"></section>
+      <section id="skills"><TechnicalSkills/></section>
       <section id="experience"></section>
       <section id="education"></section>
       <section id="adds"></section>
