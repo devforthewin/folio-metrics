@@ -6,6 +6,7 @@ import Intro from '@/components/sections/Intro'
 import TechnicalSkills from '@/components/sections/TechnicalSkills'
 import Experience from '@/components/sections/Experience'
 import Education from '@/components/sections/Education'
+import Additional from '@/components/sections/Additional'
 
 export default function LandingPage() {
   return (
@@ -16,7 +17,7 @@ export default function LandingPage() {
       <section id="skills"><TechnicalSkills/></section>
       <section id="experience"><Experience/></section>
       <section id="education"><Education/></section>
-      <section id="adds"></section>
+      <section id="adds"><Additional/></section>
     </div>
   )
 }

@@ -50,5 +50,20 @@
       "second": "2012-Present: From Hobby Projects to Professional Systems",
       "third": "Following industry leaders, documentation, and best practices."
     }
+  },
+  "Additional": {
+    "leftTitle": "Additional",
+    "leftSubtitle": "Every project — like a battle. I enter it to win, not just to participate.",
+    "intro": "This site is more than a resume; it's a full-stack open-source project showcasing my approach to software development.",
+    "projectTitle": "Folio Metrics Project",
+    "projectFeatures": {
+      "item1": "An interactive resume with <highlight>real-time visitor analytics</highlight>.",
+      "item2": "Optimized architecture: <highlight>Next.js, Prisma + MariaDB, and caching</highlight>.",
+      "item3": "Professional practices: <highlight>type safety, lazy loading, and middleware</highlight>.",
+      "item4": "An admin panel with <highlight>metrics visualization</highlight>.",
+      "item5": "Performance (Lighthouse): <highlight>95+ on all Core Web Vitals</highlight>."
+    },
+    "buttonText": "Explore the Code",
+    "buttonDemoText": "Watch Demo"
   }
 }
