@@ -5,13 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="156eae76-157f-473e-bd06-5a2fb2289c98" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/common/Header.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/fonts.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/CV_en.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/my_ava.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/common/ContactInfo.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/common/SectionHeader.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/sections/Hero.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/sections/Intro.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/fontawesome.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(site)/[locale]/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(site)/[locale]/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/(site)/[locale]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(site)/[locale]/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/common/LocaleSwitcher.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/features/LocaleSwitcher.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/messages/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/messages/en.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,17 +60,17 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/components/common" />
+      <recent name="$PROJECT_DIR$/src/components/sections" />
+      <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/src/lib" />
       <recent name="$PROJECT_DIR$/src/components" />
-      <recent name="$PROJECT_DIR$/src/app/(site)" />
-      <recent name="$PROJECT_DIR$/src/app" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets" />
       <recent name="$PROJECT_DIR$/src/components/features" />
       <recent name="$PROJECT_DIR$/src/app/(site)/[lang]" />
       <recent name="$PROJECT_DIR$/src/app/(site)" />
       <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/src/styles" />
     </key>
   </component>
   <component name="RunManager">
@@ -106,7 +111,9 @@
       <workItem from="1757348949638" duration="1915000" />
       <workItem from="1757397700551" duration="20500000" />
       <workItem from="1757501315751" duration="12540000" />
-      <workItem from="1757588709491" duration="8512000" />
+      <workItem from="1757588709491" duration="9142000" />
+      <workItem from="1757599987805" duration="1951000" />
+      <workItem from="1757674101513" duration="1376000" />
     </task>
     <servers />
   </component>
