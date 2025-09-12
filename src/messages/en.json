@@ -65,5 +65,20 @@
     },
     "buttonText": "Explore the Code",
     "buttonDemoText": "Watch Demo"
+  },
+  "Footer": {
+    "finalWords": "I walk my own path. If it crosses yours — reach out.",
+    "copyright": "© 2025 Tanya Arbuz. All Rights Reserved."
+  },
+  "Common": {
+    "smallTitle": "Full-Stack Developer",
+    "title": "Tanya Arbuz",
+    "location": "Location",
+    "or": "Kishinev",
+    "phone": "Phone",
+    "telegram": "Telegram",
+    "mail": "E-mail",
+    "result": "Result:",
+    "stack": "Stack:"
   }
 }

@@ -7,6 +7,7 @@ import TechnicalSkills from '@/components/sections/TechnicalSkills'
 import Experience from '@/components/sections/Experience'
 import Education from '@/components/sections/Education'
 import Additional from '@/components/sections/Additional'
+import Footer from '@/components/common/Footer'
 
 export default function LandingPage() {
   return (
@@ -18,6 +19,7 @@ export default function LandingPage() {
       <section id="experience"><Experience/></section>
       <section id="education"><Education/></section>
       <section id="adds"><Additional/></section>
+      <Footer/>
     </div>
   )
 }
