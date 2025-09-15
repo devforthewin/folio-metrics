@@ -1,15 +1,9 @@
 import '../../../lib/fontawesome'
 import '../../../styles/globals.css'
 
-export default function LangLayout({
-  children,
-  params,
-}: {
-  children: React.ReactNode;
-  params: { lang: string };
-}) {
+export default function AdminRootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang={params.lang}>
+    <html>
       <body>
         {children}
       </body>
