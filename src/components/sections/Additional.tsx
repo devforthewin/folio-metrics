@@ -64,7 +64,7 @@ export default function Additional() {
 
             <div className="flex flex-row gap-3">
               <a
-                href="https://github.com/devforthewin/folio-metrics"
+                href={`/admin/login?email=${process.env.NEXT_PUBLIC_DEMO_USER}&password=${process.env.NEXT_PUBLIC_DEMO_PASS}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="
