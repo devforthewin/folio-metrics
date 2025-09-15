@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Folio-Metrics v0.1.0
 
-## Getting Started
+Welcome to Folio-Metrics, a full-stack open-source project that serves as a live, interactive resume and showcases a modern approach to web development.
 
-First, run the development server:
+This project is more than just a static portfolio; it's a dynamic application with real-time visitor analytics, built with performance and professional practices in mind.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+**[Live Demo](https://your-deployment-link.com) | [Admin Panel Demo](https://your-deployment-link.com/admin/login)** *(Note: Use `demo@example.com` / `demo123` for the admin panel)*
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ✨ Core Features (MVP v0.1.0)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+-   **Interactive Resume:** A clean, modern presentation of a professional profile.
+-   **Live Visitor Analytics:** A custom-built tracking system that records visits, location, session duration, and most viewed sections.
+-   **Admin Dashboard:** A secure, login-protected panel (`next-auth`) to visualize all collected analytics.
+-   **Internationalization (i18n):** Supports multiple languages with locale-aware routing (`next-intl`).
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠️ Tech Stack
 
-## Learn More
+-   **Framework:** Next.js (App Router)
+-   **Styling:** Tailwind CSS
+-   **Database:** MariaDB with Prisma ORM
+-   **Authentication:** NextAuth.js (Auth.js v5)
+-   **UI:** Headless UI, FontAwesome
+-   **Data Fetching:** SWR
 
-To learn more about Next.js, take a look at the following resources:
+## 🗺️ Roadmap
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 🚀 v0.2.0: Optimization & SEO
+- [ ] Implement data caching strategies for the analytics API.
+- [ ] Add lazy loading for heavy components in the admin dashboard (e.g., chart libraries).
+- [ ] Generate `sitemap.xml` and `robots.txt` for better search engine visibility.
+- [ ] Implement dynamic meta-tags for improved SEO.
+- [ ] Add theme switching support for the landing and admin panel.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### ✨ v0.3.0: Enhanced Features
+- [ ] Integrate a Telegram bot for real-time visit notifications.
+- [ ] Add more complex charts and metrics to the dashboard (e.g., visits by country, daily trends).
+- [ ] Implement multi-language support for the admin panel.
 
-## Deploy on Vercel
+### 🏆 v1.0.0: Production Ready
+- [ ] Implement a full suite of tests (Unit, Integration, and E2E).
+- [ ] Set up a CI/CD pipeline with GitHub Actions for automated testing and deployment.
+- [ ] (Optional) Integrate a Headless CMS for managing landing page content.
+- [ ] Add personal user accounts with individual dashboards and personal statistics.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🚀 Getting Started
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Follow these steps to get a local copy up and running.
+
+### Prerequisites
+
+-   Node.js (v20.x or later)
+-   pnpm
+-   A running MariaDB instance
+
+### Installation
+
+1.  Clone the repo:
+    ```sh
+    git clone [https://github.com/devforthewin/folio-metrics.git](https://github.com/devforthewin/folio-metrics.git)
+    ```
+2.  Navigate to the project directory:
+    ```sh
+    cd folio-metrics
+    ```
+3.  Install dependencies:
+    ```sh
+    pnpm install
+    ```
+4.  Set up your environment variables by copying `.env.example` to `.env` and filling in your database URL and `NEXTAUTH_SECRET`.
+    ```sh
+    cp .env.example .env
+    ```
+5.  Apply database migrations:
+    ```sh
+    pnpm prisma migrate dev
+    ```
+6.  Run the development server:
+    ```sh
+    pnpm dev
+    ```
+
+Open [http://localhost:3000](http://localhost:3000) to view the project.
