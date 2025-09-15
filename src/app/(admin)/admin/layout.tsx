@@ -1,3 +1,5 @@
+import '../../../lib/fontawesome'
+import '../../../styles/globals.css'
 
 export default function LangLayout({
   children,

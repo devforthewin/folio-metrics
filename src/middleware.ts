@@ -13,21 +13,24 @@ const intlMiddleware = createMiddleware({
 })
 
 export default auth((req) => {
+  const isAdminRoute = req.nextUrl.pathname.startsWith('/admin')
+  // const isAdminPage = url.pathname.startsWith('/admin') && url.pathname !== '/admin/login'
   const session = req.auth
-  const url = req.nextUrl
+  const isLoggedIn = !!session?.user
+  const isAuthPage = req.nextUrl.pathname === '/admin/login'
 
   const intlResponse = intlMiddleware(req)
 
-  const isLoggedIn = !!session?.user
-  const isAdminPage = url.pathname.startsWith('/admin') && url.pathname !== '/admin/login'
-  const isAuthPage = url.pathname === '/admin/login'
+  if(isAdminRoute) {
+    if (isAuthPage && isLoggedIn) {
+      return NextResponse.redirect(new URL('/admin', req.nextUrl))
+    }
 
-  if (isAuthPage && isLoggedIn) {
-    return NextResponse.redirect(new URL('/admin', req.url))
-  }
+    if (!isAuthPage && !isLoggedIn) {
+      return NextResponse.redirect(new URL('/admin/login', req.nextUrl))
+    }
 
-  if (isAdminPage && !isLoggedIn) {
-    return NextResponse.redirect(new URL('/admin/login', req.url))
+    return NextResponse.next()
   }
 
   return intlResponse

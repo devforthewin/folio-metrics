@@ -8,8 +8,10 @@ import Experience from '@/components/sections/Experience'
 import Education from '@/components/sections/Education'
 import Additional from '@/components/sections/Additional'
 import Footer from '@/components/common/Footer'
+import { useSectionObserver } from '@/lib/hooks/useSectionObserver'
 
 export default function LandingPage() {
+  useSectionObserver()
   return (
     <div>
       <Header/>

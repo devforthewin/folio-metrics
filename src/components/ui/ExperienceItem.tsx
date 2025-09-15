@@ -1,6 +1,6 @@
 import { useTranslations } from 'next-intl'
 
-import { ExperienceItemType } from '@/lib/types'
+import { ExperienceItemType } from '@/types/types'
 
 type ExperienceItemProps = {
   job: ExperienceItemType;
