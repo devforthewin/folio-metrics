@@ -44,23 +44,28 @@ export default function AdminHeader() {
           {/*Socials Buttons*/}
           <div className="flex justify-center space-x-4 my-6">
             <a
-              href=""
+              href="https://mail.yandex.ru/compose?to=arbuztatiana@yandex.ru"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-gray-500 hover:text-[#F67769] transition-colors">
               <FontAwesomeIcon
                 icon={faYandex}
-                size="lg"/></a>
+                size="lg"/>
+            </a>
             <a
               href="https://www.linkedin.com/in/tanya-arbuz-187199221"
               className="text-gray-500 hover:text-[#F67769] transition-colors">
               <FontAwesomeIcon
                 icon={faLinkedinIn}
-                size="lg"/></a>
+                size="lg"/>
+            </a>
             <a
               href="https://t.me/tanya_arbuz"
               className="text-gray-500 hover:text-[#F67769] transition-colors">
               <FontAwesomeIcon
                 icon={faTelegramPlane}
-                size="lg"/></a>
+                size="lg"/>
+            </a>
           </div>
 
           {/*Lang Block*/}
