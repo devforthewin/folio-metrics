@@ -62,7 +62,7 @@ export default function Additional() {
               ))}
             </ul>
 
-            <div className="flex flex-row gap-3">
+            <div className="flex flex-col md:flex-row gap-3 mb-4">
               <a
                 href={`/admin/login?email=${process.env.NEXT_PUBLIC_DEMO_USER}&password=${process.env.NEXT_PUBLIC_DEMO_PASS}`}
                 target="_blank"

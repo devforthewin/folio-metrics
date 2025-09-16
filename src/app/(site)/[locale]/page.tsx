@@ -13,7 +13,7 @@ import { useSectionObserver } from '@/lib/hooks/useSectionObserver'
 export default function LandingPage() {
   useSectionObserver()
   return (
-    <div>
+    <div className="bg-white w-full relative text-gray-800">
       <Header/>
       <section id="hero"><Hero/></section>
       <section id="intro"><Intro/></section>
