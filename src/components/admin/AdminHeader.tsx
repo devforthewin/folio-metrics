@@ -1,7 +1,7 @@
 'use client'
 
 import { Fragment } from 'react'
-import { faLinkedinIn, faTelegramPlane, faYandex } from '@fortawesome/free-brands-svg-icons'
+import { faDiscord, faLinkedinIn, faTelegramPlane, faYandex } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Menu, MenuItem, Transition, MenuItems, MenuButton } from '@headlessui/react'
 import { Tooltip } from 'react-tooltip'
@@ -65,6 +65,16 @@ export default function AdminHeader() {
               <FontAwesomeIcon
                 icon={faTelegramPlane}
                 size="lg"/>
+            </a>
+            <a
+              href="https://discord.gg/z6mj7JNBaw"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-500 hover:text-[#F67769] transition-colors">
+              <FontAwesomeIcon
+                icon={faDiscord}
+                size="lg"
+              />
             </a>
           </div>
 

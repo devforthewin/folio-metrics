@@ -1,7 +1,7 @@
 'use client'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub, faLinkedinIn, faTelegramPlane, faYandex } from '@fortawesome/free-brands-svg-icons'
+import { faDiscord, faGithub, faLinkedinIn, faTelegramPlane, faYandex } from '@fortawesome/free-brands-svg-icons'
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 
@@ -164,6 +164,23 @@ export default function Hero() {
                 >
                   <FontAwesomeIcon
                     icon={faYandex}
+                    className="text-[1rem]"
+                  />
+                </a>
+                <a
+                  href="https://discord.gg/z6mj7JNBaw"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="
+                      w-8 h-8 lg:w-[38px] lg:h-[38px]
+                      flex items-center justify-center
+                      bg-gray-200 border border-gray-200 rounded
+                      text-gray-800 hover:bg-transparent
+                      transition-all duration-300 ease-in-out
+                    "
+                >
+                  <FontAwesomeIcon
+                    icon={faDiscord}
                     className="text-[1rem]"
                   />
                 </a>
