@@ -7,93 +7,93 @@
   "Hero": {
     "smallTitle": "Full-Stack Developer",
     "title": "Tanya Arbuz",
-    "description": "I build scalable and modular systems with a keen focus on architecture, clean code, and iterative delivery. I take full ownership of challenges to deliver results, continuously seeking ways to enhance product and engineering processes, and transforming complex problems into robust, effective solutions.",
-    "descriptionMobile": "I build scalable and modular systems with a keen focus on architecture, clean code, and iterative delivery."
+    "description": "Construiesc sisteme scalabile și modulare, cu un accent deosebit pe arhitectură, cod curat și livrare iterativă. Îmi asum responsabilitatea deplină pentru provocări pentru a livra rezultate, căutând continuu modalități de a optimiza procesele de produs și inginerie și transformând problemele complexe în soluții robuste și eficiente.",
+    "descriptionMobile": "Construiesc sisteme scalabile și modulare, cu un accent deosebit pe arhitectură, cod curat și livrare iterativă."
   },
   "AboutMe": {
-    "leftTitle": "About Me",
-    "leftSubtitle": "A warrior doesn't boast — he simply knows what he's capable of.",
-    "description1": "<highlight>Full-stack developer</highlight> with <highlight>4+ years of experience</highlight>, specializing in <secondary>web applications and Telegram bots</secondary>. I am proficient across the full stack, building <highlight>flexible and scalable solutions</highlight>.",
-    "description2_title": "My core priorities are:",
-    "description2_item1": "Architectural reliability",
-    "description2_item2": "User-friendly experiences",
-    "description2_item3": "Process automation",
-    "description2": "I am committed to <secondary>continuous learning</secondary>, value <secondary>team collaboration</secondary>, and am driven to find solutions that deliver <highlight>value to both the business and the team</highlight>."
+    "leftTitle": "Despre mine",
+    "leftSubtitle": "Un războinic nu se laudă — el pur și simplu știe de ce este capabil.",
+    "description1": "<highlight>Dezvoltator Full-stack</highlight> cu <highlight>peste 4 ani de experiență</highlight>, specializat în <secondary>aplicații web și boți Telegram</secondary>. Sunt competent pe întregul stack, construind <highlight>soluții flexibile și scalabile</highlight>.",
+    "description2_title": "Prioritățile mele principale sunt:",
+    "description2_item1": "Fiabilitatea arhitecturii",
+    "description2_item2": "Experiențe prietenoase cu utilizatorul",
+    "description2_item3": "Automatizarea proceselor",
+    "description2": "Sunt dedicat <secondary>învățării continue</secondary>, prețuiesc <secondary>colaborarea în echipă</secondary> și sunt determinat să găsesc soluții care aduc <highlight>valoare atât afacerii, cât și echipei</highlight>."
   },
   "TechnicalSkills": {
-    "leftTitle": "Technical skills",
-    "leftSubtitle": "Tools in the hands of a master become an extension of his will.",
+    "leftTitle": "Competențe tehnice",
+    "leftSubtitle": "Instrumentele în mâinile unui maestru devin o extensie a voinței sale.",
     "frontTitle": "Frontend",
     "backTitle": "Backend",
-    "infraTitle": "Infrastructure",
-    "otherTitle": "Other",
-    "addTitle": "Additional Tools and Libraries."
+    "infraTitle": "Infrastructură",
+    "otherTitle": "Altele",
+    "addTitle": "Instrumente și Biblioteci Suplimentare."
   },
   "Experience": {
-    "leftTitle": "Work Experience",
-    "leftSubtitle": "Every line of code bears the mark of battle. Every project — a new victory.",
+    "leftTitle": "Experiență profesională",
+    "leftSubtitle": "Fiecare linie de cod poartă amprenta bătăliei. Fiecare proiect — o nouă victorie.",
     "Stack": "Stack",
     "contract": {
-      "about": "Confidential Client",
-      "description": "Architected and developed a headless CMS from scratch using Payload v3. Implemented custom collections, fields, and access controls, and integrated the CMS with a large-scale Next.js application to enable full-cycle dynamic content management.",
-      "resultDescription": "Delivered a scalable decoupled architecture; provided the client with a user-friendly solution for independent content management, significantly reducing content update times."
+      "about": "Client confidențial",
+      "description": "Am proiectat și dezvoltat un CMS headless de la zero folosind Payload v3. Am implementat colecții, câmpuri și controale de acces personalizate și am integrat CMS-ul cu o aplicație Next.js de scară largă pentru a permite gestionarea dinamică a conținutului pe întregul ciclu.",
+      "resultDescription": "Am livrat o arhitectură decuplată și scalabilă; am oferit clientului o soluție prietenoasă cu utilizatorul pentru gestionarea independentă a conținutului, reducând semnificativ timpii de actualizare a acestuia."
     },
     "cpabox": {
-      "about": "SaaS platform for media buying automation",
-      "description": "Built and maintained frontend architecture and backend logic. Integrated Keitaro TDS, developed Telegram bots for domain checks, built Telegram Web Apps and webhook architecture. Contributed to technical solutions and architecture.",
-      "resultDescription": "Automated routine operations for traffic arbitrage; strengthened architecture and product-thinking skills."
+      "about": "Platformă SaaS pentru automatizarea procesului de media buying",
+      "description": "Am construit și întreținut arhitectura frontend și logica backend. Am integrat Keitaro TDS, am dezvoltat boți Telegram pentru verificarea domeniilor, am construit aplicații Telegram Web Apps și o arhitectură de webhooks. Am contribuit la soluțiile tehnice și la arhitectură.",
+      "resultDescription": "Am automatizat operațiunile de rutină pentru arbitrajul de trafic; mi-am consolidat competențele în arhitectură și gândirea de produs (product-thinking)."
     },
     "remotza": {
-      "about": "A company specializing in custom software development",
-      "description": "Developed RESTful APIs, integrated external services, worked with PostgreSQL and Redis caching, contributed to UI with Vue.js.",
-      "resultDescription": "Delivered stable APIs meeting business requirements; improved focus on stability and team communication."
+      "about": "Companie specializată în dezvoltarea de software personalizat",
+      "description": "Am dezvoltat API-uri RESTful, am integrat servicii externe, am lucrat cu PostgreSQL și caching în Redis și am contribuit la interfața UI cu Vue.js.",
+      "resultDescription": "Am livrat API-uri stabile care corespund cerințelor de business; mi-am îmbunătățit concentrarea pe stabilitate și comunicarea în cadrul echipei."
     },
     "aopsrm": {
-      "about": "A non-profit organization assisting stoma patients in Moldova",
-      "description": "Designed and launched a full-featured CRM: React frontend with Redux and Formik, Laravel REST API backend. Managed deployment with Docker and GitLab CI/CD; handled server admin and support.",
-      "resultDescription": "Delivered end-to-end CRM solution; built strong confidence in full-cycle delivery."
+      "about": "Organizație non-profit care asistă pacienții cu stomă din Moldova",
+      "description": "Am proiectat și lansat un CRM complet funcțional: frontend în React cu Redux și Formik, backend REST API în Laravel. Am gestionat deployment-ul cu Docker și GitLab CI/CD; m-am ocupat de administrarea serverului și de suportul tehnic.",
+      "resultDescription": "Am livrat o soluție CRM completă (end-to-end); mi-am consolidat încrederea în livrarea proiectelor pe întregul ciclu de dezvoltare."
     }
   },
   "Education": {
-    "leftTitle": "Education",
-    "leftSubtitle": "The path isn’t defined by diplomas. Anything that makes you stronger is part of the journey.",
-    "educ": "Russian University of Cooperation | Accounting and Finance | 2003–2007",
-    "pathTitle": "from finance to full-stack:",
-    "dailyTitle": "Daily Learning:",
+    "leftTitle": "Educație",
+    "leftSubtitle": "Calea nu este definită de diplome. Orice te face mai puternic face parte din călătorie.",
+    "educ": "Universitatea Rusă de Cooperație | Contabilitate și Finanțe | 2003–2007",
+    "pathTitle": "de la finanțe la full-stack:",
+    "dailyTitle": "Învățare Zilnică:",
     "path": {
-      "first": "2011: First Step into Tech (Webmaster Course",
-      "second": "2012-Present: From Hobby Projects to Professional Systems",
-      "third": "Following industry leaders, documentation, and best practices."
+      "first": "2011: Primul pas în tehnologie (Curs de Webmaster",
+      "second": "2012-Prezent: De la proiecte hobby la sisteme profesionale",
+      "third": "Urmărind liderii din industrie, documentația și cele mai bune practici."
     }
   },
   "Additional": {
-    "leftTitle": "Additional",
-    "leftSubtitle": "Every project — like a battle. I enter it to win, not just to participate.",
-    "intro": "This site is more than a resume; it's a full-stack open-source project showcasing my approach to software development.",
-    "projectTitle": "Folio Metrics Project",
+    "leftTitle": "Informații suplimentare",
+    "leftSubtitle": "Fiecare proiect — ca o bătălie. Intru în el pentru a câștiga, nu doar pentru a participa.",
+    "intro": "Acest site este mai mult decât un CV; este un proiect full-stack open-source care demonstrează abordarea mea față de dezvoltarea software.",
+    "projectTitle": "Proiectul Folio Metrics",
     "projectFeatures": {
-      "item1": "An interactive resume with <highlight>real-time visitor analytics</highlight>.",
-      "item2": "Optimized architecture: <highlight>Next.js, Prisma + MariaDB, and caching</highlight>.",
-      "item3": "Professional practices: <highlight>type safety, lazy loading, and middleware</highlight>.",
-      "item4": "An admin panel with <highlight>metrics visualization</highlight>.",
-      "item5": "Performance (Lighthouse): <highlight>95+ on all Core Web Vitals</highlight>."
+      "item1": "Un CV interactiv cu <highlight>analiza vizitatorilor în timp real</highlight>.",
+      "item2": "Arhitectură optimizată: <highlight>Next.js, Prisma + MariaDB și caching</highlight>.",
+      "item3": "Practici profesionale: <highlight>type safety, lazy loading și middleware</highlight>.",
+      "item4": "Un panou de administrare cu <highlight>vizualizarea metricilor</highlight>.",
+      "item5": "Performanță (Lighthouse): <highlight>95+ la toți indicatorii Core Web Vitals</highlight>."
     },
-    "buttonText": "Explore the Code",
-    "buttonDemoText": "Watch Demo"
+    "buttonText": "Explorează Codul",
+    "buttonDemoText": "Vezi Demo"
   },
   "Footer": {
-    "finalWords": "I walk my own path. If it crosses yours — reach out.",
-    "copyright": "© 2025 Tanya Arbuz. All Rights Reserved."
+    "finalWords": "Merg pe propriul meu drum. Dacă se intersectează cu al tău — contactează-mă.",
+    "copyright": "© 2025 Tanya Arbuz. Toate drepturile rezervate."
   },
   "Common": {
-    "smallTitle": "Full-Stack Developer",
+    "smallTitle": "Dezvoltator Full-Stack",
     "title": "Tanya Arbuz",
-    "location": "Location",
-    "or": "Kishinev",
-    "phone": "Phone",
+    "location": "Locație",
+    "or": "Chișinău",
+    "phone": "Telefon",
     "telegram": "Telegram",
     "mail": "E-mail",
-    "result": "Result:",
+    "result": "Rezultat:",
     "stack": "Stack:"
   }
 }

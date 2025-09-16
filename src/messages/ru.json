@@ -14,10 +14,10 @@
     "leftTitle": "Обо мне",
     "leftSubtitle": "Воин не хвастается — он просто знает, на что способен.",
     "description1": "<highlight>Full-stack разработчик</highlight> с <highlight>опытом более 4 лет</highlight>. Специализируюсь на <secondary>веб-приложениях и Telegram-ботах</secondary>. Уверенно работаю как с фронтендом, так и с бэкендом, создавая <highlight>гибкие и масштабируемые решения.</highlight>",
-    "description2_title": "My core priorities are:",
-    "description2_item1": "Architectural reliability",
-    "description2_item2": "User-friendly experiences",
-    "description2_item3": "Process automation",
+    "description2_title": "Мои ключевые приоритеты:",
+    "description2_item1": "Надёжность архитектуры",
+    "description2_item2": "Удобство для пользователя",
+    "description2_item3": "Автоматизация процессов",
     "description2": "Считаю своими приоритетами архитектурную надежность, удобство для конечного пользователя и автоматизацию рутинных процессов. Я нахожусь в непрерывном процессе обучения, ценю мнение коллег и нацелен на поиск решений, которые создают ценность как для бизнеса, так и для команды."
   },
   "TechnicalSkills": {
@@ -58,12 +58,12 @@
     "leftTitle": "Образование",
     "leftSubtitle": "Путь не ограничен дипломами. Всё, что делает тебя сильнее — часть пути.",
     "educ": "Российский университет кооперации | Бухгалтерский учёт и финансы | 2003–2007",
-    "pathTitle": "from finance to full-stack:",
-    "dailyTitle": "Daily Learning:",
+    "pathTitle": "от финансов к full-stack:",
+    "dailyTitle": "Ежедневное обучение:",
     "path": {
-      "first": "2011: First Step into Tech (Webmaster Course",
-      "second": "2012-Present: From Hobby Projects to Professional Systems",
-      "third": "Following industry leaders, documentation, and best practices."
+      "first": "2011: Первый шаг в IT (Курс веб-мастера)",
+      "second": "2012-н.в.: От хобби-проектов к профессиональным системам",
+      "third": "Изучение опыта лидеров индустрии, документации и лучших практик."
     }
   },
   "Additional": {
@@ -79,7 +79,7 @@
       "item5": "Производительность (Lighthouse): <highlight>95+ по всем Core Web Vitals</highlight>."
     },
     "buttonText": "Исследовать код",
-    "buttonDemoText": "Watch Demo"
+    "buttonDemoText": "Посмотреть Демо"
   },
   "Footer": {
     "finalWords": "Я иду своим путём. Если он совпал с твоим — напиши мне.",
