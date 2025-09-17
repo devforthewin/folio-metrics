@@ -44,8 +44,8 @@ export default function Header() {
           className="
                   lg:bg-[#FFFFFF] bg-transparent
                   pt-[1.75rem] px-[1.75rem] md:px-[3.5rem]
-                  flex-1 flex flex-col justify-between
-                  sm:flex-row sm:items-center
+                  flex-1 flex flex-row sm:flex-col justify-between
+                  sm:flex-row md:items-center
                 "
         >
           <h1 className="text-sm sm:text-base font-medium tracking-tight sm:mb-0 text-[#F67769]">

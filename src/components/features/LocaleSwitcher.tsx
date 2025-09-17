@@ -23,7 +23,7 @@ export default function LocaleSwitcher() {
   }
 
   return (
-    <div className="flex flex-row items-end gap-2">
+    <div className="flex flex-col md:flex-row items-end gap-2">
       {locales.map((locale, index) => (
         <span key={locale} className="flex items-center gap-2">
           <button
@@ -37,7 +37,7 @@ export default function LocaleSwitcher() {
           >
             {locale.toLocaleUpperCase()}
           </button>
-          {index < locales.length - 1 && <span className="text-gray-400">|</span>}
+          {index < locales.length - 1 && <span className="text-gray-400 md:block hidden">|</span>}
         </span>
       ))}
     </div>
