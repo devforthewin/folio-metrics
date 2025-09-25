@@ -2,7 +2,6 @@
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
-  faDiscord,
   faGithub,
   faLinkedinIn,
   faTelegramPlane, faYandex,
@@ -37,16 +36,6 @@ export default function Footer() {
             className="text-gray-500 hover:text-[#F67769] transition-colors"><FontAwesomeIcon
               icon={faTelegramPlane}
               size="lg"/>
-          </a>
-          <a
-            href="https://discord.gg/z6mj7JNBaw"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-500 hover:text-[#F67769] transition-colors">
-            <FontAwesomeIcon
-              icon={faDiscord}
-              size="lg"
-            />
           </a>
           <a
             href="https://mail.yandex.ru/compose?to=arbuztatiana@yandex.ru"

@@ -1,14 +1,14 @@
 'use client'
 
 import { Fragment, useState } from 'react'
-import { faDiscord, faLinkedinIn, faTelegramPlane, faYandex } from '@fortawesome/free-brands-svg-icons'
+import { faLinkedinIn, faTelegramPlane, faYandex } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Menu, MenuItem, Transition, MenuItems, MenuButton } from '@headlessui/react'
 import { Tooltip } from 'react-tooltip'
 import Image from 'next/image'
 import { signOut } from 'next-auth/react'
 
-import myAdminAva from '@/assets/images/jap.png'
+import myAdminAva from '../../../public/assets/images/jap.png'
 import MobileMenu from '@/components/ui/MobileMenu'
 
 export default function AdminHeader() {
@@ -60,16 +60,6 @@ export default function AdminHeader() {
                   <FontAwesomeIcon
                     icon={faTelegramPlane}
                     size="lg"/>
-                </a>
-                <a
-                  href="https://discord.gg/z6mj7JNBaw"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-500 hover:text-[#F67769] transition-colors">
-                  <FontAwesomeIcon
-                    icon={faDiscord}
-                    size="lg"
-                  />
                 </a>
               </div>
               
@@ -171,7 +161,7 @@ export default function AdminHeader() {
       <MobileMenu
         isOpen={isMenuOpen}
         onClose={() => setIsMenuOpen(false)}
-        socials={{ faYandex, faLinkedinIn, faTelegramPlane, faDiscord }}
+        socials={{ faYandex, faLinkedinIn, faTelegramPlane }}
         user={{ name: 'Demo Samurai', avatar: myAdminAva }}
         onLogout={() => signOut({ callbackUrl: '/' })}
       />

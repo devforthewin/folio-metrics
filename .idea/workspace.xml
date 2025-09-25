@@ -5,10 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="156eae76-157f-473e-bd06-5a2fb2289c98" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/public/assets/cv/en.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/cv/ro.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/cv/ru.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/CV_en.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/jap.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/jap.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/my_ava.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/my_ava.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/admin/AdminHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/admin/AdminHeader.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/common/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/features/LocaleSwitcher.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/features/LocaleSwitcher.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/Footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sections/Hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sections/Hero.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/MobileMenu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/MobileMenu.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/middleware.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleware.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +24,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="coming-soon" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
@@ -34,7 +47,7 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/home/arbuz/Documents/Projects/GitHub/folio-metrics/src/components/admin",
+    "last_opened_file_path": "/home/arbuz/Documents/Projects/GitHub/folio-metrics/public/assets/cv",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -51,18 +64,18 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/assets/cv" />
+      <recent name="$PROJECT_DIR$/src/assets/cv" />
       <recent name="$PROJECT_DIR$/src/components/admin" />
       <recent name="$PROJECT_DIR$/src/assets/images" />
       <recent name="$PROJECT_DIR$/src/app/(admin)/admin" />
-      <recent name="$PROJECT_DIR$/src/types" />
-      <recent name="$PROJECT_DIR$/src/components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/src/components/ui" />
       <recent name="$PROJECT_DIR$/src/app/(admin)/admin/(protected)" />
       <recent name="$PROJECT_DIR$/src/app/(admin)/admin" />
       <recent name="$PROJECT_DIR$/src/types" />
-      <recent name="$PROJECT_DIR$/src/assets" />
     </key>
   </component>
   <component name="RunManager">
@@ -127,7 +140,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="origin/main" />
                       </list>
                     </value>
                   </entry>

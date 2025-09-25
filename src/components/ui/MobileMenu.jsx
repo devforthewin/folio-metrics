@@ -10,7 +10,7 @@ export default function MobileMenu({ isOpen, onClose, socials, user, onLogout })
     { icon: socials.faYandex, href: 'https://mail.yandex.ru/compose?to=arbuztatiana@yandex.ru', text: 'Yandex' },
     { icon: socials.faLinkedinIn, href: 'https://www.linkedin.com/in/tanya-arbuz-187199221', text: 'LinkedinIn' },
     { icon: socials.faTelegramPlane, href: 'https://t.me/tanya_arbuz', text: 'Telegram' },
-    { icon: socials.faDiscord, href: 'https://discord.gg/z6mj7JNBaw', text: 'Discord' },
+    // { icon: socials.faDiscord, href: 'https://discord.gg/z6mj7JNBaw', text: 'Discord' },
   ]
 
   return (

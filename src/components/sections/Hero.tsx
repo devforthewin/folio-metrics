@@ -1,16 +1,21 @@
 'use client'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faDiscord, faGithub, faLinkedinIn, faTelegramPlane, faYandex } from '@fortawesome/free-brands-svg-icons'
-import { useTranslations } from 'next-intl'
+import { faGithub, faLinkedinIn, faTelegramPlane, faYandex } from '@fortawesome/free-brands-svg-icons'
+import { useLocale, useTranslations } from 'next-intl'
 import Image from 'next/image'
 
 import ContactInfo from '@/components/common/ContactInfo'
-import myAva from '@/assets/images/my_ava.jpg'
+
+import myAva from '../../../public/assets/images/my_ava.jpg'
 
 
 export default function Hero() {
   const t = useTranslations('Hero')
+  const locale = useLocale()
+
+  const cvPath = `/assets/cv/${locale}.pdf`
+
   return (
     <section
       className="w-full lg:h-[calc(100vh-70px)] lg:h-[calc(100vh-70px)] min-h-full relative flex flex-col lg:flex-row">
@@ -99,8 +104,8 @@ export default function Hero() {
               flex lg:flex-col items-end gap-2
               sm:flex-row">
                 <a
-                  href="../../../../CV_en.pdf"
-                  download
+                  href={cvPath}
+                  download={`CV_${locale}.pdf`}
                   className="
                       w-8 h-8 px-4 lg:w-[38px] lg:h-[38px]
                       flex items-center justify-center
@@ -164,23 +169,6 @@ export default function Hero() {
                 >
                   <FontAwesomeIcon
                     icon={faYandex}
-                    className="text-[1rem]"
-                  />
-                </a>
-                <a
-                  href="https://discord.gg/z6mj7JNBaw"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="
-                      w-8 h-8 lg:w-[38px] lg:h-[38px]
-                      flex items-center justify-center
-                      bg-gray-200 border border-gray-200 rounded
-                      text-gray-800 hover:bg-transparent
-                      transition-all duration-300 ease-in-out
-                    "
-                >
-                  <FontAwesomeIcon
-                    icon={faDiscord}
                     className="text-[1rem]"
                   />
                 </a>
