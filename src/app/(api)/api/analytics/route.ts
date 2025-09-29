@@ -15,8 +15,9 @@ export async function GET() {
     return NextResponse.json({ summary, visits }, {
       headers: { 'Cache-Control': 'no-store' },
     })
-  } catch (err: any) {
-    if (err?.code === 'P2021') {
+  } catch (err: unknown) {
+    const code = (err as { code?: string })?.code
+    if (code === 'P2021') {
       return NextResponse.json(
         { message: 'Database not initialized' },
         { status: 503 },

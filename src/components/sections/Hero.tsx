@@ -9,7 +9,6 @@ import ContactInfo from '@/components/common/ContactInfo'
 
 import myAva from '../../../public/assets/images/my_ava.jpg'
 
-
 export default function Hero() {
   const t = useTranslations('Hero')
   const locale = useLocale()
@@ -37,6 +36,8 @@ export default function Hero() {
           <Image
             src={myAva}
             alt="My photo"
+            width={224}
+            height={224}
             className="
                 rounded-full
                 object-cover

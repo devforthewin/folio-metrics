@@ -1,10 +1,10 @@
 'use client'
 
-import { FormEvent, useEffect, useState } from 'react'
+import { FormEvent, Suspense, useEffect, useState } from 'react'
 import { useRouter, useSearchParams } from 'next/navigation'
 import { signIn } from 'next-auth/react'
 
-export default function LoginPage() {
+function LoginInner() {
   const router = useRouter()
   const searchParams = useSearchParams()
   const [email, setEmail] = useState('')
@@ -33,13 +33,13 @@ export default function LoginPage() {
         password,
       })
 
-      if(result?.error) {
+      if (result?.error) {
         setError('Incorrect email address or password.')
         setIsLoading(false)
       } else {
         router.push('/admin')
       }
-    } catch (err) {
+    } catch {
       setError('An unexpected error occurred')
       setIsLoading(false)
     }
@@ -99,5 +99,13 @@ export default function LoginPage() {
         </form>
       </div>
     </main>
+  )
+}
+
+export default function LoginPage() {
+  return (
+    <Suspense fallback={null}>
+      <LoginInner />
+    </Suspense>
   )
 }

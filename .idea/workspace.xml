@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="156eae76-157f-473e-bd06-5a2fb2289c98" name="Changes" comment="" />
+    <list default="true" id="156eae76-157f-473e-bd06-5a2fb2289c98" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eslint.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/eslint.config.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(admin)/admin/(auth)/login/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(admin)/admin/(auth)/login/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(api)/api/analytics/route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(api)/api/analytics/route.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(site)/[locale]/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(site)/[locale]/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/admin/AdminHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/admin/AdminHeader.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sections/Hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sections/Hero.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -111,7 +120,7 @@
       <workItem from="1758006333458" duration="7490000" />
       <workItem from="1758095274025" duration="15650000" />
       <workItem from="1758810539140" duration="697000" />
-      <workItem from="1759129881579" duration="13824000" />
+      <workItem from="1759129881579" duration="19404000" />
     </task>
     <servers />
   </component>

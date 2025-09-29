@@ -8,8 +8,9 @@ import { Tooltip } from 'react-tooltip'
 import Image from 'next/image'
 import { signOut } from 'next-auth/react'
 
-import myAdminAva from '../../../public/assets/images/jap.png'
 import MobileMenu from '@/components/ui/MobileMenu'
+
+import myAdminAva from '../../../public/assets/images/jap.png'
 
 export default function AdminHeader() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -19,10 +20,10 @@ export default function AdminHeader() {
         className="sticky top-0 z-50 w-full h-[70px] bg-[#F6D8C2] px-4"
       >
         <div className="w-full h-full max-w-[1276px] mx-auto flex items-center">
-          
+
           {/*DESKTOP VERSION*/}
           <div className="hidden md:flex w-full items-center justify-between">
-            
+
             {/*Left block*/}
             <h2
               className="
@@ -31,7 +32,7 @@ export default function AdminHeader() {
             py-2 bg-[#F67769]">
               Arbuz Tanya
             </h2>
-            
+
             {/*Right Block*/}
             <div
               className="flex items-center gap-3 sm:gap-4"
@@ -62,9 +63,9 @@ export default function AdminHeader() {
                     size="lg"/>
                 </a>
               </div>
-              
+
               {/*Lang Block*/}
-              
+
               {/* Avatar Dropdown */}
               <Menu as="div" className="relative">
                 <MenuButton
@@ -81,12 +82,12 @@ export default function AdminHeader() {
                     className="rounded-full"
                   />
                 </MenuButton>
-                
+
                 {/* Tooltip */}
                 <Tooltip id="avatar-tooltip" place="bottom">
                   Demo Samurai
                 </Tooltip>
-                
+
                 {/* Dropdown items */}
                 <Transition
                   as={Fragment}
@@ -113,12 +114,12 @@ export default function AdminHeader() {
                       </MenuItem>
                       <div className="border-t border-gray-200 my-1"/>
                       <MenuItem>
-                        {({active}) => (
+                        {({ active }) => (
                           <button
                             className={`${
                               active ? 'bg-red-100 text-red-600' : 'text-red-500'
                             } block w-full px-4 py-2 text-sm text-left`}
-                            onClick={() => signOut({callbackUrl: '/'})} // Logout and redirect to main
+                            onClick={() => signOut({ callbackUrl: '/' })} // Logout and redirect to main
                           >
                             Logout
                           </button>
@@ -130,7 +131,7 @@ export default function AdminHeader() {
               </Menu>
             </div>
           </div>
-          
+
           {/*MOBILE VERSION*/}
           <div className="flex md:hidden w-full items-center justify-between">
             <h2
@@ -155,7 +156,7 @@ export default function AdminHeader() {
               </svg>
             </button>
           </div>
-        
+
         </div>
       </header>
       <MobileMenu

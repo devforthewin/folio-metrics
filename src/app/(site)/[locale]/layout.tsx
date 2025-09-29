@@ -1,23 +1,22 @@
-import type { Metadata } from 'next'
-
 import '../../../styles/globals.css'
 import { NextIntlClientProvider } from 'next-intl'
 import { getMessages } from 'next-intl/server'
 
 import { robotoMono, robotoSlab } from '@/lib/fonts'
 
+import type { Metadata } from 'next'
+
 export const metadata: Metadata = {
   title: 'Folio-Metrics',
   description: 'Track your portfolio with ease',
 }
 
-export default async function RootLayout({
-  children,
-  params,
-}: {
-  children: React.ReactNode;
-  params: {locale: string};
-}) {
+type Props = {
+  children: React.ReactNode
+  params: Promise<{ locale: string }>
+}
+
+export default async function RootLayout({ children, params }: Props) {
   const { locale } = await params
   const messages = await getMessages({ locale })
 
