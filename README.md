@@ -4,7 +4,8 @@ Welcome to Folio-Metrics, a full-stack open-source project that serves as a live
 
 This project is more than just a static portfolio; it's a dynamic application with real-time visitor analytics, built with performance and professional practices in mind.
 
-**[Live Demo](https://your-deployment-link.com) | [Admin Panel Demo](https://your-deployment-link.com/admin/login)** *(Note: Use `demo@example.com` / `demo123` for the admin panel)*
+**[Live Demo](https://arbuz.buzz) | [Admin Panel Demo](https://arbuz.buzz/admin/login)** 
+*(Note: Use `demo@example.com` / `demo123` for the admin panel)*
 
 ## ✨ Core Features (MVP v0.1.0)
 
@@ -25,22 +26,23 @@ This project is more than just a static portfolio; it's a dynamic application wi
 ## 🗺️ Roadmap
 
 ### 🚀 v0.2.0: Optimization & SEO
-- [ ] Implement data caching strategies for the analytics API.
-- [ ] Add lazy loading for heavy components in the admin dashboard (e.g., chart libraries).
-- [ ] Generate `sitemap.xml` and `robots.txt` for better search engine visibility.
-- [ ] Implement dynamic meta-tags for improved SEO.
-- [ ] Add theme switching support for the landing and admin panel.
+- Implement data caching strategies for the analytics API.
+- Add lazy loading for heavy components in the admin dashboard (e.g., chart libraries).
+- Generate `sitemap.xml` and `robots.txt` for better search engine visibility.
+- Implement dynamic meta-tags for improved SEO.
+- Add theme (light/dark).
 
 ### ✨ v0.3.0: Enhanced Features
-- [ ] Integrate a Telegram bot for real-time visit notifications.
-- [ ] Add more complex charts and metrics to the dashboard (e.g., visits by country, daily trends).
-- [ ] Implement multi-language support for the admin panel.
+- Integrate a Telegram bot for real-time visit notifications.
+- Add more complex charts and metrics to the dashboard (e.g., visits by country, daily trends).
+- Implement multi-language support for the admin panel.
+- First set of resume templates (several ready-made designs).
 
 ### 🏆 v1.0.0: Production Ready
-- [ ] Implement a full suite of tests (Unit, Integration, and E2E).
-- [ ] Set up a CI/CD pipeline with GitHub Actions for automated testing and deployment.
-- [ ] (Optional) Integrate a Headless CMS for managing landing page content.
-- [ ] Add personal user accounts with individual dashboards and personal statistics.
+- Implement a full suite of tests (Unit, Integration, and E2E).
+- Set up a CI/CD pipeline with GitHub Actions for automated testing and deployment.
+- (Optional) Integrate a Headless CMS for managing landing page content.
+- Add personal user accounts with individual dashboards and personal statistics.
 
 ## 🚀 Getting Started
 
@@ -56,7 +58,7 @@ Follow these steps to get a local copy up and running.
 
 1.  Clone the repo:
     ```sh
-    git clone [https://github.com/devforthewin/folio-metrics.git](https://github.com/devforthewin/folio-metrics.git)
+    git clone https://github.com/devforthewin/folio-metrics.git
     ```
 2.  Navigate to the project directory:
     ```sh
@@ -74,9 +76,16 @@ Follow these steps to get a local copy up and running.
     ```sh
     pnpm prisma migrate dev
     ```
-6.  Run the development server:
+
+6. Seed the database with demo data:
+    ```sh
+    pnpm prisma db seed
+    ```
+    
+7. Run the development server:
     ```sh
     pnpm dev
     ```
+    
 
 Open [http://localhost:3000](http://localhost:3000) to view the project.
