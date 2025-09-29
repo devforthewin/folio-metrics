@@ -22,7 +22,7 @@ export const ExperienceItem = ({ job }: ExperienceItemProps) => {
 
         <div className="w-full md:w-8/12 flex flex-col gap-4">
           <div className="text-sm text-gray-500 space-y-2">
-            <div className="flex flex-wrap justify-left gap-2 items-start">
+            <div className="flex flex-wrap justify-left gap-2 items-center">
               <span className="font-semibold">{tCommon('stack')} </span>
               {job.stack.map((skill) => (
                 <span key={skill} className="bg-gray-200 text-gray-800 text-sm font-medium px-3 py-1 rounded-full">
