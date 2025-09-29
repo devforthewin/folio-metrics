@@ -64,7 +64,7 @@ export default function Additional() {
 
             <div className="flex flex-col md:flex-row gap-3 mb-4">
               <a
-                href={`/admin/login?email=${process.env.NEXT_PUBLIC_DEMO_USER}&password=${process.env.NEXT_PUBLIC_DEMO_PASS}`}
+                href={`/admin/login?email=${process.env.DEMO_USER}&password=${process.env.DEMO_USER_PASSWORD}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="
