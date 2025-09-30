@@ -65,7 +65,7 @@ export default function Hero() {
                 lg:text-left
                 "
             >
-              <span className="text-[1.1rem] sm:text-[1.2rem] text-gray-800 pb-3">[{t('smallTitle')}]</span>
+              <span className="text-[1.2rem] sm:text-[1.4rem] text-gray-800 pb-3">[{t('smallTitle')}]</span>
               <span
                 className="
                   font-bold uppercase block

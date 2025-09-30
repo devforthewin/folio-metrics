@@ -5,7 +5,7 @@
     "language": "RO"
   },
   "Hero": {
-    "smallTitle": "Full-Stack Developer",
+    "smallTitle": "JS-Developer",
     "title": "Tanya Arbuz",
     "description": "Construiesc sisteme scalabile și modulare, cu un accent deosebit pe arhitectură, cod curat și livrare iterativă. Îmi asum responsabilitatea deplină pentru provocări pentru a livra rezultate, căutând continuu modalități de a optimiza procesele de produs și inginerie și transformând problemele complexe în soluții robuste și eficiente.",
     "descriptionMobile": "Construiesc sisteme scalabile și modulare, cu un accent deosebit pe arhitectură, cod curat și livrare iterativă."
@@ -13,7 +13,7 @@
   "AboutMe": {
     "leftTitle": "Despre mine",
     "leftSubtitle": "Un războinic nu se laudă — el pur și simplu știe de ce este capabil.",
-    "description1": "<highlight>Dezvoltator Full-stack</highlight> cu <highlight>peste 4 ani de experiență</highlight>, specializat în <secondary>aplicații web și boți Telegram</secondary>. Sunt competent pe întregul stack, construind <highlight>soluții flexibile și scalabile</highlight>.",
+    "description1": "<highlight>JS-Dezvoltator</highlight> cu <highlight>peste 4 ani de experiență</highlight>, specializat în <secondary>aplicații web și boți Telegram</secondary>. Sunt competent pe întregul stack, construind <highlight>soluții flexibile și scalabile</highlight>.",
     "description2_title": "Prioritățile mele principale sunt:",
     "description2_item1": "Fiabilitatea arhitecturii",
     "description2_item2": "Experiențe prietenoase cu utilizatorul",
@@ -86,7 +86,7 @@
     "copyright": "© 2025 Tanya Arbuz. Toate drepturile rezervate."
   },
   "Common": {
-    "smallTitle": "Dezvoltator Full-Stack",
+    "smallTitle": "JS-Dezvoltator",
     "title": "Tanya Arbuz",
     "location": "Locație",
     "or": "Chișinău",

@@ -5,7 +5,7 @@
     "language": "RU"
   },
   "Hero": {
-    "smallTitle": "Full-Stack Developer",
+    "smallTitle": "JS-Developer",
     "title": "Tanya Arbuz",
     "description": "I build scalable and modular systems with a keen focus on architecture, clean code, and iterative delivery. I take full ownership of challenges to deliver results, continuously seeking ways to enhance product and engineering processes, and transforming complex problems into robust, effective solutions.",
     "descriptionMobile": "I build scalable and modular systems with a keen focus on architecture, clean code, and iterative delivery."
@@ -13,7 +13,7 @@
   "AboutMe": {
     "leftTitle": "About Me",
     "leftSubtitle": "A warrior doesn't boast — he simply knows what he's capable of.",
-    "description1": "<highlight>Full-stack developer</highlight> with <highlight>4+ years of experience</highlight>, specializing in <secondary>web applications and Telegram bots</secondary>. I am proficient across the full stack, building <highlight>flexible and scalable solutions</highlight>.",
+    "description1": "<highlight>JS developer</highlight> with <highlight>4+ years of experience</highlight>, specializing in <secondary>web applications and Telegram bots</secondary>. I am proficient across the full-stack, building <highlight>flexible and scalable solutions</highlight>.",
     "description2_title": "My core priorities are:",
     "description2_item1": "Architectural reliability",
     "description2_item2": "User-friendly experiences",
@@ -86,7 +86,7 @@
     "copyright": "© 2025 Tanya Arbuz. All Rights Reserved."
   },
   "Common": {
-    "smallTitle": "Full-Stack Developer",
+    "smallTitle": "JS-Developer",
     "title": "Tanya Arbuz",
     "location": "Location",
     "or": "Kishinev",
