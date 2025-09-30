@@ -16,16 +16,23 @@ export default function Footer() {
 
         {/*Social Buttons*/}
         <div className="flex justify-center space-x-4 my-6">
-          <a href="https://github.com/devforthewin" className="text-gray-500 hover:text-[#F67769] transition-colors">
+          <a
+            href="https://github.com/devforthewin"
+            target="_blank"
+            className="text-gray-500 hover:text-[#F67769] transition-colors">
             <FontAwesomeIcon icon={faGithub} size="lg" />
           </a>
           <a
             href="https://www.linkedin.com/in/tanya-arbuz-187199221"
+            target="_blank"
             className="text-gray-500 hover:text-[#F67769] transition-colors"
           >
             <FontAwesomeIcon icon={faLinkedinIn} size="lg" />
           </a>
-          <a href="https://t.me/tanya_arbuz" className="text-gray-500 hover:text-[#F67769] transition-colors">
+          <a
+            href="https://t.me/tanya_arbuz"
+            target="_blank"
+            className="text-gray-500 hover:text-[#F67769] transition-colors">
             <FontAwesomeIcon icon={faTelegramPlane} size="lg" />
           </a>
           <a

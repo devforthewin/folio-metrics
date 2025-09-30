@@ -7,10 +7,12 @@ import { Menu, MenuItem, Transition, MenuItems, MenuButton } from '@headlessui/r
 import { Tooltip } from 'react-tooltip'
 import Image from 'next/image'
 import { signOut } from 'next-auth/react'
+import Link from 'next/link'
 
 import MobileMenu from '@/components/ui/MobileMenu'
 
 import myAdminAva from '../../../public/assets/images/jap.png'
+
 
 export default function AdminHeader() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -21,14 +23,17 @@ export default function AdminHeader() {
           {/*DESKTOP VERSION*/}
           <div className="hidden md:flex w-full items-center justify-between">
             {/*Left block*/}
-            <h2
-              className="
-            w-[230px] h-[38px]
-            text-md font-bold uppercase text-[#FFFFFF] text-center
-            py-2 bg-[#F67769]"
-            >
-              Arbuz Tanya
-            </h2>
+            <Link href="/">
+              <h2
+                className="
+                  w-[230px] h-[38px]
+                  text-md font-bold uppercase text-[#FFFFFF] text-center
+                  py-2 bg-[#F67769]
+                  cursor-pointer transition-opacity hover:opacity-90"
+              >
+                Arbuz Tanya
+              </h2>
+            </Link>
 
             {/*Right Block*/}
             <div className="flex items-center gap-3 sm:gap-4">
@@ -44,11 +49,15 @@ export default function AdminHeader() {
                 </a>
                 <a
                   href="https://www.linkedin.com/in/tanya-arbuz-187199221"
+                  target="_blank"
                   className="text-gray-500 hover:text-[#F67769] transition-colors"
                 >
                   <FontAwesomeIcon icon={faLinkedinIn} size="lg" />
                 </a>
-                <a href="https://t.me/tanya_arbuz" className="text-gray-500 hover:text-[#F67769] transition-colors">
+                <a
+                  href="https://t.me/tanya_arbuz"
+                  target="_blank"
+                  className="text-gray-500 hover:text-[#F67769] transition-colors">
                   <FontAwesomeIcon icon={faTelegramPlane} size="lg" />
                 </a>
               </div>
