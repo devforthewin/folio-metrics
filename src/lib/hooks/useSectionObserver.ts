@@ -16,7 +16,7 @@ export function useSectionObserver() {
         })
       },
       {
-        threshold: 0.6, // 60%
+        threshold: 0.3, // 30%
       },
     )
 
@@ -34,7 +34,7 @@ export function useSectionObserver() {
       }
 
       // reliably sends data even when the tab is closed
-      navigator.sendBeacon('/api/track', JSON.stringify(data))
+      navigator.sendBeacon('/api/track-visit', JSON.stringify(data))
     }
 
     // add page unload event listener
