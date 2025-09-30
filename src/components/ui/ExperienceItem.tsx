@@ -3,7 +3,7 @@ import { useTranslations } from 'next-intl'
 import { ExperienceItemType } from '@/types/types'
 
 type ExperienceItemProps = {
-  job: ExperienceItemType;
+  job: ExperienceItemType
 }
 export const ExperienceItem = ({ job }: ExperienceItemProps) => {
   const t = useTranslations('Experience')
@@ -33,9 +33,7 @@ export const ExperienceItem = ({ job }: ExperienceItemProps) => {
           </div>
 
           <div className="text-sm text-gray-500 space-y-2">
-            <p>
-              {t(job.description)}
-            </p>
+            <p>{t(job.description)}</p>
             <p>
               <span className="font-semibold">🏆 {tCommon('result')} </span>
               {t(job.result)}

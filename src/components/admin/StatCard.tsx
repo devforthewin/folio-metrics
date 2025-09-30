@@ -1,8 +1,8 @@
 type StatCardProps = {
-  title: string;
-  value: string | number;
-  isLoading: boolean;
-};
+  title: string
+  value: string | number
+  isLoading: boolean
+}
 
 export default function StatCard({ title, value, isLoading }: StatCardProps) {
   if (isLoading) {

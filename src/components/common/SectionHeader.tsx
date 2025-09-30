@@ -1,10 +1,10 @@
 import clsx from 'clsx'
 
 type SectionHeaderProps = {
-  title: string;
-  subtitle?: string;
+  title: string
+  subtitle?: string
   theme: 'cream' | 'peach'
-};
+}
 
 const SectionHeader = ({ title, subtitle, theme }: SectionHeaderProps) => {
   const themeClasses = {
@@ -39,9 +39,7 @@ const SectionHeader = ({ title, subtitle, theme }: SectionHeaderProps) => {
         >
           {title}
         </h2>
-        <blockquote className="text-sm text-gray-600 mt-3 sm:mt-4 font-normal italic">
-          [ {subtitle} ]
-        </blockquote>
+        <blockquote className="text-sm text-gray-600 mt-3 sm:mt-4 font-normal italic">[ {subtitle} ]</blockquote>
       </div>
     </div>
   )

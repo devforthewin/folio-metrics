@@ -1,13 +1,8 @@
 'use client'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-  faGithub,
-  faLinkedinIn,
-  faTelegramPlane, faYandex,
-} from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faLinkedinIn, faTelegramPlane, faYandex } from '@fortawesome/free-brands-svg-icons'
 import { useTranslations } from 'next-intl'
-
 
 export default function Footer() {
   const t = useTranslations('Footer')
@@ -21,39 +16,30 @@ export default function Footer() {
 
         {/*Social Buttons*/}
         <div className="flex justify-center space-x-4 my-6">
-          <a
-            href="https://github.com/devforthewin"
-            className="text-gray-500 hover:text-[#F67769] transition-colors"><FontAwesomeIcon
-              icon={faGithub}
-              size="lg"/></a>
+          <a href="https://github.com/devforthewin" className="text-gray-500 hover:text-[#F67769] transition-colors">
+            <FontAwesomeIcon icon={faGithub} size="lg" />
+          </a>
           <a
             href="https://www.linkedin.com/in/tanya-arbuz-187199221"
-            className="text-gray-500 hover:text-[#F67769] transition-colors"><FontAwesomeIcon
-              icon={faLinkedinIn}
-              size="lg"/></a>
-          <a
-            href="https://t.me/tanya_arbuz"
-            className="text-gray-500 hover:text-[#F67769] transition-colors"><FontAwesomeIcon
-              icon={faTelegramPlane}
-              size="lg"/>
+            className="text-gray-500 hover:text-[#F67769] transition-colors"
+          >
+            <FontAwesomeIcon icon={faLinkedinIn} size="lg" />
+          </a>
+          <a href="https://t.me/tanya_arbuz" className="text-gray-500 hover:text-[#F67769] transition-colors">
+            <FontAwesomeIcon icon={faTelegramPlane} size="lg" />
           </a>
           <a
             href="https://mail.yandex.ru/compose?to=arbuztatiana@yandex.ru"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-500 hover:text-[#F67769] transition-colors">
-            <FontAwesomeIcon
-              icon={faYandex}
-              size="lg"
-            />
+            className="text-gray-500 hover:text-[#F67769] transition-colors"
+          >
+            <FontAwesomeIcon icon={faYandex} size="lg" />
           </a>
-
         </div>
 
         {/* Копирайт и год */}
-        <p className="text-sm text-gray-400">
-          © {new Date().getFullYear()} Tanya Arbuz. All Rights Reserved.
-        </p>
+        <p className="text-sm text-gray-400">© {new Date().getFullYear()} Tanya Arbuz. All Rights Reserved.</p>
       </div>
     </footer>
   )

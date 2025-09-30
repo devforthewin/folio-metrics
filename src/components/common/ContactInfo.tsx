@@ -10,7 +10,8 @@ export default function ContactInfo() {
       grid grid-cols-1 md:grid-cols-4 sm:grid-cols-2
       gap-8 leading-[1.75]
       text-center sm:text-left
-    ">
+    "
+    >
       <div>
         <h4 className="font-semibold text-[#F67769]">{t('location')}</h4>
         <p className="text-gray-800 font-normal">{t('or')}</p>

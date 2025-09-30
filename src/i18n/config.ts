@@ -1,5 +1,5 @@
 export const locales = ['en', 'ro', 'ru'] as const
-export type AppLocale = typeof locales[number]
+export type AppLocale = (typeof locales)[number]
 
 export const defaultLocale: AppLocale = 'en'
 

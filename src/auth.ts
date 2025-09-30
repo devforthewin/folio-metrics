@@ -19,7 +19,8 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
       },
       async authorize(credentials) {
         const { email, password } = (credentials ?? {}) as {
-          email?: string; password?: string;
+          email?: string
+          password?: string
         }
 
         if (!email || !password) {
@@ -30,13 +31,13 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
           where: { email: email },
         })
 
-        if(!user || !user.password) {
+        if (!user || !user.password) {
           throw new Error('User not found')
         }
 
         const isPasswordValid = bcrypt.compare(password, user.password)
 
-        if(!isPasswordValid) {
+        if (!isPasswordValid) {
           throw new Error('Incorrect password')
         }
 
@@ -52,7 +53,7 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
   callbacks: {
     //callback for token extension
     jwt({ token, user }) {
-      if(user) {
+      if (user) {
         token.id = user.id
       }
       return token

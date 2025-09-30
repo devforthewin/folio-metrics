@@ -14,14 +14,26 @@ export default function LandingPage() {
   useSectionObserver()
   return (
     <div className="bg-white w-full relative text-gray-800">
-      <Header/>
-      <section id="hero"><Hero/></section>
-      <section id="intro"><Intro/></section>
-      <section id="skills"><TechnicalSkills/></section>
-      <section id="experience"><Experience/></section>
-      <section id="education"><Education/></section>
-      <section id="adds"><Additional/></section>
-      <Footer/>
+      <Header />
+      <section id="hero">
+        <Hero />
+      </section>
+      <section id="intro">
+        <Intro />
+      </section>
+      <section id="skills">
+        <TechnicalSkills />
+      </section>
+      <section id="experience">
+        <Experience />
+      </section>
+      <section id="education">
+        <Education />
+      </section>
+      <section id="adds">
+        <Additional />
+      </section>
+      <Footer />
     </div>
   )
 }

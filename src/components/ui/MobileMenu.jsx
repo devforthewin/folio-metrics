@@ -48,21 +48,21 @@ export default function MobileMenu({ isOpen, onClose, socials, user, onLogout })
                 aria-label="Close menu"
               >
                 <svg
-                  xmlns="http://www.w3.org/2000/svg" fill="none"
-                  viewBox="0 0 24 24" strokeWidth={1.5}
-                  stroke="currentColor" className="w-8 h-8">
-                  <path
-                    strokeLinecap="round" strokeLinejoin="round"
-                    d="M6 18L18 6M6 6l12 12" />
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="w-8 h-8"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                 </svg>
               </button>
             </div>
 
             {/* Navigation and socials */}
             <nav className="flex flex-col flex-grow gap-4">
-              <span className="text-sm font-semibold tracking-wider text-gray-400 uppercase">
-                Contacts
-              </span>
+              <span className="text-sm font-semibold tracking-wider text-gray-400 uppercase">Contacts</span>
               {socialLinks.map((link, index) => (
                 <a
                   key={index}
@@ -80,10 +80,7 @@ export default function MobileMenu({ isOpen, onClose, socials, user, onLogout })
             {/* Bottom part: profile and close */}
             <div className="pt-6 mt-6 border-t border-gray-700">
               <div className="flex items-center gap-4 mb-4">
-                <Image
-                  src={user.avatar} alt="User Avatar"
-                  width={48} height={48}
-                  className="rounded-full" />
+                <Image src={user.avatar} alt="User Avatar" width={48} height={48} className="rounded-full" />
                 <div>
                   <div className="font-semibold">{user.name}</div>
                   <div className="text-sm text-gray-400">Admin</div>

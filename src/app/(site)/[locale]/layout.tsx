@@ -11,23 +11,20 @@ export const metadata: Metadata = {
   description: 'Track your portfolio with ease',
 }
 
-type Props = {
+export default async function RootLayout({
+   children,
+   params,
+}: {
   children: React.ReactNode
   params: Promise<{ locale: string }>
-}
-
-export default async function RootLayout({ children, params }: Props) {
+}) {
   const { locale } = await params
   const messages = await getMessages({ locale })
 
   return (
     <html lang={locale}>
       <NextIntlClientProvider locale={locale} messages={messages}>
-        <body
-          className={`${robotoSlab.variable} ${robotoMono.variable} antialiased`}
-        >
-          {children}
-        </body>
+        <body className={`${robotoSlab.variable} ${robotoMono.variable} antialiased`}>{children}</body>
       </NextIntlClientProvider>
     </html>
   )

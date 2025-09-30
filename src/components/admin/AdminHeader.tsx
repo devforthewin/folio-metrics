@@ -16,51 +16,40 @@ export default function AdminHeader() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   return (
     <>
-      <header
-        className="sticky top-0 z-50 w-full h-[70px] bg-[#F6D8C2] px-4"
-      >
+      <header className="sticky top-0 z-50 w-full h-[70px] bg-[#F6D8C2] px-4">
         <div className="w-full h-full max-w-[1276px] mx-auto flex items-center">
-
           {/*DESKTOP VERSION*/}
           <div className="hidden md:flex w-full items-center justify-between">
-
             {/*Left block*/}
             <h2
               className="
             w-[230px] h-[38px]
             text-md font-bold uppercase text-[#FFFFFF] text-center
-            py-2 bg-[#F67769]">
+            py-2 bg-[#F67769]"
+            >
               Arbuz Tanya
             </h2>
 
             {/*Right Block*/}
-            <div
-              className="flex items-center gap-3 sm:gap-4"
-            >
+            <div className="flex items-center gap-3 sm:gap-4">
               {/*Socials Buttons*/}
               <div className="flex items-center gap-3 sm:gap-4">
                 <a
                   href="https://mail.yandex.ru/compose?to=arbuztatiana@yandex.ru"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-500 hover:text-[#F67769] transition-colors">
-                  <FontAwesomeIcon
-                    icon={faYandex}
-                    size="lg"/>
+                  className="text-gray-500 hover:text-[#F67769] transition-colors"
+                >
+                  <FontAwesomeIcon icon={faYandex} size="lg" />
                 </a>
                 <a
                   href="https://www.linkedin.com/in/tanya-arbuz-187199221"
-                  className="text-gray-500 hover:text-[#F67769] transition-colors">
-                  <FontAwesomeIcon
-                    icon={faLinkedinIn}
-                    size="lg"/>
+                  className="text-gray-500 hover:text-[#F67769] transition-colors"
+                >
+                  <FontAwesomeIcon icon={faLinkedinIn} size="lg" />
                 </a>
-                <a
-                  href="https://t.me/tanya_arbuz"
-                  className="text-gray-500 hover:text-[#F67769] transition-colors">
-                  <FontAwesomeIcon
-                    icon={faTelegramPlane}
-                    size="lg"/>
+                <a href="https://t.me/tanya_arbuz" className="text-gray-500 hover:text-[#F67769] transition-colors">
+                  <FontAwesomeIcon icon={faTelegramPlane} size="lg" />
                 </a>
               </div>
 
@@ -74,13 +63,7 @@ export default function AdminHeader() {
                          hover:ring-2 hover:ring-[#F67769] transition
                          p-1"
                 >
-                  <Image
-                    src={myAdminAva}
-                    alt="User Avatar"
-                    width={41}
-                    height={41}
-                    className="rounded-full"
-                  />
+                  <Image src={myAdminAva} alt="User Avatar" width={41} height={41} className="rounded-full" />
                 </MenuButton>
 
                 {/* Tooltip */}
@@ -105,14 +88,10 @@ export default function AdminHeader() {
                     <div className="py-1">
                       <MenuItem>
                         {() => (
-                          <span
-                            className="block px-4 py-2 text-sm text-gray-400 cursor-not-allowed"
-                          >
-                          Profile
-                        </span>
+                          <span className="block px-4 py-2 text-sm text-gray-400 cursor-not-allowed">Profile</span>
                         )}
                       </MenuItem>
-                      <div className="border-t border-gray-200 my-1"/>
+                      <div className="border-t border-gray-200 my-1" />
                       <MenuItem>
                         {({ active }) => (
                           <button
@@ -138,7 +117,8 @@ export default function AdminHeader() {
               className="
             w-[230px] h-[38px]
             text-md font-bold uppercase text-[#FFFFFF] text-center
-            py-2 bg-[#F67769]">
+            py-2 bg-[#F67769]"
+            >
               Arbuz Tanya
             </h2>
             <button
@@ -147,16 +127,17 @@ export default function AdminHeader() {
               aria-label="Open menu"
             >
               <svg
-                xmlns="http://www.w3.org/2000/svg" fill="none"
-                viewBox="0 0 24 24" strokeWidth={1.5}
-                stroke="currentColor" className="w-8 h-8">
-                <path
-                  strokeLinecap="round" strokeLinejoin="round"
-                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="w-8 h-8"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
               </svg>
             </button>
           </div>
-
         </div>
       </header>
       <MobileMenu

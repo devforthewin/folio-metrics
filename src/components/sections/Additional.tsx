@@ -14,15 +14,12 @@ export default function Additional() {
 
   return (
     <section className="flex w-full text-gray-700 relative">
-
-      <div className="absolute top-0 left-0 w-1/2 h-full lg:bg-[#F6D8C2] z-0 md:bg-gray-50"/>
-      <div className="absolute top-0 right-0 w-1/2 h-full bg-[#FCF8F6] z-0"/>
+      <div className="absolute top-0 left-0 w-1/2 h-full lg:bg-[#F6D8C2] z-0 md:bg-gray-50" />
+      <div className="absolute top-0 right-0 w-1/2 h-full bg-[#FCF8F6] z-0" />
 
       <div className="w-full z-10 max-w-[1276px] mx-auto flex flex-col lg:flex-row h-full">
         {/* Левая часть */}
-        <SectionHeader
-          title={t('leftTitle')} subtitle={t('leftSubtitle')}
-          theme="peach"/>
+        <SectionHeader title={t('leftTitle')} subtitle={t('leftSubtitle')} theme="peach" />
 
         {/* Right Part */}
         <div
@@ -39,14 +36,10 @@ export default function Additional() {
         >
           <div className="flex flex-col">
             {/* Intro */}
-            <p className="text-base mb-4 text-gray-700">
-              {t('intro')}
-            </p>
+            <p className="text-base mb-4 text-gray-700">{t('intro')}</p>
 
             {/* Project Name */}
-            <h3 className="text-lg font-bold uppercase text-[#F67769] mb-4">
-              {t('projectTitle')}
-            </h3>
+            <h3 className="text-lg font-bold uppercase text-[#F67769] mb-4">{t('projectTitle')}</h3>
 
             {/* Fetches */}
             <ul className="space-y-2 text-sm text-gray-800 mb-6">
@@ -73,7 +66,7 @@ export default function Additional() {
         hover:bg-gray-700 transition-colors duration-300
       "
               >
-                <FontAwesomeIcon icon={faEye} className="mr-3"/>
+                <FontAwesomeIcon icon={faEye} className="mr-3" />
                 {t('buttonDemoText')}
               </a>
 
@@ -87,11 +80,10 @@ export default function Additional() {
         hover:bg-gray-700 transition-colors duration-300
       "
               >
-                <FontAwesomeIcon icon={faGithub} className="mr-3"/>
+                <FontAwesomeIcon icon={faGithub} className="mr-3" />
                 {t('buttonText')}
               </a>
             </div>
-
           </div>
         </div>
       </div>

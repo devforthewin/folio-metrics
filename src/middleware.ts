@@ -21,7 +21,7 @@ export default auth((req) => {
 
   const intlResponse = intlMiddleware(req)
 
-  if(isAdminRoute) {
+  if (isAdminRoute) {
     if (isAuthPage && isLoggedIn) {
       return NextResponse.redirect(new URL('/admin', req.nextUrl))
     }

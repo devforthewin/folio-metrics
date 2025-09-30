@@ -48,9 +48,7 @@ function LoginInner() {
   return (
     <main className="h-screen w-screen bg-[#FBE1D0] flex items-center justify-center p-4">
       <div className="relative w-full max-w-[450px] bg-white rounded-2xl shadow-lg p-6">
-        <h1 className="text-2xl font-bold text-center mb-6 text-gray-800">
-          Admin Panel Login
-        </h1>
+        <h1 className="text-2xl font-bold text-center mb-6 text-gray-800">Admin Panel Login</h1>
 
         <form onSubmit={handleSubmit} className="space-y-5">
           <div>

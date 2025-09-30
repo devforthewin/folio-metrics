@@ -9,15 +9,12 @@ export default function Education() {
 
   return (
     <section className="flex w-full text-gray-700 relative">
-
-      <div className="absolute top-0 left-0 w-1/2 h-full lg:bg-[#FBE1D0] z-0 md:bg-gray-50"/>
-      <div className="absolute top-0 right-0 w-1/2 h-full bg-[#FFFFFF] z-0"/>
+      <div className="absolute top-0 left-0 w-1/2 h-full lg:bg-[#FBE1D0] z-0 md:bg-gray-50" />
+      <div className="absolute top-0 right-0 w-1/2 h-full bg-[#FFFFFF] z-0" />
 
       <div className="w-full z-10 max-w-[1276px] mx-auto flex flex-col lg:flex-row h-full">
         {/* Left Part */}
-        <SectionHeader
-          title={t('leftTitle')} subtitle={t('leftSubtitle')}
-          theme="cream"/>
+        <SectionHeader title={t('leftTitle')} subtitle={t('leftSubtitle')} theme="cream" />
 
         {/* Right Part */}
         <div
@@ -31,16 +28,10 @@ export default function Education() {
           <div className="flex mb-12 relative pl-8">
             <div className="flex w-full gap-4 items-start">
               <div className="flex flex-col">
-                <h3 className="text-base font-bold uppercase text-[#F67769] mb-2">
-                  {t('educ')}
-                </h3>
-                <hr
-                  className="w-full h-[3px] bg-[#F67769] border-none rounded-full my-2">
-                </hr>
+                <h3 className="text-base font-bold uppercase text-[#F67769] mb-2">{t('educ')}</h3>
+                <hr className="w-full h-[3px] bg-[#F67769] border-none rounded-full my-2"></hr>
                 <div>
-                  <h3 className="text-base font-bold uppercase text-[#F67769] mb-3">
-                    {t('pathTitle')}
-                  </h3>
+                  <h3 className="text-base font-bold uppercase text-[#F67769] mb-3">{t('pathTitle')}</h3>
                   <ul className="space-y-3 text-sm text-gray-700">
                     <li className="flex items-start">
                       <span className="font-bold text-[#F67769] mr-3 w-12">2011</span>
@@ -59,7 +50,6 @@ export default function Education() {
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </section>

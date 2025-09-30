@@ -26,12 +26,7 @@ export default function SkillBar({ name, level }: SkillBarProps) {
   }, [level])
 
   const blocks = Array.from({ length: totalLength }).map((_, idx) => (
-    <span
-      key={idx}
-      className={`text-lg ${
-        idx < filledLength ? 'text-[#F67769]' : 'text-gray-300'
-      }`}
-    >
+    <span key={idx} className={`text-lg ${idx < filledLength ? 'text-[#F67769]' : 'text-gray-300'}`}>
       •
     </span>
   ))

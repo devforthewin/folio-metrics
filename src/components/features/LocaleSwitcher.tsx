@@ -30,9 +30,7 @@ export default function LocaleSwitcher() {
             onClick={() => handleSwitch(locale)}
             className={clsx(
               'transition-colors duration-200',
-              currentLocale === locale
-                ? 'text-[#F67769] bold'
-                : 'hover:text-[#F67769]',
+              currentLocale === locale ? 'text-[#F67769] bold' : 'hover:text-[#F67769]',
             )}
           >
             {locale.toLocaleUpperCase()}

@@ -11,15 +11,12 @@ export default function Experience() {
 
   return (
     <section className="flex w-full text-gray-700 relative">
-
-      <div className="absolute top-0 left-0 w-1/2 h-full lg:bg-[#F6D8C2] z-0 md:bg-gray-50"/>
-      <div className="absolute top-0 right-0 w-1/2 h-full bg-[#FCF8F6] z-0"/>
+      <div className="absolute top-0 left-0 w-1/2 h-full lg:bg-[#F6D8C2] z-0 md:bg-gray-50" />
+      <div className="absolute top-0 right-0 w-1/2 h-full bg-[#FCF8F6] z-0" />
 
       <div className="w-full z-10 max-w-[1276px] mx-auto flex flex-col lg:flex-row h-full">
         {/* Left Part */}
-        <SectionHeader
-          title={t('leftTitle')} subtitle={t('leftSubtitle')}
-          theme="peach"/>
+        <SectionHeader title={t('leftTitle')} subtitle={t('leftSubtitle')} theme="peach" />
 
         {/* Right Part */}
         <div
@@ -34,7 +31,6 @@ export default function Experience() {
             ))}
           </div>
         </div>
-
       </div>
     </section>
   )
