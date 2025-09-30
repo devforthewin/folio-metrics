@@ -63,7 +63,10 @@ export default function AdminHeader() {
                          hover:ring-2 hover:ring-[#F67769] transition
                          p-1"
                 >
-                  <Image src={myAdminAva} alt="User Avatar" width={41} height={41} className="rounded-full" />
+                  <Image
+                    src={myAdminAva} alt="User Avatar"
+                    width={41} height={41}
+                    className="rounded-full" />
                 </MenuButton>
 
                 {/* Tooltip */}
@@ -134,7 +137,9 @@ export default function AdminHeader() {
                 stroke="currentColor"
                 className="w-8 h-8"
               >
-                <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                <path
+                  strokeLinecap="round" strokeLinejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
               </svg>
             </button>
           </div>

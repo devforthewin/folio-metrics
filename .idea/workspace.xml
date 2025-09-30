@@ -6,13 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="156eae76-157f-473e-bd06-5a2fb2289c98" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/cv/en.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/cv/en.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/cv/ro.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/cv/ro.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/cv/ru.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/cv/ru.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sections/Hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sections/Hero.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/messages/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/messages/en.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/messages/ro.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/messages/ro.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/messages/ru.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/messages/ru.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(admin)/admin/(protected)/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(admin)/admin/(protected)/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/admin/AdminHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/admin/AdminHeader.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sections/Education.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sections/Education.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sections/Experience.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sections/Experience.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sections/TechnicalSkills.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sections/TechnicalSkills.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/MobileMenu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/MobileMenu.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +54,7 @@
     "nodejs_package_manager_path": "/home/arbuz/.nvm/versions/node/v20.18.3/bin/pnpm",
     "npm.build.executor": "Run",
     "npm.dev.executor": "Run",
-    "settings.editor.selected.configurable": "settings.javascript.linters.eslint",
+    "settings.editor.selected.configurable": "preferences.sourceCode",
     "ts.external.directory.path": "/home/arbuz/Documents/Projects/GitHub/folio-metrics/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
@@ -133,7 +133,7 @@
       <workItem from="1758095274025" duration="15650000" />
       <workItem from="1758810539140" duration="697000" />
       <workItem from="1759129881579" duration="20037000" />
-      <workItem from="1759209004919" duration="5825000" />
+      <workItem from="1759209004919" duration="7722000" />
     </task>
     <servers />
   </component>

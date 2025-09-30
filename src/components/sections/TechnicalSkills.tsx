@@ -27,10 +27,13 @@ export default function TechnicalSkills() {
 
       <div className="w-full z-10 max-w-[1276px] mx-auto flex flex-col lg:flex-row h-full">
         {/* Left Part */}
-        <SectionHeader title={t('leftTitle')} subtitle={t('leftSubtitle')} theme="cream" />
+        <SectionHeader
+          title={t('leftTitle')} subtitle={t('leftSubtitle')}
+          theme="cream" />
 
         {/* Right */}
-        <div className="bg-[#FFFFFF] flex-1 flex flex-col pt-[1.75rem] px-[1.75rem] lg:pt-[4.375rem] lg:pb-[1.6625rem] md:pt-[1.75rem] md:pb-[1.4rem] md:px-[3.5rem]">
+        <div
+          className="bg-[#FFFFFF] flex-1 flex flex-col pt-[1.75rem] px-[1.75rem] lg:pt-[4.375rem] lg:pb-[1.6625rem] md:pt-[1.75rem] md:pb-[1.4rem] md:px-[3.5rem]">
           <div className="grid grid-cols-1 md:grid-cols-2 sm:grid-cols-2 gap-8">
             {/* Left Column */}
             <div>

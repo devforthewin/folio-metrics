@@ -16,7 +16,9 @@ export default function Experience() {
 
       <div className="w-full z-10 max-w-[1276px] mx-auto flex flex-col lg:flex-row h-full">
         {/* Left Part */}
-        <SectionHeader title={t('leftTitle')} subtitle={t('leftSubtitle')} theme="peach" />
+        <SectionHeader
+          title={t('leftTitle')} subtitle={t('leftSubtitle')}
+          theme="peach" />
 
         {/* Right Part */}
         <div

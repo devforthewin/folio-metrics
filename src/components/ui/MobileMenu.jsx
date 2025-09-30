@@ -39,7 +39,8 @@ export default function MobileMenu({ isOpen, onClose, socials, user, onLogout })
           leaveFrom="translate-x-0"
           leaveTo="translate-x-full"
         >
-          <Dialog.Panel className="fixed top-0 right-0 flex flex-col w-full h-full max-w-xs p-6 bg-[#111827] text-white">
+          <Dialog.Panel
+            className="fixed top-0 right-0 flex flex-col w-full h-full max-w-xs p-6 bg-[#111827] text-white">
             {/* Top part: close and logo */}
             <div className="flex items-center justify-between mb-8">
               <button
@@ -55,7 +56,9 @@ export default function MobileMenu({ isOpen, onClose, socials, user, onLogout })
                   stroke="currentColor"
                   className="w-8 h-8"
                 >
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                  <path
+                    strokeLinecap="round" strokeLinejoin="round"
+                    d="M6 18L18 6M6 6l12 12" />
                 </svg>
               </button>
             </div>
@@ -80,7 +83,10 @@ export default function MobileMenu({ isOpen, onClose, socials, user, onLogout })
             {/* Bottom part: profile and close */}
             <div className="pt-6 mt-6 border-t border-gray-700">
               <div className="flex items-center gap-4 mb-4">
-                <Image src={user.avatar} alt="User Avatar" width={48} height={48} className="rounded-full" />
+                <Image
+                  src={user.avatar} alt="User Avatar"
+                  width={48} height={48}
+                  className="rounded-full" />
                 <div>
                   <div className="font-semibold">{user.name}</div>
                   <div className="text-sm text-gray-400">Admin</div>
