@@ -3,6 +3,8 @@ import bcrypt from 'bcryptjs'
 
 const prisma = new PrismaClient()
 
+const utc = (iso: string) => new Date(iso)
+
 export const mockVisits: Omit<Visit, 'id'>[] = [
   {
     sectionId: 'experience',
@@ -10,8 +12,8 @@ export const mockVisits: Omit<Visit, 'id'>[] = [
     city: 'San Francisco',
     ipAddress: '192.168.0.1',
     userAgent: 'Desktop, Chrome',
-    duration: 125000, // ms
-    createdAt: new Date('2025-08-06T10:00:00Z'),
+    duration: 125_000,
+    createdAt: utc('2025-09-29T10:00:00Z'),
   },
   {
     sectionId: 'adds',
@@ -19,8 +21,8 @@ export const mockVisits: Omit<Visit, 'id'>[] = [
     city: 'Berlin',
     ipAddress: '10.0.0.1',
     userAgent: 'Mobile, Safari',
-    duration: 80000,
-    createdAt: new Date('2025-08-07T12:30:00Z'),
+    duration: 80_000,
+    createdAt: utc('2025-09-30T12:30:00Z'),
   },
   {
     sectionId: 'skills',
@@ -28,8 +30,8 @@ export const mockVisits: Omit<Visit, 'id'>[] = [
     city: 'Paris',
     ipAddress: '172.16.0.1',
     userAgent: 'Desktop, Firefox',
-    duration: 210000,
-    createdAt: new Date('2025-08-07T14:45:00Z'),
+    duration: 210_000,
+    createdAt: utc('2025-09-30T14:45:00Z'),
   },
   {
     sectionId: 'experience',
@@ -37,8 +39,8 @@ export const mockVisits: Omit<Visit, 'id'>[] = [
     city: 'San Francisco',
     ipAddress: '192.168.1.1',
     userAgent: 'Desktop, Chrome',
-    duration: 125000, // ms
-    createdAt: new Date('2025-08-06T10:00:00Z'),
+    duration: 125_000,
+    createdAt: utc('2025-09-29T10:00:00Z'),
   },
   {
     sectionId: 'adds',
@@ -46,8 +48,8 @@ export const mockVisits: Omit<Visit, 'id'>[] = [
     city: 'Berlin',
     ipAddress: '105.0.0.1',
     userAgent: 'Mobile, Safari',
-    duration: 80000,
-    createdAt: new Date('2025-08-07T12:30:00Z'),
+    duration: 80_000,
+    createdAt: utc('2025-09-30T12:30:00Z'),
   },
   {
     sectionId: 'skills',
@@ -55,8 +57,8 @@ export const mockVisits: Omit<Visit, 'id'>[] = [
     city: 'Paris',
     ipAddress: '172.164.0.1',
     userAgent: 'Desktop, Firefox',
-    duration: 210000,
-    createdAt: new Date('2025-08-07T14:45:00Z'),
+    duration: 210_000,
+    createdAt: utc('2025-09-30T14:45:00Z'),
   },
   {
     sectionId: 'experience',
@@ -64,8 +66,8 @@ export const mockVisits: Omit<Visit, 'id'>[] = [
     city: 'San Francisco',
     ipAddress: '192.15.1.1',
     userAgent: 'Desktop, Chrome',
-    duration: 125000, // ms
-    createdAt: new Date('2025-08-06T10:00:00Z'),
+    duration: 125_000,
+    createdAt: utc('2025-09-29T10:00:00Z'),
   },
   {
     sectionId: 'adds',
@@ -73,8 +75,8 @@ export const mockVisits: Omit<Visit, 'id'>[] = [
     city: 'Berlin',
     ipAddress: '10.0.1.1',
     userAgent: 'Mobile, Safari',
-    duration: 80000,
-    createdAt: new Date('2025-08-07T12:30:00Z'),
+    duration: 80_000,
+    createdAt: utc('2025-09-30T12:30:00Z'),
   },
   {
     sectionId: 'skills',
@@ -82,8 +84,8 @@ export const mockVisits: Omit<Visit, 'id'>[] = [
     city: 'Paris',
     ipAddress: '178.16.0.1',
     userAgent: 'Desktop, Firefox',
-    duration: 210000,
-    createdAt: new Date('2025-08-07T14:45:00Z'),
+    duration: 210_000,
+    createdAt: utc('2025-09-30T14:45:00Z'),
   },
   {
     sectionId: 'experience',
@@ -91,8 +93,8 @@ export const mockVisits: Omit<Visit, 'id'>[] = [
     city: 'San Francisco',
     ipAddress: '192.158.1.1',
     userAgent: 'Desktop, Chrome',
-    duration: 125000, // ms
-    createdAt: new Date('2025-08-06T10:00:00Z'),
+    duration: 125_000,
+    createdAt: utc('2025-09-29T10:00:00Z'),
   },
   {
     sectionId: 'adds',
@@ -100,8 +102,8 @@ export const mockVisits: Omit<Visit, 'id'>[] = [
     city: 'Berlin',
     ipAddress: '10.1.0.1',
     userAgent: 'Mobile, Safari',
-    duration: 80000,
-    createdAt: new Date('2025-08-07T12:30:00Z'),
+    duration: 80_000,
+    createdAt: utc('2025-09-30T12:30:00Z'),
   },
   {
     sectionId: 'skills',
@@ -109,8 +111,8 @@ export const mockVisits: Omit<Visit, 'id'>[] = [
     city: 'Paris',
     ipAddress: '172.164.1.1',
     userAgent: 'Desktop, Firefox',
-    duration: 210000,
-    createdAt: new Date('2025-08-07T14:45:00Z'),
+    duration: 210_000,
+    createdAt: utc('2025-09-30T14:45:00Z'),
   },
   {
     sectionId: 'experience',
@@ -118,8 +120,8 @@ export const mockVisits: Omit<Visit, 'id'>[] = [
     city: 'San Francisco',
     ipAddress: '192.168.0.1',
     userAgent: 'Desktop, Chrome',
-    duration: 125000, // ms
-    createdAt: new Date('2025-08-06T10:00:00Z'),
+    duration: 125_000,
+    createdAt: utc('2025-09-29T10:00:00Z'),
   },
   {
     sectionId: 'adds',
@@ -127,8 +129,8 @@ export const mockVisits: Omit<Visit, 'id'>[] = [
     city: 'Berlin',
     ipAddress: '110.1.0.1',
     userAgent: 'Mobile, Safari',
-    duration: 80000,
-    createdAt: new Date('2025-08-07T12:30:00Z'),
+    duration: 80_000,
+    createdAt: utc('2025-09-30T12:30:00Z'),
   },
   {
     sectionId: 'skills',
@@ -136,8 +138,8 @@ export const mockVisits: Omit<Visit, 'id'>[] = [
     city: 'Paris',
     ipAddress: '175.16.0.1',
     userAgent: 'Desktop, Firefox',
-    duration: 210000,
-    createdAt: new Date('2025-08-07T14:45:00Z'),
+    duration: 210_000,
+    createdAt: utc('2025-09-30T14:45:00Z'),
   },
   {
     sectionId: 'experience',
@@ -145,8 +147,8 @@ export const mockVisits: Omit<Visit, 'id'>[] = [
     city: 'San Francisco',
     ipAddress: '192.168.4.1',
     userAgent: 'Desktop, Chrome',
-    duration: 125000, // ms
-    createdAt: new Date('2025-08-06T10:00:00Z'),
+    duration: 125_000,
+    createdAt: utc('2025-09-29T10:00:00Z'),
   },
   {
     sectionId: 'adds',
@@ -154,8 +156,8 @@ export const mockVisits: Omit<Visit, 'id'>[] = [
     city: 'Berlin',
     ipAddress: '108.2.0.1',
     userAgent: 'Mobile, Safari',
-    duration: 80000,
-    createdAt: new Date('2025-08-07T12:30:00Z'),
+    duration: 80_000,
+    createdAt: utc('2025-09-30T12:30:00Z'),
   },
   {
     sectionId: 'skills',
@@ -163,8 +165,8 @@ export const mockVisits: Omit<Visit, 'id'>[] = [
     city: 'Paris',
     ipAddress: '179.16.1.1',
     userAgent: 'Desktop, Firefox',
-    duration: 210000,
-    createdAt: new Date('2025-08-07T14:45:00Z'),
+    duration: 210_000,
+    createdAt: utc('2025-09-30T14:45:00Z'),
   },
 ]
 

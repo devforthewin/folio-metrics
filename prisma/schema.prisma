@@ -21,7 +21,7 @@ model Visit {
   ipAddress String?  @db.VarChar(45)
   userAgent String?  @db.VarChar(512)
   duration  Int?
-  createdAt DateTime @default(now())
+  createdAt DateTime @default(now()) @db.Timestamptz(6)
 
   @@index([sectionId])
   @@index([createdAt])
