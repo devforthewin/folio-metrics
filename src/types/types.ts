@@ -7,3 +7,15 @@ export interface ExperienceItemType {
   description: string
   result: string
 }
+
+//Technical Skills
+export interface SkillGroup {
+  groupName: string;
+  skills: string[];
+}
+
+export interface SkillCategory {
+  category: string;
+  side: 'left' | 'right';
+  groups: SkillGroup[];
+}

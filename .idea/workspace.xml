@@ -5,12 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="156eae76-157f-473e-bd06-5a2fb2289c98" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/prisma/migrations/20250930125146_visit_createdat_timestamptz/migration.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/skillsData.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prisma/schema.prisma" beforeDir="false" afterPath="$PROJECT_DIR$/prisma/schema.prisma" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prisma/seed.ts" beforeDir="false" afterPath="$PROJECT_DIR$/prisma/seed.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sections/Additional.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sections/Additional.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sections/Intro.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sections/Intro.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(admin)/admin/SignOutButton.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/SectionHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/SectionHeader.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sections/Hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sections/Hero.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sections/TechnicalSkills.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sections/TechnicalSkills.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/messages/ru.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/messages/ru.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/types.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +43,7 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/home/arbuz/Documents/Projects/GitHub/folio-metrics/public/assets/cv",
+    "last_opened_file_path": "/home/arbuz/Documents/Projects/GitHub/folio-metrics/src/data",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -59,11 +61,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/data" />
       <recent name="$PROJECT_DIR$/public/assets/cv" />
       <recent name="$PROJECT_DIR$/src/assets/cv" />
       <recent name="$PROJECT_DIR$/src/components/admin" />
       <recent name="$PROJECT_DIR$/src/assets/images" />
-      <recent name="$PROJECT_DIR$/src/app/(admin)/admin" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public" />
@@ -73,7 +75,7 @@
       <recent name="$PROJECT_DIR$/src/types" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.build">
+  <component name="RunManager" selected="npm.dev">
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -96,8 +98,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.build" />
         <item itemvalue="npm.dev" />
+        <item itemvalue="npm.build" />
       </list>
     </recent_temporary>
   </component>
@@ -131,7 +133,8 @@
       <workItem from="1758095274025" duration="15650000" />
       <workItem from="1758810539140" duration="697000" />
       <workItem from="1759129881579" duration="20037000" />
-      <workItem from="1759209004919" duration="21816000" />
+      <workItem from="1759209004919" duration="25284000" />
+      <workItem from="1759301107941" duration="15089000" />
     </task>
     <servers />
   </component>
