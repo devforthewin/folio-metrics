@@ -5,17 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="156eae76-157f-473e-bd06-5a2fb2289c98" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/common/PageObserver.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/common/ContactInfo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/ContactInfo.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sections/Education.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sections/Education.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sections/Hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sections/Hero.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sections/TechnicalSkills.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sections/TechnicalSkills.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/MobileMenu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/MobileMenu.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/experienceData.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/experienceData.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/skillsData.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/skillsData.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/messages/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/messages/en.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/messages/ro.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/messages/ro.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/messages/ru.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/messages/ru.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(site)/[locale]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(site)/[locale]/page.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,7 +133,7 @@
       <workItem from="1759301107941" duration="17160000" />
       <workItem from="1759393821549" duration="6746000" />
       <workItem from="1759488545699" duration="3231000" />
-      <workItem from="1759494925584" duration="6796000" />
+      <workItem from="1759494925584" duration="8674000" />
     </task>
     <servers />
   </component>

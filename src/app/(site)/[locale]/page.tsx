@@ -1,19 +1,20 @@
-'use client'
+import dynamic from 'next/dynamic'
 
 import Header from '@/components/common/Header'
 import Hero from '@/components/sections/Hero'
 import Intro from '@/components/sections/Intro'
-import TechnicalSkills from '@/components/sections/TechnicalSkills'
-import Experience from '@/components/sections/Experience'
-import Education from '@/components/sections/Education'
-import Additional from '@/components/sections/Additional'
-import Footer from '@/components/common/Footer'
-import { useSectionObserver } from '@/lib/hooks/useSectionObserver'
+import PageObserver from '@/components/common/PageObserver'
+
+const TechnicalSkills = dynamic(() => import('@/components/sections/TechnicalSkills'))
+const Experience = dynamic(() => import('@/components/sections/Experience'))
+const Education = dynamic(() => import('@/components/sections/Education'))
+const Additional = dynamic(() => import('@/components/sections/Additional'))
+const Footer = dynamic(() => import('@/components/common/Footer'))
 
 export default function LandingPage() {
-  useSectionObserver()
   return (
     <div className="bg-white w-full relative text-gray-800">
+      <PageObserver />
       <Header />
       <section id="hero">
         <Hero />
