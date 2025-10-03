@@ -26,7 +26,7 @@ export default function ContactInfo() {
       </div>
       <div>
         <h4 className="font-semibold text-[#F67769]">{t('mail')}</h4>
-        <p className="text-[#455B84] font-normal">work.arbuz@gmail.com</p>
+        <p className="text-gray-800 font-normal">work.arbuz@gmail.com</p>
       </div>
     </div>
   )

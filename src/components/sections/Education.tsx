@@ -44,8 +44,9 @@ export default function Education() {
                       <span>{t('path.second')}</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="font-bold text-gray-800 mr-3">{t('dailyTitle')}</span>
-                      <span>{t('path.third')}</span>
+                      <span>
+                        <span className="font-bold text-gray-800 mr-3">{t('dailyTitle')}</span>
+                      <span>{t('path.third')}</span></span>
                     </li>
                   </ul>
                 </div>

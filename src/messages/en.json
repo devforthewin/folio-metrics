@@ -5,7 +5,7 @@
     "language": "RU"
   },
   "Hero": {
-    "smallTitle": "JS-Developer",
+    "smallTitle": "Full-stack Software Engineer",
     "title": "Tanya Arbuz",
     "description": "I build scalable and modular systems with a keen focus on architecture, clean code, and iterative delivery. I take full ownership of challenges to deliver results, continuously seeking ways to enhance product and engineering processes, and transforming complex problems into robust, effective solutions.",
     "descriptionMobile": "I build scalable and modular systems with a keen focus on architecture, clean code, and iterative delivery."
@@ -13,8 +13,7 @@
   "AboutMe": {
     "leftTitle": "About Me",
     "leftSubtitle": "A warrior doesn't boast — he simply knows what he's capable of.",
-    "description1": "<highlight>JS developer</highlight> with <highlight>4+ years of experience</highlight>, specializing in <secondary>web applications and Telegram bots</secondary>. I am proficient across the full-stack, building <highlight>flexible and scalable solutions</highlight>.",
-    "description2_title": "My core priorities are:",
+    "description1": "<highlight>Full-stack Software Engineer</highlight> with <highlight>over 4 years of experience in web development</highlight>. I specialize in creating <secondary>scalable web applications with React/Nest.js and integration solutions, including Telegram bots</secondary>. I am confident working with the full development cycle, <secondary>from frontend to CI/CD setup</secondary>.",    "description2_title": "My core priorities are:",
     "description2_item1": "Architectural reliability",
     "description2_item2": "User-friendly experiences",
     "description2_item3": "Process automation",
@@ -23,47 +22,46 @@
   "TechnicalSkills": {
     "leftTitle": "Technical skills",
     "leftSubtitle": "Tools in the hands of a master become an extension of his will.",
-    "frontTitle": "Frontend",
-    "backTitle": "Backend",
-    "infraTitle": "Infrastructure",
-    "otherTitle": "Other",
-    "addTitle": "Additional Tools and Libraries."
+    "coreTitle": "Core stack",
+    "tgTitle": "Telegram Expertise",
+    "toolTitle": "Tools",
+    "otherTitle": "Additional Experience"
   },
   "Experience": {
     "leftTitle": "Work Experience",
     "leftSubtitle": "Every line of code bears the mark of battle. Every project — a new victory.",
     "Stack": "Stack",
     "contract": {
-      "about": "Confidential Client",
-      "description": "Architected and developed a headless CMS from scratch using Payload v3. Implemented custom collections, fields, and access controls, and integrated the CMS with a large-scale Next.js application to enable full-cycle dynamic content management.",
-      "resultDescription": "Delivered a scalable decoupled architecture; provided the client with a user-friendly solution for independent content management, significantly reducing content update times."
+      "about": "Construction company, residential complex SAMPO",
+      "description": "Developed and implemented a headless CMS based on Payload to manage the content of the residential complex's website. Configured data models, access levels, and API, and integrated the system with a Next.js application. Implemented a user-friendly interface for creating and managing pages and news.",
+      "resultDescription": "The client received a flexible and reliable tool for independently managing the website and publishing content without technical support, which increased the speed and quality of information updates."
     },
     "cpabox": {
-      "about": "SaaS platform for media buying automation",
-      "description": "Built and maintained frontend architecture and backend logic. Integrated Keitaro TDS, developed Telegram bots for domain checks, built Telegram Web Apps and webhook architecture. Contributed to technical solutions and architecture.",
-      "resultDescription": "Automated routine operations for traffic arbitrage; strengthened architecture and product-thinking skills."
+      "about": "SaaS platform for traffic arbitrage automation",
+      "description": "I was responsible for the development and support of full-stack modules for a SaaS platform that links campaigns from TDS Keitaro with Facebook ad accounts and anti-detect profiles. I created a Telegram checker bot to monitor domains with renewal notifications. I configured API integration with Keitaro and webhooks for data synchronization with ad networks. I also developed a Telegram Web App that used the Keitaro API to fetch a list of domains, allowing users to select them for tracking and add new ones manually.",
+      "resultDescription": "Automated the management of ad funnels, reducing human error and factor, which allowed users to effectively control campaigns and save time."
     },
     "remotza": {
-      "about": "A company specializing in custom software development",
-      "description": "Developed RESTful APIs, integrated external services, worked with PostgreSQL and Redis caching, contributed to UI with Vue.js.",
-      "resultDescription": "Delivered stable APIs meeting business requirements; improved focus on stability and team communication."
+      "about": "Custom software development",
+      "description": "I participated in the design and development of custom web services. I implemented REST APIs and business logic, configured Redis caching to improve performance and stability with PostgreSQL, and maintained and refined interfaces using Vue.js.",
+      "resultDescription": "Clients received ready-made solutions that simplified user data management and made their services more stable and convenient for end-users."
     },
     "aopsrm": {
-      "about": "A non-profit organization assisting stoma patients in Moldova",
-      "description": "Designed and launched a full-featured CRM: React frontend with Redux and Formik, Laravel REST API backend. Managed deployment with Docker and GitLab CI/CD; handled server admin and support.",
-      "resultDescription": "Delivered end-to-end CRM solution; built strong confidence in full-cycle delivery."
+      "about": "An NGO assisting ostomy patients in Moldova",
+      "description": "I developed a multi-page website for the organization and built a custom CMS for content management, allowing for publishing articles, uploading photos, and adding comments. I configured forms and implemented the core functionality for administration and full project operation. I also set up a CI/CD pipeline via GitLab and deployed the project on a server with a linked domain.",
+      "resultDescription": "The organization received a complete, turn-key website with a CMS — from design and logic to deployment. This empowered them to independently publish materials and communicate with their audience without needing external specialists."
     }
   },
   "Education": {
     "leftTitle": "Education",
     "leftSubtitle": "The path isn’t defined by diplomas. Anything that makes you stronger is part of the journey.",
     "educ": "Russian University of Cooperation | Accounting and Finance | 2003–2007",
-    "pathTitle": "from finance to full-stack:",
+    "pathTitle": "from finance to Full-stack Software Engineer:",
     "dailyTitle": "Daily Learning:",
     "path": {
-      "first": "2011: First Step into Tech (Webmaster Course",
+      "first": "2011: First step in IT (Web Development)",
       "second": "2012-Present: From Hobby Projects to Professional Systems",
-      "third": "Following industry leaders, documentation, and best practices."
+      "third": "For professional growth, I regularly analyze technical articles and conference talks, applying new knowledge to improve code quality and find more effective solutions in my work."
     }
   },
   "Additional": {
@@ -72,11 +70,11 @@
     "intro": "This site is more than a resume; it's a full-stack open-source project showcasing my approach to software development.",
     "projectTitle": "Folio Metrics Project",
     "projectFeatures": {
-      "item1": "An interactive resume with <highlight>real-time visitor analytics</highlight>.",
-      "item2": "Optimized architecture: <highlight>Next.js, Prisma + MariaDB, and caching</highlight>.",
-      "item3": "Professional practices: <highlight>type safety, lazy loading, and middleware</highlight>.",
-      "item4": "An admin panel with <highlight>metrics visualization</highlight>.",
-      "item5": "Performance (Lighthouse): <highlight>95+ on all Core Web Vitals</highlight>."
+      "item1": "<highlight>Interactive resume</highlight> with a custom visit analytics system.",
+      "item2": "<highlight>Modern architecture:</highlight> Next.js (App Router), Prisma + PostgreSQL.",
+      "item3": "Professional practices: <highlight>TypeScript (type-safety) and Middleware</highlight>.",
+      "item4": "<highlight>Secure admin panel</highlight> (NextAuth.js) with metrics visualization.",
+      "item5": "Performance optimization (Lighthouse): <highlight>95+ across all Core Web Vitals</highlight>."
     },
     "buttonText": "Explore the Code",
     "buttonDemoText": "Watch Demo"
@@ -86,7 +84,7 @@
     "copyright": "© 2025 Tanya Arbuz. All Rights Reserved."
   },
   "Common": {
-    "smallTitle": "JS-Developer",
+    "smallTitle": "Full-stack Software Engineer",
     "title": "Tanya Arbuz",
     "location": "Location",
     "or": "Kishinev",

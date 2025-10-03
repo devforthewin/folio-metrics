@@ -33,7 +33,7 @@ export default function TechnicalSkills() {
               {leftCategories.map((category) => (
                 <section key={category.category}>
                   <h3 className="text-md font-bold mb-4 uppercase text-[#F67769]">
-                    {category.category}
+                    {t(category.category)}
                   </h3>
                   <ul className="space-y-3">
                     {category.groups.map((group) => (
@@ -58,7 +58,7 @@ export default function TechnicalSkills() {
               {rightCategories.map((category) => (
                 <section key={category.category}>
                   <h3 className="text-md font-bold mb-4 uppercase text-[#F67769]">
-                    {category.category}
+                    {t(category.category)}
                   </h3>
                   <ul className="space-y-3">
                     {category.groups.map((group) => (

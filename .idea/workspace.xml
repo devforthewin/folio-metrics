@@ -5,14 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="156eae76-157f-473e-bd06-5a2fb2289c98" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/data/skillsData.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(admin)/admin/SignOutButton.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/common/SectionHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/SectionHeader.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/ContactInfo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/ContactInfo.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sections/Education.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sections/Education.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/sections/Hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sections/Hero.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/sections/TechnicalSkills.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sections/TechnicalSkills.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/MobileMenu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/MobileMenu.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/experienceData.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/experienceData.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/skillsData.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/skillsData.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/messages/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/messages/en.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/messages/ro.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/messages/ro.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/messages/ru.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/messages/ru.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/types.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,27 +41,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/home/arbuz/Documents/Projects/GitHub/folio-metrics/src/data",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "node",
-    "nodejs_package_manager_path": "/home/arbuz/.nvm/versions/node/v20.18.3/bin/pnpm",
-    "npm.build.executor": "Run",
-    "npm.dev.executor": "Run",
-    "settings.editor.selected.configurable": "preferences.sourceCode",
-    "ts.external.directory.path": "/home/arbuz/Documents/Projects/GitHub/folio-metrics/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/arbuz/Documents/Projects/GitHub/folio-metrics/src/data&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;/home/arbuz/.nvm/versions/node/v20.18.3/bin/pnpm&quot;,
+    &quot;npm.build.executor&quot;: &quot;Run&quot;,
+    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/home/arbuz/Documents/Projects/GitHub/folio-metrics/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/data" />
@@ -134,7 +137,10 @@
       <workItem from="1758810539140" duration="697000" />
       <workItem from="1759129881579" duration="20037000" />
       <workItem from="1759209004919" duration="25284000" />
-      <workItem from="1759301107941" duration="15089000" />
+      <workItem from="1759301107941" duration="17160000" />
+      <workItem from="1759393821549" duration="6746000" />
+      <workItem from="1759488545699" duration="3231000" />
+      <workItem from="1759494925584" duration="6796000" />
     </task>
     <servers />
   </component>

@@ -5,7 +5,7 @@
     "language": "RO"
   },
   "Hero": {
-    "smallTitle": "JS-Developer",
+    "smallTitle": "Full-stack Software Engineer",
     "title": "Tanya Arbuz",
     "description": "Construiesc sisteme scalabile și modulare, cu un accent deosebit pe arhitectură, cod curat și livrare iterativă. Îmi asum responsabilitatea deplină pentru provocări pentru a livra rezultate, căutând continuu modalități de a optimiza procesele de produs și inginerie și transformând problemele complexe în soluții robuste și eficiente.",
     "descriptionMobile": "Construiesc sisteme scalabile și modulare, cu un accent deosebit pe arhitectură, cod curat și livrare iterativă."
@@ -13,8 +13,7 @@
   "AboutMe": {
     "leftTitle": "Despre mine",
     "leftSubtitle": "Un războinic nu se laudă — el pur și simplu știe de ce este capabil.",
-    "description1": "<highlight>JS-Dezvoltator</highlight> cu <highlight>peste 4 ani de experiență</highlight>, specializat în <secondary>aplicații web și boți Telegram</secondary>. Sunt competent pe întregul stack, construind <highlight>soluții flexibile și scalabile</highlight>.",
-    "description2_title": "Prioritățile mele principale sunt:",
+    "description1": "<highlight>Engineer software full-stack</highlight> cu <highlight>o experiență de peste 4 ani în dezvoltarea web</highlight>. Sunt specializat în crearea de <secondary>aplicații web scalabile folosind React/Nest.js și soluții de integrare, inclusiv boți pentru Telegram</secondary>. Lucrez cu încredere cu întregul ciclu de dezvoltare, <secondary>de la front-end până la configurarea CI/CD</secondary>.",    "description2_title": "Prioritățile mele principale sunt:",
     "description2_item1": "Fiabilitatea arhitecturii",
     "description2_item2": "Experiențe prietenoase cu utilizatorul",
     "description2_item3": "Automatizarea proceselor",
@@ -23,47 +22,46 @@
   "TechnicalSkills": {
     "leftTitle": "Competențe tehnice",
     "leftSubtitle": "Instrumentele în mâinile unui maestru devin o extensie a voinței sale.",
-    "frontTitle": "Frontend",
-    "backTitle": "Backend",
-    "infraTitle": "Infrastructură",
-    "otherTitle": "Altele",
-    "addTitle": "Instrumente și Biblioteci Suplimentare."
+    "coreTitle": "Stack Principal",
+    "tgTitle": "Expertiză în Telegram",
+    "toolTitle": "Instrumente",
+    "otherTitle": "Experiență Suplimentară"
   },
   "Experience": {
     "leftTitle": "Experiență profesională",
     "leftSubtitle": "Fiecare linie de cod poartă amprenta bătăliei. Fiecare proiect — o nouă victorie.",
     "Stack": "Stack",
     "contract": {
-      "about": "Client confidențial",
-      "description": "Am proiectat și dezvoltat un CMS headless de la zero folosind Payload v3. Am implementat colecții, câmpuri și controale de acces personalizate și am integrat CMS-ul cu o aplicație Next.js de scară largă pentru a permite gestionarea dinamică a conținutului pe întregul ciclu.",
-      "resultDescription": "Am livrat o arhitectură decuplată și scalabilă; am oferit clientului o soluție prietenoasă cu utilizatorul pentru gestionarea independentă a conținutului, reducând semnificativ timpii de actualizare a acestuia."
+      "about": "Companie de construcții, complexul rezidențial SAMPO",
+      "description": "Am dezvoltat și implementat un headless CMS bazat pe Payload pentru gestionarea conținutului site-ului complexului rezidențial. Am configurat modele de date, niveluri de acces și API, și am integrat sistemul cu o aplicație Next.js. Am implementat o interfață prietenoasă pentru crearea și gestionarea paginilor și știrilor.",
+      "resultDescription": "Clientul a primit un instrument flexibil și fiabil pentru gestionarea autonomă a site-ului și publicarea conținutului fără suport tehnic, ceea ce a sporit viteza și calitatea actualizării informațiilor."
     },
     "cpabox": {
-      "about": "Platformă SaaS pentru automatizarea procesului de media buying",
-      "description": "Am construit și întreținut arhitectura frontend și logica backend. Am integrat Keitaro TDS, am dezvoltat boți Telegram pentru verificarea domeniilor, am construit aplicații Telegram Web Apps și o arhitectură de webhooks. Am contribuit la soluțiile tehnice și la arhitectură.",
-      "resultDescription": "Am automatizat operațiunile de rutină pentru arbitrajul de trafic; mi-am consolidat competențele în arhitectură și gândirea de produs (product-thinking)."
+      "about": "Platformă SaaS pentru automatizarea arbitrajului de trafic",
+      "description": "Am fost responsabilă pentru dezvoltarea și mentenanța modulelor full-stack ale platformei SaaS care conectează campaniile din TDS Keitaro cu conturile de publicitate Facebook și profilurile anti-detect. Am creat un bot Telegram de verificare pentru monitorizarea domeniilor, cu notificări de reînnoire. Am configurat integrarea API cu Keitaro și webhooks pentru sincronizarea datelor cu rețelele de publicitate. Am dezvoltat o aplicație Telegram Web App care, prin API-ul Keitaro, prelua o listă de domenii, permițând selectarea acestora pentru urmărire și adăugarea manuală a altora noi.",
+      "resultDescription": "Am automatizat gestionarea legăturilor publicitare, reducând factorul uman și erorile, ceea ce a permis utilizatorilor să controleze eficient campaniile și să economisească timp."
     },
     "remotza": {
-      "about": "Companie specializată în dezvoltarea de software personalizat",
-      "description": "Am dezvoltat API-uri RESTful, am integrat servicii externe, am lucrat cu PostgreSQL și caching în Redis și am contribuit la interfața UI cu Vue.js.",
-      "resultDescription": "Am livrat API-uri stabile care corespund cerințelor de business; mi-am îmbunătățit concentrarea pe stabilitate și comunicarea în cadrul echipei."
+      "about": "Dezvoltare de software la comandă",
+      "description": "Am participat la proiectarea și dezvoltarea serviciilor web la comandă. Am implementat API-uri REST și logica de business, am configurat caching-ul cu Redis pentru a spori performanța și stabilitatea lucrului cu PostgreSQL. Am asigurat mentenanța și am perfecționat interfețele dezvoltate pe Vue.js.",
+      "resultDescription": "Clienții au primit soluții la cheie care au simplificat gestionarea datelor utilizatorilor și au făcut serviciile lor mai stabile și mai convenabile pentru utilizatorii finali."
     },
     "aopsrm": {
-      "about": "Organizație non-profit care asistă pacienții cu stomă din Moldova",
-      "description": "Am proiectat și lansat un CRM complet funcțional: frontend în React cu Redux și Formik, backend REST API în Laravel. Am gestionat deployment-ul cu Docker și GitLab CI/CD; m-am ocupat de administrarea serverului și de suportul tehnic.",
-      "resultDescription": "Am livrat o soluție CRM completă (end-to-end); mi-am consolidat încrederea în livrarea proiectelor pe întregul ciclu de dezvoltare."
+      "about": "ONG care ajută persoanele cu stomă din Moldova",
+      "description": "Am dezvoltat un site multi-pagină pentru organizație și am creat un CMS pentru gestionarea conținutului: publicarea articolelor, încărcarea fotografiilor, adăugarea comentariilor. Am configurat formulare, am implementat funcționalități de bază pentru administrare și funcționarea deplină a proiectului. Am organizat CI/CD prin GitLab și am implementat proiectul pe un server, cu conectarea domeniului.",
+      "resultDescription": "Organizația a primit un site funcțional cu un CMS la cheie — de la design și logică până la implementare. Acest lucru le-a oferit posibilitatea de a publica materiale în mod independent și de a comunica cu audiența fără a apela la specialiști externi."
     }
   },
   "Education": {
     "leftTitle": "Educație",
     "leftSubtitle": "Calea nu este definită de diplome. Orice te face mai puternic face parte din călătorie.",
     "educ": "Universitatea Rusă de Cooperație | Contabilitate și Finanțe | 2003–2007",
-    "pathTitle": "de la finanțe la full-stack:",
+    "pathTitle": "de la finanțe la Full-stack Software Engineer:",
     "dailyTitle": "Învățare Zilnică:",
     "path": {
-      "first": "2011: Primul pas în tehnologie (Curs de Webmaster",
+      "first": "2011: Primul pas în IT (Dezvoltare Web)",
       "second": "2012-Prezent: De la proiecte hobby la sisteme profesionale",
-      "third": "Urmărind liderii din industrie, documentația și cele mai bune practici."
+      "third": "Pentru a mă dezvolta profesional, analizez în mod regulat articole tehnice și prezentări de la conferințe, aplicând noile cunoștințe pentru a îmbunătăți calitatea codului și pentru a găsi soluții mai eficiente în munca mea."
     }
   },
   "Additional": {
@@ -72,11 +70,11 @@
     "intro": "Acest site este mai mult decât un CV; este un proiect full-stack open-source care demonstrează abordarea mea față de dezvoltarea software.",
     "projectTitle": "Proiectul Folio Metrics",
     "projectFeatures": {
-      "item1": "Un CV interactiv cu <highlight>analiza vizitatorilor în timp real</highlight>.",
-      "item2": "Arhitectură optimizată: <highlight>Next.js, Prisma + MariaDB și caching</highlight>.",
-      "item3": "Practici profesionale: <highlight>type safety, lazy loading și middleware</highlight>.",
-      "item4": "Un panou de administrare cu <highlight>vizualizarea metricilor</highlight>.",
-      "item5": "Performanță (Lighthouse): <highlight>95+ la toți indicatorii Core Web Vitals</highlight>."
+      "item1": "<highlight>CV interactiv</highlight> cu un sistem personalizat de analiză a vizitelor.",
+      "item2": "<highlight>Arhitectură modernă:</highlight> Next.js (App Router), Prisma + PostgreSQL.",
+      "item3": "Practici profesionale: <highlight>TypeScript (siguranța tipurilor) și Middleware</highlight>.",
+      "item4": "<highlight>Panou de administrare securizat</highlight> (NextAuth.js) cu vizualizarea metricilor.",
+      "item5": "Optimizarea performanței (Lighthouse): <highlight>95+ pentru toți indicatorii Core Web Vitals</highlight>."
     },
     "buttonText": "Explorează Codul",
     "buttonDemoText": "Vezi Demo"
@@ -86,7 +84,7 @@
     "copyright": "© 2025 Tanya Arbuz. Toate drepturile rezervate."
   },
   "Common": {
-    "smallTitle": "JS-Dezvoltator",
+    "smallTitle": "Full-stack Software Engineer",
     "title": "Tanya Arbuz",
     "location": "Locație",
     "or": "Chișinău",

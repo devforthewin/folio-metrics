@@ -2,7 +2,7 @@ import { SkillCategory } from '@/types/types'
 
 export const skillsData: SkillCategory[] = [
   {
-    category: 'Основной стек',
+    category: 'coreTitle',
     side: 'left',
     groups: [
       {
@@ -29,7 +29,7 @@ export const skillsData: SkillCategory[] = [
     ],
   },
   {
-    category: 'Экспертиза в Telegram',
+    category: 'tgTitle',
     side: 'left',
     groups: [
       {
@@ -39,7 +39,7 @@ export const skillsData: SkillCategory[] = [
     ],
   },
   {
-    category: 'Инструменты',
+    category: 'toolTitle',
     side: 'right',
     groups: [
       {
@@ -49,7 +49,7 @@ export const skillsData: SkillCategory[] = [
     ],
   },
   {
-    category: 'Дополнительный опыт',
+    category: 'otherTitle',
     side: 'right',
     groups: [
       { groupName: 'Frontend', skills: ['Vue.js'] },
