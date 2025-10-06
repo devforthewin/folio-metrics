@@ -74,7 +74,7 @@
       "item1": "<highlight>Интерактивное резюме</highlight> с кастомной системой аналитики посещений.",
       "item2": "<highlight>Современная архитектура:</highlight> Next.js (App Router), Prisma + PostgreSQL.",
       "item3": "<highlight>Профессиональные практики:</highlight> TypeScript (типобезопасность) и Middleware.",
-      "item4": "<highlight>Защищенная админ-панель</highlight> (NextAuth.js) с визуализацией метрик..",
+      "item4": "<highlight>Защищенная админ-панель</highlight> (NextAuth.js) с визуализацией метрик.",
       "item5": "Оптимизация производительности (Lighthouse): <highlight>95+ по всем Core Web Vitals</highlight>."
     },
     "buttonText": "Исследовать код",
