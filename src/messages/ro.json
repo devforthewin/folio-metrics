@@ -13,7 +13,8 @@
   "AboutMe": {
     "leftTitle": "Despre mine",
     "leftSubtitle": "Un războinic nu se laudă — el pur și simplu știe de ce este capabil.",
-    "description1": "<highlight>Engineer software full-stack</highlight> cu <highlight>o experiență de peste 4 ani în dezvoltarea web</highlight>. Sunt specializat în crearea de <secondary>aplicații web scalabile folosind React/Nest.js și soluții de integrare, inclusiv boți pentru Telegram</secondary>. Lucrez cu încredere cu întregul ciclu de dezvoltare, <secondary>de la front-end până la configurarea CI/CD</secondary>.",    "description2_title": "Prioritățile mele principale sunt:",
+    "description1": "<highlight>Engineer software full-stack</highlight> cu <highlight>o experiență de peste 4 ani în dezvoltarea web</highlight>. Mă specializez în <secondary>aplicații web și boți pentru Telegram</secondary>.\nLucrez atât cu frontend, cât și cu backend, construind <highlight>arhitecturi curate și soluții scalabile.</highlight>",
+    "description2_title": "Prioritățile mele principale sunt:",
     "description2_item1": "Fiabilitatea arhitecturii",
     "description2_item2": "Experiențe prietenoase cu utilizatorul",
     "description2_item3": "Automatizarea proceselor",
@@ -59,7 +60,7 @@
     "pathTitle": "de la finanțe la Full-stack Software Engineer:",
     "dailyTitle": "Învățare Zilnică:",
     "path": {
-      "first": "2011: Primul pas în IT (Dezvoltare Web)",
+      "first": "2011: Primul pas în IT (Curs Dezvoltare Web)",
       "second": "2012-Prezent: De la proiecte hobby la sisteme profesionale",
       "third": "Pentru a mă dezvolta profesional, analizez în mod regulat articole tehnice și prezentări de la conferințe, aplicând noile cunoștințe pentru a îmbunătăți calitatea codului și pentru a găsi soluții mai eficiente în munca mea."
     }

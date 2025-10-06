@@ -1,14 +1,14 @@
-import '../../../styles/globals.css'
 import { NextIntlClientProvider } from 'next-intl'
 import { getMessages } from 'next-intl/server'
 
 import { robotoMono, robotoSlab } from '@/lib/fonts'
+import '../../../lib/fontawesome'
 
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Folio-Metrics',
-  description: 'Track your portfolio with ease',
+  title: 'Arbuz Tanya | Full-Stack Developer',
+  description: 'Hi! This is my live resume and a demonstration of my development skills. The project is built on Next.js and includes custom analytics.',
 }
 
 export default async function RootLayout({
@@ -23,9 +23,11 @@ export default async function RootLayout({
 
   return (
     <html lang={locale}>
-      <NextIntlClientProvider locale={locale} messages={messages}>
-        <body className={`${robotoSlab.variable} ${robotoMono.variable} antialiased`}>{children}</body>
-      </NextIntlClientProvider>
+      <body className={`${robotoSlab.variable} ${robotoMono.variable} antialiased`}>
+        <NextIntlClientProvider locale={locale} messages={messages}>
+          {children}
+        </NextIntlClientProvider>
+      </body>
     </html>
   )
 }

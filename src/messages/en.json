@@ -13,7 +13,8 @@
   "AboutMe": {
     "leftTitle": "About Me",
     "leftSubtitle": "A warrior doesn't boast — he simply knows what he's capable of.",
-    "description1": "<highlight>Full-stack Software Engineer</highlight> with <highlight>over 4 years of experience in web development</highlight>. I specialize in creating <secondary>scalable web applications with React/Nest.js and integration solutions, including Telegram bots</secondary>. I am confident working with the full development cycle, <secondary>from frontend to CI/CD setup</secondary>.",    "description2_title": "My core priorities are:",
+    "description1": "<highlight>Full-stack Software Engineer</highlight> with <highlight>over 4 years of experience in web development</highlight>. I specialize in <secondary>web applications and Telegram bots</secondary>. I work with both frontend and backend, building <highlight>clean architecture and scalable solutions.</highlight>",
+    "description2_title": "My core priorities are:",
     "description2_item1": "Architectural reliability",
     "description2_item2": "User-friendly experiences",
     "description2_item3": "Process automation",
@@ -59,7 +60,7 @@
     "pathTitle": "from finance to Full-stack Software Engineer:",
     "dailyTitle": "Daily Learning:",
     "path": {
-      "first": "2011: First step in IT (Web Development)",
+      "first": "2011: First step in IT (Web Development Course)",
       "second": "2012-Present: From Hobby Projects to Professional Systems",
       "third": "For professional growth, I regularly analyze technical articles and conference talks, applying new knowledge to improve code quality and find more effective solutions in my work."
     }
