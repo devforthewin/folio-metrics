@@ -7,6 +7,20 @@ import { logError } from '@/shared/lib/error'
 import { RangeOptionValue } from '@/features/admin/analytics-filters'
 import { useAnalytics } from '@/features/admin/analytics/provider'
 
+/**
+ * TODO(analytics-refactor):
+ * This hook currently depends on AnalyticsProvider (useAnalytics),
+ * which mixes tracking concerns with data fetching.
+ *
+ * In future:
+ * - move dashboard data fetching to entities/analytics/api/metrics
+ * - use MetricsService directly instead of provider
+ * - keep provider only for client-side tracking (trackSectionVisit, etc.)
+ *
+ * Reason:
+ * separate read (dashboard) and write (tracking) concerns
+ * and remove implicit dependency on React context
+ */
 
 type AnalyticsDashboardSnapshot = {
   range: RangeOptionValue
