@@ -3,12 +3,11 @@
 import { useCallback, useEffect, useRef } from 'react'
 
 import { usePathname } from '@/shared/lib/i18n/navigation'
-
-import { useAnalytics } from '../../../../app/_providers/analytics'
+import { useTrackSectionVisit } from '@/features/admin/analytics/track-section-visit'
 
 export function useSectionObserver() {
   const pathname = usePathname()
-  const { trackSectionVisit } = useAnalytics()
+  const trackSectionVisit = useTrackSectionVisit()
   const activeSectionRef = useRef<string>('hero')
   const startTimeRef = useRef<number>(Date.now())
 

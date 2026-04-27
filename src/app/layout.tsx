@@ -3,7 +3,7 @@ import '@/shared/styles/globals.css'
 import { Metadata } from 'next'
 
 import { inter, robotoMono, robotoSlab } from '@/shared/config'
-import { AnalyticsProvider } from '@/app/_providers/analytics'
+import { AnalyticsProvider } from '@/features/admin/analytics/provider'
 
 export const metadata: Metadata = {
   title: 'Tatiana Arbuz | Frontend Engineer',
