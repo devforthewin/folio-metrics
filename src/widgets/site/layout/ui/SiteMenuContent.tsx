@@ -5,8 +5,9 @@ import Link from 'next/link'
 import { useTranslations } from 'next-intl'
 
 import { PRIMARY_CONTACTS } from '@/entities/contact'
-import { NAV_LINKS } from '@/widgets/site/layout/model'
 import { SocialLinksList } from '@/shared/ui'
+
+import { NAV_LINKS } from '../model'
 
 type SiteMobileMenuProps = {
   onClose: () => void

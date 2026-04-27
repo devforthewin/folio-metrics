@@ -7,7 +7,8 @@ import { CONTACT_ICONS } from '@/shared/ui'
 import { LocaleSwitcher } from '@/features/site/locale-switcher'
 import { SOCIAL_LINKS } from '@/entities/contact'
 import { useMobileMenu } from '@/shared/lib/hooks'
-import { NAV_LINKS, useNavActiveByClick } from '@/widgets/site/layout/model'
+
+import { NAV_LINKS, useNavActiveByClick } from '../model'
 
 import { SiteMobileMenu, SiteHeaderMobile } from './index'
 
