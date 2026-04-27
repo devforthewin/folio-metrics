@@ -3,7 +3,8 @@
 import { useCallback, useEffect, useRef } from 'react'
 
 import { usePathname } from '@/shared/lib/i18n/navigation'
-import { useAnalytics } from '@/shared/api/analytics'
+
+import { useAnalytics } from '../../../../app/_providers/analytics'
 
 export function useSectionObserver() {
   const pathname = usePathname()

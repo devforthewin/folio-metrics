@@ -2,7 +2,7 @@ import mockHistory from '@/shared/assets/data/mock-history.json'
 import { IS_DEMO_MODE } from '@/shared/lib/utils'
 import { invalidateCache, withCache } from '@/shared/lib/cache'
 import { AnalyticsDashboard, AnalyticsProcessor, VisitData } from '@/entities/analytics'
-import { IMetricsRepository, PrismaMetricsRepository } from '@/shared/api/metrics'
+import { IMetricsRepository, PrismaMetricsRepository } from '@/entities/analytics/api/metrics/index'
 
 type VisitWithSource = VisitData & { isMock: boolean }
 

@@ -4,7 +4,7 @@ import { LRUCache } from 'lru-cache'
 import { auth } from '@/auth'
 import { logError } from '@/shared/lib/error'
 import { trackVisitSchema } from '@/entities/analytics'
-import { createServerMetricsRepository, MetricsService } from '@/shared/api/metrics'
+import { createServerMetricsRepository, MetricsService } from '@/entities/analytics/api/metrics'
 
 const repo = createServerMetricsRepository()
 const service = new MetricsService(repo)

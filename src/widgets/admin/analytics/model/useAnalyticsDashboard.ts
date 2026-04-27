@@ -5,7 +5,8 @@ import { useState, useEffect, useRef } from 'react'
 import { AnalyticsDashboard, DailyPoint, SectionPoint, SummaryStats, VisitData } from '@/entities/analytics'
 import { logError } from '@/shared/lib/error'
 import { RangeOptionValue } from '@/features/admin/analytics-filters'
-import { useAnalytics } from '@/shared/api/analytics'
+
+import { useAnalytics } from '../../../../app/_providers/analytics'
 
 type AnalyticsDashboardSnapshot = {
   range: RangeOptionValue

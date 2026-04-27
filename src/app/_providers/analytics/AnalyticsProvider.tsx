@@ -11,7 +11,7 @@ import {
 import { useRouter } from 'next/navigation'
 
 import { VisitorManager } from '@/shared/lib/visitor'
-import { createClientMetricsRepository, IMetricsRepository, MetricsService } from '@/shared/api/metrics'
+import { createClientMetricsRepository, IMetricsRepository, MetricsService } from '@/entities/analytics/api/metrics'
 import { logError } from '@/shared/lib/error'
 
 import type { VisitData, AnalyticsDashboard } from '@/entities/analytics'
