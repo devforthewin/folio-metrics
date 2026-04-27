@@ -1,11 +1,10 @@
 'use client'
 
-import { VisitsTable } from '@/widgets/admin/visits-table'
-import { AnalyticsChartsAsync } from '@/widgets/admin/analytics'
-
 import { DashboardInitialState } from '../model'
 
+import { AnalyticsChartsAsync } from './analytics'
 import { SummaryCards } from './SummaryCards'
+import { VisitsTable } from './visits-table'
 
 type Props = {
   initialState: DashboardInitialState

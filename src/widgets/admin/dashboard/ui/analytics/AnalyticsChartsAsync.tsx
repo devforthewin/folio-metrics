@@ -6,7 +6,7 @@ import { ErrorBoundary } from 'react-error-boundary'
 import { DataPlaceholder } from '@/shared/ui'
 import { ChartSkeleton } from '@/shared/ui'
 
-import { AnalyticsChartsProps } from '../model'
+import { AnalyticsChartsProps } from '../../model'
 
 const AnalyticsCharts = dynamic<AnalyticsChartsProps>(
   () => import('./AnalyticsCharts').then((m) => m.AnalyticsCharts),

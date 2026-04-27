@@ -3,9 +3,9 @@
 import { useEffect, useState } from 'react'
 
 import { AnalyticsRangeFilter, RangeOptionValue } from '@/features/admin/analytics-filters'
+import { useAnalyticsDashboard } from '@/widgets/admin/dashboard/model'
 
-import { useAnalyticsDashboard } from '../model'
-import { AnalyticsChartsProps } from '../model'
+import { AnalyticsChartsProps } from '../../model/analytics.types'
 
 import { DailyVisitsChart, SectionsChart } from './index'
 

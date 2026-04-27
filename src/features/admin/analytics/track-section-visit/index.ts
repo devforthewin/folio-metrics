@@ -1,1 +1,1 @@
-export { useTrackSectionVisit } from 'model/useTrackSectionVisit'
+export { useTrackSectionVisit } from './model/useTrackSectionVisit'
