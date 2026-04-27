@@ -6,5 +6,4 @@ export type {
   AnalyticsDashboard,
 } from './model/types'
 
-export { AnalyticsProcessor } from './model'
-export { trackVisitSchema } from './model'
+export { trackVisitSchema } from './model/visit.schema'

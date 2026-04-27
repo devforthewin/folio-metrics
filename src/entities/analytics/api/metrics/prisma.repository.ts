@@ -1,10 +1,11 @@
 import { prisma } from '@/shared/db/prisma'
-import { resolveVisitorKey } from '@/entities/analytics/lib'
 import { logDebug, logError } from '@/shared/lib/error'
+
+import { resolveVisitorKey } from '../../lib/resolveVisitorKey'
 
 import { IMetricsRepository } from './repository.interface'
 
-import type { VisitData } from '@/entities/analytics'
+import type { VisitData } from '../../model/types'
 
 export class PrismaMetricsRepository implements IMetricsRepository {
 

@@ -1,7 +1,3 @@
 export { MetricsService } from './metrics-service'
-export { LocalStorageMetricsRepository } from './local-storage.repository'
-export { PrismaMetricsRepository } from './prisma.repository'
-export { NoopMetricsRepository } from './noop.repository'
-export { HttpMetricsRepository } from './http.repository'
 export { createClientMetricsRepository, createServerMetricsRepository } from './factory'
 export type { IMetricsRepository } from './repository.interface'

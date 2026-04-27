@@ -11,9 +11,10 @@ import {
 import { useRouter } from 'next/navigation'
 
 import { VisitorManager } from '@/shared/lib/visitor'
-import { createClientMetricsRepository, IMetricsRepository, MetricsService } from '@/entities/analytics/api/metrics'
+import { createClientMetricsRepository, MetricsService } from '@/entities/analytics/api/metrics'
 import { logError } from '@/shared/lib/error'
 
+import type { IMetricsRepository } from '@/entities/analytics/api/metrics'
 import type { VisitData, AnalyticsDashboard } from '@/entities/analytics'
 
 const INITIAL_DASHBOARD_DATA: AnalyticsDashboard = {

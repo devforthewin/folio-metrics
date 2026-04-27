@@ -1,4 +1,4 @@
-import type { VisitData } from '@/entities/analytics'
+import type { VisitData } from '../../model/types'
 
 export interface IMetricsRepository {
   save(data: VisitData): Promise<void>

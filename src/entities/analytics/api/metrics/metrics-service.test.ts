@@ -1,8 +1,9 @@
 import { invalidateCache } from '@/shared/lib/cache'
-import { VisitData } from '@/entities/analytics'
 
 import { MetricsService } from './metrics-service'
 import { IMetricsRepository } from './repository.interface'
+
+import type { VisitData } from '../../model/types'
 
 jest.mock('@/shared/lib/cache', () => ({
   invalidateCache: jest.fn(),

@@ -1,6 +1,6 @@
 import { IMetricsRepository } from './repository.interface'
 
-import type { VisitData } from '@/entities/analytics'
+import type { VisitData } from '../../model/types'
 
 export class HttpMetricsRepository implements IMetricsRepository {
   private readonly endpoint = '/api/admin/analytics'

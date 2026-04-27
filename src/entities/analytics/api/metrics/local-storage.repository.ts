@@ -2,7 +2,7 @@ import { logError } from '@/shared/lib/error'
 
 import { IMetricsRepository } from './repository.interface'
 
-import type { VisitData } from '@/entities/analytics'
+import type { VisitData } from '../../model/types'
 
 export class LocalStorageMetricsRepository implements IMetricsRepository {
   private readonly STORAGE_KEY = 'folio_metrics_demo'

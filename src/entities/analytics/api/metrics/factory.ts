@@ -1,8 +1,8 @@
 // runtime: Node.js
-import { PrismaMetricsRepository } from '@/entities/analytics/api/metrics/prisma.repository'
-import { NoopMetricsRepository } from '@/entities/analytics/api/metrics/noop.repository'
-import { HttpMetricsRepository } from '@/entities/analytics/api/metrics/http.repository'
-import { LocalStorageMetricsRepository } from '@/entities/analytics/api/metrics/local-storage.repository'
+import { PrismaMetricsRepository } from './prisma.repository'
+import { NoopMetricsRepository } from './noop.repository'
+import { HttpMetricsRepository } from './http.repository'
+import { LocalStorageMetricsRepository } from './local-storage.repository'
 
 export function createServerMetricsRepository() {
   const mode = process.env.ANALYTICS_MODE || 'demo'
