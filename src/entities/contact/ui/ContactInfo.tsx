@@ -2,7 +2,7 @@
 
 import { useLocale, useTranslations } from 'next-intl'
 
-import { PRIMARY_CONTACTS } from '@/entities/contact'
+import { PRIMARY_CONTACTS } from '../model/constants'
 
 import { getContactStyles } from './ContactInfo.styles'
 

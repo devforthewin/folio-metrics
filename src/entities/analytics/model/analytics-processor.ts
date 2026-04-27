@@ -1,4 +1,4 @@
-import type { DailyPoint, SectionPoint, SummaryStats, VisitData } from '@/entities/analytics'
+import type { DailyPoint, SectionPoint, SummaryStats, VisitData } from '../model/types'
 
 export class AnalyticsProcessor {
   static filterByRange(data: VisitData[], days: number): VisitData[] {

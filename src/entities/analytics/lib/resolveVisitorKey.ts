@@ -1,4 +1,4 @@
-import { VisitData } from '@/entities/analytics'
+import { VisitData } from '../model/types'
 
 import { createVisitorHash } from './createVisitorHash'
 
