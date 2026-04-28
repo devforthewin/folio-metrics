@@ -9,8 +9,14 @@ import { createServerMetricsRepository, MetricsService } from '@/entities/analyt
 const repo = createServerMetricsRepository()
 const service = new MetricsService(repo)
 
-// --- RATE LIMITER SETUP ---
-const rateLimit = new LRUCache<string, number>({
+/**
+ * In-memory rate limiter.
+ *
+ * TODO(rate-limit):
+ * Replace with Redis/Upstash or another external store before multi-instance deployment.
+ * Current implementation is process-local and resets on server restart.
+ */
+const inMemoryRateLimit = new LRUCache<string, number>({
   max: 500,
   ttl: 10 * 1000,
 })
@@ -19,12 +25,12 @@ export async function POST(req: NextRequest) {
   try {
     const ip = req.headers.get('x-forwarded-for')?.split(',')[0]?.trim() || '127.0.0.1'
 
-    const currentUsage = rateLimit.get(ip) || 0
+    const currentUsage = inMemoryRateLimit.get(ip) || 0
     if (currentUsage >= 5) {
       logError(`Spam detected from IP: ${ip}`, '[API Analytics POST RateLimit]')
       return NextResponse.json({ error: 'Too Many Requests' }, { status: 429 })
     }
-    rateLimit.set(ip, currentUsage + 1)
+    inMemoryRateLimit.set(ip, currentUsage + 1)
     const body = await req.json()
 
     const result = trackVisitSchema.safeParse(body)
