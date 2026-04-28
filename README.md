@@ -6,24 +6,32 @@
 > Demo access is enabled via environment configuration.
 > Credentials are not hardcoded in the source code.
 
-## 🔐 Demo Access
-
-The admin panel includes a demo login for portfolio review.
-Demo credentials are **not stored in the repository** and must be provided via environment variables:
-
-- `SECRET_DEMO_USER`
-- `SECRET_DEMO_PASSWORD`
-
-If these variables are not set, demo login will be disabled.
----
 ## ✨ Core Features
 
 * **Hybrid Analytics Engine:** Powered by the **Repository Pattern**. The system automatically switches between `LocalStorage` (Demo mode) and `PostgreSQL/Supabase` (Production) without modifying business logic.
 * **Concurrency Management:** Implements the **Web Locks API** to prevent data race conditions when multiple browser tabs are recording metrics simultaneously.
 * **Smart Data Orchestration:** Features a service layer with **"Time-shifting"** logic — historical mock data is automatically rejuvenated to the current date, ensuring vibrant and relevant charts in the demo dashboard.
 * **Privacy-First Tracking:** Custom-built `SectionObserver` for engagement metrics, avoiding intrusive third-party cookies.
-* **Performance-Driven:** Achieves a **Performance is optimized with a focus on Core Web Vitals and Lighthouse metrics (95+ in controlled environments).** perfectly balancing aesthetics and accessibility. Utilizes **Dynamic Imports** and lazy loading for heavy visualization libraries (ECharts).
+* **Performance-Driven:** Optimized for Core Web Vitals and Lighthouse metrics (95+ in controlled environments). Perfectly balancing aesthetics and accessibility. Utilizes **Dynamic Imports** and lazy loading for heavy visualization libraries (ECharts).
 ---
+
+## 🧱 Architecture
+
+The project is structured using **Feature-Sliced Design (FSD)** with strict layer boundaries:
+
+- **app** — routing, providers, entry points
+- **widgets** — page-level UI composition
+- **features** — user interactions (e.g. tracking, auth actions)
+- **entities** — business logic and domain models (analytics, users)
+- **shared** — reusable infrastructure (API, utils, database)
+
+### Key Rules
+
+- No upward imports between layers
+- `shared` contains no business logic
+- `entities` encapsulate domain logic
+- `features` represent user intent
+- `widgets` compose UI without owning business logic
 
 ## 📊 Architecture & Patterns
 
@@ -39,6 +47,25 @@ The project follows **Clean Architecture** and **Dependency Inversion** (DI) pri
 
 ---
 
+## ⚖️ Trade-offs & Limitations
+
+This project intentionally makes several trade-offs to balance simplicity and production-readiness:
+
+- **Rate limiting** is implemented using an in-memory LRU cache  
+  → suitable for single-instance deployments, but should be replaced with Redis/Upstash in distributed environments
+
+- **Analytics storage** switches between LocalStorage and PostgreSQL  
+  → simplifies demo setup, but introduces different consistency guarantees
+
+- **Demo mode** disables strict persistence and uses mock data  
+  → improves UX for reviewers, but differs from production behavior
+
+- **Logging** is environment-aware  
+  → verbose in development, minimal in production
+
+- **Supabase client support is optional**  
+  → included for extensibility, not required for core functionality
+
 ## 🛠️ Tech Stack
 
 * **Framework:** Next.js 15 (App Router), TypeScript.
@@ -48,6 +75,33 @@ The project follows **Clean Architecture** and **Dependency Inversion** (DI) pri
 * **Visualization:** Apache ECharts.
 * **i18n:** Full multi-language support via `next-intl`.
 
+---
+
+## 🔍 How to Review This Project
+
+If you are evaluating this project:
+
+1. Start from `app/` to understand routing and providers
+2. Explore `widgets/admin/dashboard` for UI composition
+3. Check `entities/analytics` for domain logic and metrics processing
+4. Review `features/analytics` for tracking behavior
+5. Inspect `shared` for infrastructure (API, Prisma, utilities)
+
+Key areas of interest:
+- Repository pattern implementation
+- MetricsService orchestration
+- Feature-Sliced Design boundaries
+- Demo vs production behavior
+
+## 🔐 Demo Access
+
+The admin panel includes a demo login for portfolio review.
+Demo credentials are **not stored in the repository** and must be provided via environment variables:
+
+- `SECRET_DEMO_USER`
+- `SECRET_DEMO_PASSWORD`
+
+If these variables are not set, demo login will be disabled.
 ---
 
 ## 🚀 Getting Started
