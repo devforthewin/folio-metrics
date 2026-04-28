@@ -2,18 +2,27 @@
 
 **Folio-Metrics** is a professional-grade open-source portfolio built with **Next.js 15**. This project is designed as an architecture showcase, moving beyond a simple CV to demonstrate production-ready engineering patterns, data persistence, and high-performance metrics.
 
-**[Live Demo](https://arbuz.buzz) | [Admin Panel](https://arbuz.buzz/admin/login)** *(Credentials: `demo@example.com` / `demo123`)*
+**[Live Demo](https://arbuz.buzz) | [Admin Panel](https://arbuz.buzz/admin/login)** 
+> Demo access is enabled via environment configuration.
+> Credentials are not hardcoded in the source code.
 
+## 🔐 Demo Access
+
+The admin panel includes a demo login for portfolio review.
+Demo credentials are **not stored in the repository** and must be provided via environment variables:
+
+- `SECRET_DEMO_USER`
+- `SECRET_DEMO_PASSWORD`
+
+If these variables are not set, demo login will be disabled.
 ---
-
 ## ✨ Core Features
 
 * **Hybrid Analytics Engine:** Powered by the **Repository Pattern**. The system automatically switches between `LocalStorage` (Demo mode) and `PostgreSQL/Supabase` (Production) without modifying business logic.
 * **Concurrency Management:** Implements the **Web Locks API** to prevent data race conditions when multiple browser tabs are recording metrics simultaneously.
 * **Smart Data Orchestration:** Features a service layer with **"Time-shifting"** logic — historical mock data is automatically rejuvenated to the current date, ensuring vibrant and relevant charts in the demo dashboard.
 * **Privacy-First Tracking:** Custom-built `SectionObserver` for engagement metrics, avoiding intrusive third-party cookies.
-* **Performance-Driven:** Achieves a **Lighthouse score of ≥ 95 across all categories** perfectly balancing aesthetics and accessibility. Utilizes **Dynamic Imports** and lazy loading for heavy visualization libraries (ECharts).
-
+* **Performance-Driven:** Achieves a **Performance is optimized with a focus on Core Web Vitals and Lighthouse metrics (95+ in controlled environments).** perfectly balancing aesthetics and accessibility. Utilizes **Dynamic Imports** and lazy loading for heavy visualization libraries (ECharts).
 ---
 
 ## 📊 Architecture & Patterns
