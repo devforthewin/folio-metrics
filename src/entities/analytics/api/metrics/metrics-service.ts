@@ -1,6 +1,7 @@
 import mockHistory from '@/shared/assets/data/mock-history.json'
 import { IS_DEMO_MODE } from '@/shared/lib/utils'
 import { invalidateCache, withCache } from '@/shared/lib/cache'
+import { logDebug } from '@/shared/lib/error'
 
 import { AnalyticsProcessor } from '../../model/analytics-processor'
 
@@ -17,7 +18,8 @@ const CACHE_TTL = 5 * 60 * 1000 // 5 min
 let hasLoggedMockFallback = false
 
 export class MetricsService {
-  constructor(private repo: IMetricsRepository) {}
+  constructor(private repo: IMetricsRepository) {
+  }
 
   async getDashboardData(days: number): Promise<AnalyticsDashboard> {
     const cacheKey = `${DASHBOARD_CACHE_PREFIX}${days}`
@@ -64,7 +66,9 @@ export class MetricsService {
     }))
 
     if (!IS_DEMO_MODE && processedData.length === 0 && !hasLoggedMockFallback) {
-      console.info('[MetricsService] DB is empty, showing shifted mocks for demo purposes')
+      logDebug('DB is empty, showing shifted mocks for demo purposes', {
+        context: 'MetricsService',
+      })
       hasLoggedMockFallback = true
     }
 

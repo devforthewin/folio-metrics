@@ -1,3 +1,5 @@
+import { logError } from '@/shared/lib/error'
+
 import { IMetricsRepository } from './repository.interface'
 
 import type { VisitData } from '../../model/types'
@@ -19,7 +21,9 @@ export class HttpMetricsRepository implements IMetricsRepository {
         },
         body: JSON.stringify(data),
         keepalive: true,
-      }).catch(console.error)
+      }).catch((error) => {
+        logError(error, 'HttpMetricsRepository.save')
+      })
     }
   }
 

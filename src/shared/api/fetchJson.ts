@@ -1,3 +1,5 @@
+import { logDebug } from '@/shared/lib/error'
+
 import { HttpError } from './HttpError'
 
 export async function fetchJson<T>(url: string, init?: RequestInit): Promise<T> {
@@ -12,7 +14,7 @@ export async function fetchJson<T>(url: string, init?: RequestInit): Promise<T> 
       errorMessage = errorData.message || errorMessage
       detail = errorData.detail || ''
     } catch (parseError) {
-      console.warn('Could not parse error response', parseError)
+      logDebug('Could not parse error response', parseError)
     }
     throw new HttpError(errorMessage, response.status, detail)
   }
