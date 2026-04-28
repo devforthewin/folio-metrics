@@ -1,9 +1,10 @@
 import NextAuth from 'next-auth'
 import CredentialsProvider from 'next-auth/providers/credentials'
 
-const DEMO_EMAIL = process.env.SECRET_DEMO_USER ?? 'demo@example.com'
-const DEMO_PASSWORD = process.env.SECRET_DEMO_PASSWORD ?? 'demo123'
+const DEMO_EMAIL = process.env.SECRET_DEMO_USER
+const DEMO_PASSWORD = process.env.SECRET_DEMO_PASSWORD
 const DEMO_USER_ID = process.env.DEMO_USER_ID ?? 'demo'
+const IS_DEMO_AUTH_ENABLED = Boolean(DEMO_EMAIL && DEMO_PASSWORD)
 
 export const { handlers, auth, signIn, signOut } = NextAuth({
   session: { strategy: 'jwt' },
@@ -19,7 +20,11 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
       async authorize(credentials) {
         const { email, password } = (credentials ?? {}) as Record<string, string>
 
-        if (email === DEMO_EMAIL && password === DEMO_PASSWORD) {
+        if (
+          IS_DEMO_AUTH_ENABLED &&
+          email === DEMO_EMAIL &&
+          password === DEMO_PASSWORD
+        ) {
           return { id: DEMO_USER_ID, email: DEMO_EMAIL, name: 'Demo' }
         }
         return null

@@ -14,8 +14,8 @@ export const metadata: Metadata = {
 
 function isDemoUser(user: { email?: string | null; name?: string | null }) {
   const email = user.email ?? ''
-  const name = user.name ?? ''
-  return email === 'demo@example.com' || name.toLowerCase().includes('demo')
+  const demoEmail = process.env.SECRET_DEMO_USER
+  return Boolean(demoEmail && email === demoEmail)
 }
 
 type ProtectedLayoutProps = {
