@@ -48,13 +48,13 @@ export class AnalyticsProcessor {
 
   static sortAndSlice(data: VisitData[], limit: number): VisitData[] {
     return [...data]
-      .filter(v => v.timestamp && !isNaN(v.timestamp)) // only valid data
+      // ignore corrupted analytics events that cannot be sorted reliably
+      .filter((visit) => Number.isFinite(visit.timestamp))
       .sort((a, b) => {
         const diff = b.timestamp - a.timestamp
         if (diff !== 0) return diff
 
-        // if the times match - sort by section ID or visitorId
-        // stable row order
+        //ensure deterministic order when timestamps are equal
         return a.sectionId.localeCompare(b.sectionId)
       })
       .slice(0, limit)
