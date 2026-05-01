@@ -48,9 +48,7 @@ export async function POST(req: NextRequest) {
 
     const visit = {
       ...result.data,
-      sectionId: result.data.sectionId,
-      duration: result.data.duration,
-      timestamp: result.data.timestamp || Date.now(),
+      timestamp: result.data.timestamp ?? Date.now(),
       ipAddress: ip,
       userAgent,
       country,
